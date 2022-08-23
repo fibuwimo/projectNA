@@ -3345,11 +3345,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09565a427b9cfdb458ebdda44fa4c4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magicWallTest: {fileID: 7396750004132694426, guid: 8d63bce6fce891049b63284ee5b0842e,
+  tutiWallTest: {fileID: 7396750004132694426, guid: 8d63bce6fce891049b63284ee5b0842e,
     type: 3}
-  magicWallMihon: {fileID: 2322237017587224455, guid: 421bbf78caa547c49bdabb5ea75e742c,
+  tutiWallMihon: {fileID: 2322237017587224455, guid: 421bbf78caa547c49bdabb5ea75e742c,
     type: 3}
-  magicWall: {fileID: 2322237017587224455, guid: e44e59f3247788d4d82ae7ee4b97a2fb,
+  tutiWall: {fileID: 2322237017587224455, guid: e44e59f3247788d4d82ae7ee4b97a2fb,
     type: 3}
 --- !u!114 &258959100
 MonoBehaviour:

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class tutiMagic : MonoBehaviour
 {
-    public GameObject magicWallTest;
-    public GameObject magicWallMihon;
-    public GameObject magicWall;
+    public GameObject tutiWallTest;
+    public GameObject tutiWallMihon;
+    public GameObject tutiWall;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,12 @@ public class tutiMagic : MonoBehaviour
             float x = Mathf.Round(tPosition.x / 1.5f);
             float z = Mathf.Round(tPosition.z / 1.5f);
             Vector3 magicWallPosition = new Vector3(x * 1.5f, 0.5f, z * 1.5f);
-            Instantiate(magicWallMihon, magicWallPosition, Quaternion.Euler(transform.forward)); 
+           /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+            obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+            
+            Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+            
+            
         }
         if (Input.GetKeyUp(KeyCode.Z))
         {
@@ -30,7 +35,8 @@ public class tutiMagic : MonoBehaviour
                float x = Mathf.Round(tPosition.x / 1.5f);
                float z = Mathf.Round(tPosition.z / 1.5f);
                Vector3 magicWallPosition = new Vector3(x * 1.5f, 0.5f, z * 1.5f);
-               Instantiate(magicWall, magicWallPosition, Quaternion.Euler(transform.forward));
+               Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
+            
         }
           
     }
