@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 405214493496401561}
   - component: {fileID: 405214493496401566}
   - component: {fileID: 405214493496401567}
-  - component: {fileID: 405214493496401562}
+  - component: {fileID: 3497681892823163774}
   m_Layer: 0
-  m_Name: Enemy
-  m_TagString: agentRed
+  m_Name: Enemy3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a499c3a059059a409750435edd78c95, type: 2}
+  - {fileID: 2100000, guid: 6c500e07cec49dd44b03e1c440d8fd59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104,7 +104,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 2
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -114,9 +114,9 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 7
+  m_WalkableMask: 3
   m_ObstacleAvoidanceType: 0
---- !u!114 &405214493496401562
+--- !u!114 &3497681892823163774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,6 +125,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 405214493496401564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce45a2d9ed2f76843a1e124d1ae33455, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e343089805fbd439ff288a559779c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
