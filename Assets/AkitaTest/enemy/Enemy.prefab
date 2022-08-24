@@ -128,3 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce45a2d9ed2f76843a1e124d1ae33455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jyunkaiTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  jyunkaiIndex: 0
+  jyunkaiTime: 10
+  tuibiTime: 10

@@ -22,12 +22,28 @@ public class tutiMagic : MonoBehaviour
             float x = Mathf.Round(tPosition.x / 1.5f);
             float z = Mathf.Round(tPosition.z / 1.5f);
             Vector3 magicWallPosition = new Vector3(x * 1.5f, 0.5f, z * 1.5f);
-           /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
-            obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+            /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+             obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+            Ray ray=new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), new Vector3(x * 1.5f, 10f, z * 1.5f) - new Vector3(x * 1.5f, 0, z * 1.5f));
+            Debug.DrawRay(new Vector3(x * 1.5f, 10f, z * 1.5f), new Vector3(x * 1.5f, 10f, z * 1.5f) - new Vector3(x * 1.5f, 0, z * 1.5f),Color.red,2f);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+            {
+                Debug.Log("レイキャスト通過");
+                if (hit.collider.CompareTag("Wall"))
+                {
+                    
+                }
+                else
+                {
+                    Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                }
+                
+            }
             
-            Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
-            
-            
+
+
         }
         if (Input.GetKeyUp(KeyCode.Z))
         {

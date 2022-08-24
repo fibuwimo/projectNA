@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyTuibiForwad : MonoBehaviour
+public class EnemyYellow : MonoBehaviour
 {
     private GameObject pl;
     private NavMeshAgent agent;
