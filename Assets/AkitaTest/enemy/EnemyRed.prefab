@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &405214493496401564
+--- !u!1 &5128031216333130208
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 405214493496401563}
-  - component: {fileID: 405214493496401560}
-  - component: {fileID: 405214493496401561}
-  - component: {fileID: 405214493496401566}
-  - component: {fileID: 405214493496401567}
-  - component: {fileID: 405214493496401562}
+  - component: {fileID: 5128031216333130215}
+  - component: {fileID: 5128031216333130212}
+  - component: {fileID: 5128031216333130213}
+  - component: {fileID: 5128031216333130210}
+  - component: {fileID: 5128031216333130211}
+  - component: {fileID: 5128031216333130214}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: EnemyRed
   m_TagString: agentRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &405214493496401563
+--- !u!4 &5128031216333130215
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405214493496401564}
+  m_GameObject: {fileID: 5128031216333130208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 7.4}
+  m_LocalPosition: {x: -7.68, y: 0.5, z: 7.4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &405214493496401560
+--- !u!33 &5128031216333130212
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405214493496401564}
+  m_GameObject: {fileID: 5128031216333130208}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &405214493496401561
+--- !u!23 &5128031216333130213
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405214493496401564}
+  m_GameObject: {fileID: 5128031216333130208}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -80,13 +80,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &405214493496401566
+--- !u!136 &5128031216333130210
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405214493496401564}
+  m_GameObject: {fileID: 5128031216333130208}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -94,20 +94,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!195 &405214493496401567
+--- !u!195 &5128031216333130211
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405214493496401564}
+  m_GameObject: {fileID: 5128031216333130208}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 360
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -116,23 +116,36 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 7
   m_ObstacleAvoidanceType: 0
---- !u!114 &405214493496401562
+--- !u!114 &5128031216333130214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405214493496401564}
+  m_GameObject: {fileID: 5128031216333130208}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce45a2d9ed2f76843a1e124d1ae33455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startSpeeds:
+  - 2
+  - 2.2
+  - 2.4
+  - 2.6
+  - 2.8
+  maxSpeeds:
+  - 4
+  - 4.2
+  - 4.4
+  - 4.6
+  - 4.8
+  speedStep: 0.5
   jyunkaiTarget:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   jyunkaiIndex: 0
-  jyunkaiTime: 10
-  tuibiTime: 10
+  jyunkaiTime: 0
+  tuibiTime: 20
