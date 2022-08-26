@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 405214493496401567}
   - component: {fileID: 3452121060075800464}
   m_Layer: 0
-  m_Name: Enemy2
-  m_TagString: Untagged
+  m_Name: EnemyBlue
+  m_TagString: agentBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,3 +128,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56df2b6f3861a5d41a3cfe3b79f0a97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startSpeeds:
+  - 2
+  - 2.2
+  - 2.4
+  - 2.6
+  - 2.8
+  maxSpeeds:
+  - 4
+  - 4.2
+  - 4.4
+  - 4.6
+  - 4.8
+  speedStep: 0.5
+  state: 0
+  jyunkaiTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  jyunkaiIndex: 0
+  jyunkaiTime: 15
+  tuibiTime: 30

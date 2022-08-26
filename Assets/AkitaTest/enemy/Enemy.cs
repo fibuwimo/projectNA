@@ -14,13 +14,14 @@ public abstract class Enemy : MonoBehaviour
     public float[] startSpeeds;
     public float[] maxSpeeds;
     public float speedStep;
-    protected STATE state = STATE.JYUNKAI;
+    public STATE state = STATE.JYUNKAI;
     protected GameObject pl;
     protected NavMeshAgent agent;
     public GameObject[] jyunkaiTarget;
     public int jyunkaiIndex = 0;
     public int jyunkaiTime;
     public int tuibiTime;
+    float tempSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +36,20 @@ public abstract class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (agent.desiredVelocity.magnitude == 0f)
         {
-            if (state == STATE.TUIBI)
+            if (state == STATE.RUN)
+            {
+                Vector3 runPosition = transform.position + (transform.position - pl.transform.position).normalized * 3;
+                runPosition.y = 0;
+                agent.destination = runPosition;
+            }
+            else if (state == STATE.TUIBI)
             {
                 agent.destination = pl.transform.position;
             }
-            if (state == STATE.JYUNKAI)
+            else if (state == STATE.JYUNKAI)
             {
                 agent.destination = jyunkaiTarget[jyunkaiIndex].transform.position;
             }
@@ -50,6 +58,13 @@ public abstract class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag == "Player")
+        {
+            if (state == STATE.RUN)
+            {
+                Restart();
+            }
+        }
         for (int i = 0; i < jyunkaiTarget.Length; i++)
         {
             if (other.gameObject == jyunkaiTarget[i])
@@ -61,11 +76,17 @@ public abstract class Enemy : MonoBehaviour
 
         if (other.gameObject.tag == "CrossTrigger")
         {
-            if (state == STATE.TUIBI)
+            if (state == STATE.RUN)
+            {
+                Vector3 runPosition = transform.position + (transform.position - pl.transform.position).normalized * 3;
+                runPosition.y = 0;
+                agent.destination = runPosition;
+            }
+            else if (state == STATE.TUIBI)
             {
                 agent.destination = pl.transform.position;
             }
-            if (state == STATE.JYUNKAI)
+            else if (state == STATE.JYUNKAI)
             {
                 agent.destination = jyunkaiTarget[jyunkaiIndex].transform.position;
             }
@@ -76,11 +97,34 @@ public abstract class Enemy : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(jyunkaiTime);
-            Debug.Log("追尾になる");
-            state = STATE.TUIBI;
+            if (state == STATE.JYUNKAI)
+            {
+                state = STATE.TUIBI;
+            }
             yield return new WaitForSeconds(tuibiTime);
-            Debug.Log("巡回になる");
+            if (state == STATE.TUIBI)
+            {
+                state = STATE.JYUNKAI;
+            }
+        }
+    }
+    IEnumerator Run()
+    {
+        state = STATE.RUN;
+        tempSpeed = agent.speed;
+        agent.speed =tempSpeed/2;
+        yield return new WaitForSeconds(10);
+        if (state == STATE.RUN)
+        {
+            agent.speed = tempSpeed;
             state = STATE.JYUNKAI;
+        }
+    }
+    public void runAwake()
+    {
+        if (state != STATE.RUN)
+        {
+            StartCoroutine("Run");
         }
     }
     IEnumerator changeSpeed()
@@ -94,6 +138,12 @@ public abstract class Enemy : MonoBehaviour
                 agent.speed = maxSpeeds[0];
             }
         }
+    }
+    public void Restart()
+    {
+        transform.position = new Vector3(0, 0.5f, 7.5f);
+        agent.speed = startSpeeds[0];
+        state = STATE.JYUNKAI;
     }
 }
 

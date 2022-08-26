@@ -8,6 +8,9 @@ TagManager:
   - CrossTrigger
   - Wall
   - agentRed
+  - agentBlue
+  - agentYellow
+  - mutekiItem
   layers:
   - Default
   - TransparentFX
