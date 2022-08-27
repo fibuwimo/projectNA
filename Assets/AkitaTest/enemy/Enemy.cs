@@ -22,9 +22,11 @@ public abstract class Enemy : MonoBehaviour
     public int jyunkaiTime;
     public int tuibiTime;
     float tempSpeed;
+    Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
+        startPosition = transform.position;
         pl = GameObject.FindWithTag("Player");
         agent = gameObject.GetComponent<NavMeshAgent>();
         agent.destination = pl.transform.position;
@@ -141,7 +143,7 @@ public abstract class Enemy : MonoBehaviour
     }
     public void Restart()
     {
-        transform.position = new Vector3(0, 0.5f, 7.5f);
+        transform.position = startPosition;
         agent.speed = startSpeeds[0];
         state = STATE.JYUNKAI;
     }

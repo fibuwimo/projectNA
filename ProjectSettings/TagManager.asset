@@ -11,6 +11,7 @@ TagManager:
   - agentBlue
   - agentYellow
   - mutekiItem
+  - Coin
   layers:
   - Default
   - TransparentFX

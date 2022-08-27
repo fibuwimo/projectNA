@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public int life;
     public Text lifeText;
     public Text mutekiText;
+    public Text coinText;
+    int coinCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,12 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag.Contains("Coin"))
+        {
+            coinCount++;
+            coinText.text = "コイン:" +coinCount;
+            Destroy(other.gameObject);
+        }
         if (other.gameObject.tag.Contains("agent"))
         {
             if (state == STATE.ALIVE)
