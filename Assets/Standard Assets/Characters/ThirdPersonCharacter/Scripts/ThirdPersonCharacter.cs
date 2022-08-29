@@ -160,8 +160,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_Rigidbody.AddForce(extraGravityForce);
 
 			m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
-
-			float speed = 4.77573647112f * this.m_MoveSpeedMultiplier * this.m_Animator.GetFloat("Forward");
+			//ここ編集点：木村（空中ジャンプ関連かも）
+			float speed = 2.77573647112f * this.m_MoveSpeedMultiplier * this.m_Animator.GetFloat("Forward");
 			Vector3 forward = transform.forward;
 			m_Rigidbody.velocity = new Vector3(forward.x * speed, m_Rigidbody.velocity.y, forward.z * speed);
 		}
