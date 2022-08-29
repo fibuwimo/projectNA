@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1174,6 +1174,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &41709280 stripped
@@ -1734,7 +1739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60715260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1184052173}
@@ -2027,6 +2032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -2438,6 +2448,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -3280,7 +3295,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -3434,7 +3449,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -3536,7 +3551,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -4160,6 +4175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &122969490
@@ -4755,7 +4775,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142216710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2131674098}
@@ -5211,7 +5231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161112170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 668707146}
@@ -6086,6 +6106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &206510644 stripped
@@ -6736,6 +6761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1 &241377298 stripped
@@ -7215,6 +7245,8 @@ MonoBehaviour:
     type: 3}
   tutiWallMihon: {fileID: 2322237017587224455, guid: 421bbf78caa547c49bdabb5ea75e742c,
     type: 3}
+  tutiWallMihonRed: {fileID: 2322237017587224455, guid: 935a48e3973fb3d42ae8d2b09439a127,
+    type: 3}
   tutiWall: {fileID: 2322237017587224455, guid: e44e59f3247788d4d82ae7ee4b97a2fb,
     type: 3}
 --- !u!114 &258959100
@@ -7639,7 +7671,7 @@ PrefabInstance:
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
@@ -8109,6 +8141,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &303863017
@@ -8262,6 +8299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -8588,7 +8630,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 74
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -9485,7 +9527,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 79
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -9559,7 +9601,7 @@ PrefabInstance:
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
@@ -9733,6 +9775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -11670,6 +11717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &482975373
@@ -11926,7 +11978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494502449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2146446555}
@@ -13059,7 +13111,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -13802,6 +13854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -14945,7 +15002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590684524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 924930988}
@@ -15916,6 +15973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -17499,7 +17561,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -17732,7 +17794,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -18327,6 +18389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -18986,6 +19053,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &739606673
@@ -19209,6 +19281,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &740741811
@@ -19277,6 +19354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -19622,7 +19704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751640815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 763313677}
@@ -19706,7 +19788,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 91
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -21328,7 +21410,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -22680,7 +22762,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 93
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -23524,6 +23606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &933263154 stripped
@@ -23771,6 +23858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &945111164
@@ -23983,7 +24075,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -26048,7 +26140,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 78
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -26149,6 +26241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -26424,7 +26521,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -26623,6 +26720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -26905,7 +27007,7 @@ PrefabInstance:
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
@@ -27247,7 +27349,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 73
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -27401,7 +27503,7 @@ PrefabInstance:
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
@@ -27564,6 +27666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -28434,7 +28541,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -28499,7 +28606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120142278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4940373402323588327}
@@ -29423,6 +29530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &1151904572 stripped
@@ -29905,7 +30017,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 75
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -31478,6 +31590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1 &1225606452 stripped
@@ -31568,6 +31685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -31998,7 +32120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240379068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 807585802995765554}
@@ -32129,7 +32251,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 81
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -32980,6 +33102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -35026,7 +35153,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -35569,6 +35696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -36312,6 +36444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &1361384195 stripped
@@ -36967,6 +37104,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &1392484821
@@ -37084,7 +37226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402518368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1879751928}
@@ -37593,6 +37735,7 @@ MonoBehaviour:
   - {fileID: 1228823972}
   - {fileID: 958430433}
   - {fileID: 1958044301}
+  taikiTime: 5
   jyunkaiIndex: 0
   jyunkaiTime: 1
   tuibiTime: 4000
@@ -37796,7 +37939,7 @@ PrefabInstance:
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
@@ -38120,7 +38263,7 @@ PrefabInstance:
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 3507770609037452398, guid: c0eb91dc7d36ddc43914613383b45fac,
         type: 3}
@@ -38344,6 +38487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -39496,6 +39644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &1482173563 stripped
@@ -40039,6 +40192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1 &1509957477 stripped
@@ -40167,7 +40325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512677718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1819716450}
@@ -40592,6 +40750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -41949,6 +42112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &1591979154
@@ -42765,7 +42933,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -44324,7 +44492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679074896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 41709280}
@@ -44822,7 +44990,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 92
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -45111,7 +45279,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 73
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -45185,7 +45353,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -45671,6 +45839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -46579,6 +46752,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &1771981954
@@ -46873,7 +47051,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 75
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -47736,7 +47914,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -48047,7 +48225,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -48546,7 +48724,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -49024,6 +49202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &1896583081 stripped
@@ -49429,7 +49612,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -51628,6 +51811,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &1996136350
@@ -52184,6 +52372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -53170,6 +53363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!4 &2055667795 stripped
@@ -54044,6 +54242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &2089427460
@@ -54539,7 +54742,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -54634,6 +54837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -54966,6 +55174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrossTrigger (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
@@ -55507,6 +55720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 4350149793688377280, guid: 1d78dc43535567b438c9e0d2932117ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d78dc43535567b438c9e0d2932117ea, type: 3}
 --- !u!1001 &2128815118
@@ -55832,7 +56050,7 @@ PrefabInstance:
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 77
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
         type: 3}
@@ -56316,6 +56534,7 @@ MonoBehaviour:
   - {fileID: 1228823972}
   - {fileID: 958430433}
   - {fileID: 1958044301}
+  taikiTime: 3
   jyunkaiIndex: 0
   jyunkaiTime: 5
   tuibiTime: 20
@@ -56420,7 +56639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1001 &7311253091934288845
 PrefabInstance:
   m_ObjectHideFlags: 0

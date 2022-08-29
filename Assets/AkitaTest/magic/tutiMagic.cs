@@ -35,7 +35,7 @@ public class tutiMagic : MonoBehaviour
                 Debug.Log("レイキャスト通過");
                 if (hit.collider.CompareTag("Wall"))
                 {
-                    
+                    magicWallPosition.y = hit.point.y+0.5f;
                     Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
                 }
                 else
