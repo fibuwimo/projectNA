@@ -10,6 +10,7 @@ public abstract class Enemy : MonoBehaviour
         JYUNKAI,
         TUIBI,
         RUN,
+        TAIKI,
     }
     public float[] startSpeeds;
     public float[] maxSpeeds;
@@ -18,6 +19,7 @@ public abstract class Enemy : MonoBehaviour
     protected GameObject pl;
     protected NavMeshAgent agent;
     public GameObject[] jyunkaiTarget;
+    public float taikiTime;
     public int jyunkaiIndex = 0;
     public int jyunkaiTime;
     public int tuibiTime;
@@ -29,10 +31,21 @@ public abstract class Enemy : MonoBehaviour
         startPosition = transform.position;
         pl = GameObject.FindWithTag("Player");
         agent = gameObject.GetComponent<NavMeshAgent>();
+        StartCoroutine(Init());
+        state = STATE.TAIKI;
+    }
+
+    IEnumerator Init()
+    {
+        StopCoroutine(changeSTATE());
+        StopCoroutine(changeSpeed());
+        agent.speed = 0;
+        yield return new WaitForSeconds(taikiTime);
+        state = STATE.JYUNKAI;
         agent.destination = pl.transform.position;
+        agent.speed = startSpeeds[0];
         StartCoroutine(changeSTATE());
         StartCoroutine(changeSpeed());
-        agent.speed = startSpeeds[0];
     }
 
     // Update is called once per frame
@@ -143,9 +156,11 @@ public abstract class Enemy : MonoBehaviour
     }
     public void Restart()
     {
-        transform.position = startPosition;
-        agent.speed = startSpeeds[0];
-        state = STATE.JYUNKAI;
+        StopCoroutine(Init());
+        agent.speed = 0;
+        transform.position = new Vector3(0, 0, 10);
+        state = STATE.TAIKI;
+        StartCoroutine(Init());
     }
 }
 

@@ -6,6 +6,7 @@ public class tutiMagic : MonoBehaviour
 {
     public GameObject tutiWallTest;
     public GameObject tutiWallMihon;
+    public GameObject tutiWallMihonRed;
     public GameObject tutiWall;
     // Start is called before the first frame update
     void Start()
@@ -35,9 +36,11 @@ public class tutiMagic : MonoBehaviour
                 if (hit.collider.CompareTag("Wall"))
                 {
                     
+                    Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
                 }
                 else
                 {
+                    magicWallPosition.y = hit.point.y+0.5f;
                     Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
                 }
                 
@@ -65,6 +68,7 @@ public class tutiMagic : MonoBehaviour
                 }
                 else
                 {
+                    magicWallPosition.y = hit.point.y+0.5f;
                     Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
                 }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5128031216333130211}
   - component: {fileID: 5128031216333130214}
   - component: {fileID: 114512973311575688}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EnemyOrange
   m_TagString: agentRed
   m_Icon: {fileID: 0}
@@ -148,6 +148,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  taikiTime: 0
   jyunkaiIndex: 0
   jyunkaiTime: 0
   tuibiTime: 20
@@ -182,6 +183,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  taikiTime: 0
   jyunkaiIndex: 0
   jyunkaiTime: 10
   tuibiTime: 30

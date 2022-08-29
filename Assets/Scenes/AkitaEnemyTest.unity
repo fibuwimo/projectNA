@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 59822310}
   - component: {fileID: 59822309}
   - component: {fileID: 59822312}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (20)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 71087998}
   - component: {fileID: 71087997}
   - component: {fileID: 71088000}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (27)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 129105635}
   - component: {fileID: 129105634}
   - component: {fileID: 129105637}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (15)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 138367376}
   - component: {fileID: 138367375}
   - component: {fileID: 138367378}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (56)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -1584,7 +1584,7 @@ GameObject:
   - component: {fileID: 141893788}
   - component: {fileID: 141893787}
   - component: {fileID: 141893790}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (51)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -2989,7 +2989,7 @@ GameObject:
   - component: {fileID: 232570157}
   - component: {fileID: 232570156}
   - component: {fileID: 232570159}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (4)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -3347,7 +3347,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
@@ -3475,7 +3475,7 @@ GameObject:
   - component: {fileID: 255255110}
   - component: {fileID: 255255109}
   - component: {fileID: 255255112}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (23)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -3591,6 +3591,8 @@ MonoBehaviour:
   tutiWallTest: {fileID: 7396750004132694426, guid: 8d63bce6fce891049b63284ee5b0842e,
     type: 3}
   tutiWallMihon: {fileID: 2322237017587224455, guid: 421bbf78caa547c49bdabb5ea75e742c,
+    type: 3}
+  tutiWallMihonRed: {fileID: 2322237017587224455, guid: 935a48e3973fb3d42ae8d2b09439a127,
     type: 3}
   tutiWall: {fileID: 2322237017587224455, guid: e44e59f3247788d4d82ae7ee4b97a2fb,
     type: 3}
@@ -3884,7 +3886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278670601}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.33, y: 0.5, z: 7.4}
+  m_LocalPosition: {x: 2.56, y: 0.5, z: -4.47}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1217333900}
@@ -3921,6 +3923,7 @@ MonoBehaviour:
   - {fileID: 1228823972}
   - {fileID: 958430433}
   - {fileID: 1958044301}
+  taikiTime: 6
   jyunkaiIndex: 0
   jyunkaiTime: 5
   tuibiTime: 20
@@ -3944,7 +3947,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 7
+  m_WalkableMask: 15
   m_ObstacleAvoidanceType: 0
 --- !u!136 &278670605
 CapsuleCollider:
@@ -4296,6 +4299,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &290407559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1780733142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &295167837
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,7 +4318,7 @@ GameObject:
   - component: {fileID: 295167840}
   - component: {fileID: 295167839}
   - component: {fileID: 295167842}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (85)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -4417,7 +4426,7 @@ GameObject:
   - component: {fileID: 295429400}
   - component: {fileID: 295429399}
   - component: {fileID: 295429402}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (98)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -5125,7 +5134,7 @@ GameObject:
   - component: {fileID: 327428729}
   - component: {fileID: 327428728}
   - component: {fileID: 327428731}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (48)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -5451,7 +5460,7 @@ GameObject:
   - component: {fileID: 347481785}
   - component: {fileID: 347481784}
   - component: {fileID: 347481787}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (26)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -5575,11 +5584,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350875577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.74, y: 0.5, z: -8.82}
+  m_LocalPosition: {x: -1.48, y: 0.5, z: 7.25}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1217333900}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &350875579
 MonoBehaviour:
@@ -5612,6 +5621,7 @@ MonoBehaviour:
   - {fileID: 1910490253}
   - {fileID: 898542253}
   - {fileID: 490959075}
+  taikiTime: 12
   jyunkaiIndex: 0
   jyunkaiTime: 15
   tuibiTime: 15
@@ -5709,7 +5719,7 @@ GameObject:
   - component: {fileID: 355987657}
   - component: {fileID: 355987656}
   - component: {fileID: 355987659}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (25)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -5817,7 +5827,7 @@ GameObject:
   - component: {fileID: 362087785}
   - component: {fileID: 362087784}
   - component: {fileID: 362087787}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (87)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -6266,7 +6276,7 @@ GameObject:
   - component: {fileID: 397856496}
   - component: {fileID: 397856495}
   - component: {fileID: 397856498}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (7)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -6683,7 +6693,7 @@ GameObject:
   - component: {fileID: 435792887}
   - component: {fileID: 435792886}
   - component: {fileID: 435792889}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (63)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -7118,7 +7128,7 @@ GameObject:
   - component: {fileID: 441483348}
   - component: {fileID: 441483347}
   - component: {fileID: 441483350}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (22)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -7226,7 +7236,7 @@ GameObject:
   - component: {fileID: 442451553}
   - component: {fileID: 442451552}
   - component: {fileID: 442451555}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (96)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -7627,7 +7637,7 @@ GameObject:
   - component: {fileID: 468577756}
   - component: {fileID: 468577755}
   - component: {fileID: 468577758}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (12)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -7858,7 +7868,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
@@ -8036,7 +8046,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
@@ -8376,7 +8386,7 @@ GameObject:
   - component: {fileID: 512690997}
   - component: {fileID: 512690996}
   - component: {fileID: 512690999}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (95)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -8575,7 +8585,7 @@ GameObject:
   - component: {fileID: 532374820}
   - component: {fileID: 532374819}
   - component: {fileID: 532374822}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (77)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -8792,7 +8802,7 @@ GameObject:
   - component: {fileID: 536354933}
   - component: {fileID: 536354932}
   - component: {fileID: 536354935}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (45)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -9009,7 +9019,7 @@ GameObject:
   - component: {fileID: 544031148}
   - component: {fileID: 544031147}
   - component: {fileID: 544031150}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (97)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -9208,7 +9218,7 @@ GameObject:
   - component: {fileID: 554379858}
   - component: {fileID: 554379857}
   - component: {fileID: 554379860}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (18)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -9407,7 +9417,7 @@ GameObject:
   - component: {fileID: 571577607}
   - component: {fileID: 571577606}
   - component: {fileID: 571577609}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (58)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -9515,7 +9525,7 @@ GameObject:
   - component: {fileID: 575342020}
   - component: {fileID: 575342019}
   - component: {fileID: 575342022}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (57)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -9805,7 +9815,7 @@ GameObject:
   - component: {fileID: 593921628}
   - component: {fileID: 593921627}
   - component: {fileID: 593921630}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (86)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10133,7 +10143,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
@@ -10176,7 +10186,7 @@ GameObject:
   - component: {fileID: 641474699}
   - component: {fileID: 641474698}
   - component: {fileID: 641474701}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (71)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10284,7 +10294,7 @@ GameObject:
   - component: {fileID: 651777985}
   - component: {fileID: 651777984}
   - component: {fileID: 651777987}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (60)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10392,7 +10402,7 @@ GameObject:
   - component: {fileID: 652194771}
   - component: {fileID: 652194770}
   - component: {fileID: 652194773}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (93)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10500,7 +10510,7 @@ GameObject:
   - component: {fileID: 665886488}
   - component: {fileID: 665886487}
   - component: {fileID: 665886490}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (75)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10608,7 +10618,7 @@ GameObject:
   - component: {fileID: 673258358}
   - component: {fileID: 673258357}
   - component: {fileID: 673258360}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (53)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10716,7 +10726,7 @@ GameObject:
   - component: {fileID: 674408113}
   - component: {fileID: 674408112}
   - component: {fileID: 674408115}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (80)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -10915,7 +10925,7 @@ GameObject:
   - component: {fileID: 677135842}
   - component: {fileID: 677135841}
   - component: {fileID: 677135844}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (92)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -11025,7 +11035,7 @@ GameObject:
   - component: {fileID: 678556046}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 40
@@ -11313,7 +11323,7 @@ GameObject:
   - component: {fileID: 691859003}
   - component: {fileID: 691859002}
   - component: {fileID: 691859005}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (54)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -11712,7 +11722,7 @@ GameObject:
   - component: {fileID: 715133540}
   - component: {fileID: 715133539}
   - component: {fileID: 715133542}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (8)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -11943,7 +11953,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
@@ -12271,7 +12281,7 @@ GameObject:
   - component: {fileID: 787288281}
   - component: {fileID: 787288280}
   - component: {fileID: 787288283}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (49)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -12470,7 +12480,7 @@ GameObject:
   - component: {fileID: 803952055}
   - component: {fileID: 803952054}
   - component: {fileID: 803952057}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (3)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -12578,7 +12588,7 @@ GameObject:
   - component: {fileID: 819837493}
   - component: {fileID: 819837492}
   - component: {fileID: 819837495}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (39)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -12686,7 +12696,7 @@ GameObject:
   - component: {fileID: 837406543}
   - component: {fileID: 837406542}
   - component: {fileID: 837406545}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (78)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -12994,7 +13004,7 @@ GameObject:
   - component: {fileID: 848365643}
   - component: {fileID: 848365642}
   - component: {fileID: 848365645}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (66)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -13603,7 +13613,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
@@ -13761,7 +13771,7 @@ GameObject:
   - component: {fileID: 909478446}
   - component: {fileID: 909478445}
   - component: {fileID: 909478448}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (47)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -14026,7 +14036,7 @@ GameObject:
   - component: {fileID: 928439715}
   - component: {fileID: 928439714}
   - component: {fileID: 928439717}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (46)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -14366,7 +14376,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
@@ -14530,7 +14540,7 @@ GameObject:
   - component: {fileID: 967752295}
   - component: {fileID: 967752294}
   - component: {fileID: 967752297}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (74)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -14856,7 +14866,7 @@ GameObject:
   - component: {fileID: 974246249}
   - component: {fileID: 974246248}
   - component: {fileID: 974246251}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (42)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -15055,7 +15065,7 @@ GameObject:
   - component: {fileID: 985102537}
   - component: {fileID: 985102536}
   - component: {fileID: 985102539}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (61)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -15195,7 +15205,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
@@ -15456,7 +15466,7 @@ GameObject:
   - component: {fileID: 995026689}
   - component: {fileID: 995026688}
   - component: {fileID: 995026691}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (31)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -16165,7 +16175,7 @@ GameObject:
   - component: {fileID: 1065229943}
   - component: {fileID: 1065229942}
   - component: {fileID: 1065229945}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (55)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -16273,7 +16283,7 @@ GameObject:
   - component: {fileID: 1073040471}
   - component: {fileID: 1073040470}
   - component: {fileID: 1073040473}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (94)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -16381,7 +16391,7 @@ GameObject:
   - component: {fileID: 1086942960}
   - component: {fileID: 1086942959}
   - component: {fileID: 1086942962}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -16701,7 +16711,7 @@ GameObject:
   - component: {fileID: 1121186413}
   - component: {fileID: 1121186412}
   - component: {fileID: 1121186415}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (89)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -16918,7 +16928,7 @@ GameObject:
   - component: {fileID: 1134388235}
   - component: {fileID: 1134388234}
   - component: {fileID: 1134388237}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (99)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -17122,6 +17132,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153534751}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1158245361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158245365}
+  - component: {fileID: 1158245364}
+  - component: {fileID: 1158245363}
+  - component: {fileID: 1158245362}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &1158245362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158245361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1158245363
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158245361}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1158245364
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158245361}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1158245365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158245361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.66, y: 1, z: 0.166}
+  m_LocalScale: {x: 1.5, y: 0.01, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1161164424
 GameObject:
   m_ObjectHideFlags: 0
@@ -17335,7 +17436,7 @@ GameObject:
   - component: {fileID: 1174902009}
   - component: {fileID: 1174902008}
   - component: {fileID: 1174902011}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (81)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -17443,7 +17544,7 @@ GameObject:
   - component: {fileID: 1189042639}
   - component: {fileID: 1189042638}
   - component: {fileID: 1189042641}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (1)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -17751,7 +17852,7 @@ GameObject:
   - component: {fileID: 1202163631}
   - component: {fileID: 1202163630}
   - component: {fileID: 1202163633}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (10)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -17859,7 +17960,7 @@ GameObject:
   - component: {fileID: 1211910254}
   - component: {fileID: 1211910253}
   - component: {fileID: 1211910256}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (29)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -18074,6 +18175,7 @@ Transform:
   m_Children:
   - {fileID: 7345555854744839000}
   - {fileID: 278670602}
+  - {fileID: 290407559}
   - {fileID: 1879751928}
   - {fileID: 1228823977}
   - {fileID: 958430438}
@@ -18408,7 +18510,7 @@ GameObject:
   - component: {fileID: 1245816097}
   - component: {fileID: 1245816096}
   - component: {fileID: 1245816099}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (90)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -18516,7 +18618,7 @@ GameObject:
   - component: {fileID: 1251118256}
   - component: {fileID: 1251118255}
   - component: {fileID: 1251118258}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (73)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -18656,7 +18758,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: bf6ce18e78b48954ab55dfba80e04909,
         type: 3}
@@ -18699,7 +18801,7 @@ GameObject:
   - component: {fileID: 1259877495}
   - component: {fileID: 1259877494}
   - component: {fileID: 1259877497}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (17)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -18898,7 +19000,7 @@ GameObject:
   - component: {fileID: 1277540965}
   - component: {fileID: 1277540964}
   - component: {fileID: 1277540967}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (91)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -19325,7 +19427,7 @@ GameObject:
   - component: {fileID: 1308400966}
   - component: {fileID: 1308400965}
   - component: {fileID: 1308400968}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (65)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -19524,7 +19626,7 @@ GameObject:
   - component: {fileID: 1310461919}
   - component: {fileID: 1310461918}
   - component: {fileID: 1310461921}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (88)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -19741,7 +19843,7 @@ GameObject:
   - component: {fileID: 1319642825}
   - component: {fileID: 1319642824}
   - component: {fileID: 1319642827}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (41)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -20635,7 +20737,7 @@ GameObject:
   - component: {fileID: 1363311085}
   - component: {fileID: 1363311084}
   - component: {fileID: 1363311087}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (36)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -21222,7 +21324,7 @@ GameObject:
   - component: {fileID: 1452284778}
   - component: {fileID: 1452284777}
   - component: {fileID: 1452284780}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (52)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -21736,7 +21838,7 @@ GameObject:
   - component: {fileID: 1489304891}
   - component: {fileID: 1489304890}
   - component: {fileID: 1489304893}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (16)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -22044,7 +22146,7 @@ GameObject:
   - component: {fileID: 1504885067}
   - component: {fileID: 1504885066}
   - component: {fileID: 1504885069}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (24)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -22658,7 +22760,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
         type: 3}
@@ -22822,7 +22924,7 @@ GameObject:
   - component: {fileID: 1530970159}
   - component: {fileID: 1530970158}
   - component: {fileID: 1530970161}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (68)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -22930,7 +23032,7 @@ GameObject:
   - component: {fileID: 1534425286}
   - component: {fileID: 1534425285}
   - component: {fileID: 1534425288}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (84)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -23256,7 +23358,7 @@ GameObject:
   - component: {fileID: 1567915996}
   - component: {fileID: 1567915995}
   - component: {fileID: 1567915998}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (19)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -23364,7 +23466,7 @@ GameObject:
   - component: {fileID: 1571025719}
   - component: {fileID: 1571025718}
   - component: {fileID: 1571025721}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (50)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -23672,7 +23774,7 @@ GameObject:
   - component: {fileID: 1581241805}
   - component: {fileID: 1581241804}
   - component: {fileID: 1581241807}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (72)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -23980,7 +24082,7 @@ GameObject:
   - component: {fileID: 1588457929}
   - component: {fileID: 1588457928}
   - component: {fileID: 1588457931}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (33)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -24543,7 +24645,7 @@ GameObject:
   - component: {fileID: 1630001368}
   - component: {fileID: 1630001367}
   - component: {fileID: 1630001370}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (32)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -24942,7 +25044,7 @@ GameObject:
   - component: {fileID: 1661606045}
   - component: {fileID: 1661606044}
   - component: {fileID: 1661606047}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (2)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -25050,7 +25152,7 @@ GameObject:
   - component: {fileID: 1662343053}
   - component: {fileID: 1662343052}
   - component: {fileID: 1662343055}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (28)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -25158,7 +25260,7 @@ GameObject:
   - component: {fileID: 1662674855}
   - component: {fileID: 1662674854}
   - component: {fileID: 1662674857}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (9)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -25684,7 +25786,7 @@ GameObject:
   - component: {fileID: 1696479298}
   - component: {fileID: 1696479297}
   - component: {fileID: 1696479300}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (6)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -25883,7 +25985,7 @@ GameObject:
   - component: {fileID: 1709387098}
   - component: {fileID: 1709387097}
   - component: {fileID: 1709387100}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (70)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -25991,7 +26093,7 @@ GameObject:
   - component: {fileID: 1718719870}
   - component: {fileID: 1718719869}
   - component: {fileID: 1718719872}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (67)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -26099,7 +26201,7 @@ GameObject:
   - component: {fileID: 1726108134}
   - component: {fileID: 1726108133}
   - component: {fileID: 1726108136}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (11)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -26207,7 +26309,7 @@ GameObject:
   - component: {fileID: 1735079068}
   - component: {fileID: 1735079067}
   - component: {fileID: 1735079070}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (59)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -26697,7 +26799,7 @@ GameObject:
   - component: {fileID: 1758237962}
   - component: {fileID: 1758237961}
   - component: {fileID: 1758237964}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (43)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -26869,6 +26971,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758667056}
   m_CullTransparentMesh: 0
+--- !u!1001 &1780733142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1217333900}
+    m_Modifications:
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Name
+      value: jyunkiTargetRed (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &1805079076
 GameObject:
   m_ObjectHideFlags: 0
@@ -26882,7 +27053,7 @@ GameObject:
   - component: {fileID: 1805079079}
   - component: {fileID: 1805079078}
   - component: {fileID: 1805079081}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (21)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -27099,7 +27270,7 @@ GameObject:
   - component: {fileID: 1847744194}
   - component: {fileID: 1847744193}
   - component: {fileID: 1847744196}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (5)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -27207,7 +27378,7 @@ GameObject:
   - component: {fileID: 1855119098}
   - component: {fileID: 1855119097}
   - component: {fileID: 1855119100}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (30)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -27406,7 +27577,7 @@ GameObject:
   - component: {fileID: 1878232286}
   - component: {fileID: 1878232285}
   - component: {fileID: 1878232288}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (62)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -27958,7 +28129,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
@@ -28116,7 +28287,7 @@ GameObject:
   - component: {fileID: 1941879039}
   - component: {fileID: 1941879038}
   - component: {fileID: 1941879041}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (69)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -28224,7 +28395,7 @@ GameObject:
   - component: {fileID: 1951246338}
   - component: {fileID: 1951246337}
   - component: {fileID: 1951246340}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (37)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -28344,7 +28515,7 @@ GameObject:
   - component: {fileID: 1960332697}
   - component: {fileID: 1960332696}
   - component: {fileID: 1960332699}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (13)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -28452,7 +28623,7 @@ GameObject:
   - component: {fileID: 1961691671}
   - component: {fileID: 1961691670}
   - component: {fileID: 1961691673}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (76)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -28560,7 +28731,7 @@ GameObject:
   - component: {fileID: 1970389401}
   - component: {fileID: 1970389400}
   - component: {fileID: 1970389403}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (82)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -28868,7 +29039,7 @@ GameObject:
   - component: {fileID: 1998070172}
   - component: {fileID: 1998070171}
   - component: {fileID: 1998070174}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (14)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -28976,7 +29147,7 @@ GameObject:
   - component: {fileID: 2000283314}
   - component: {fileID: 2000283313}
   - component: {fileID: 2000283316}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (64)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -29084,7 +29255,7 @@ GameObject:
   - component: {fileID: 2007401417}
   - component: {fileID: 2007401416}
   - component: {fileID: 2007401419}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (38)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -29531,7 +29702,7 @@ GameObject:
   - component: {fileID: 2056318238}
   - component: {fileID: 2056318237}
   - component: {fileID: 2056318240}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (79)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -29639,7 +29810,7 @@ GameObject:
   - component: {fileID: 2057411185}
   - component: {fileID: 2057411184}
   - component: {fileID: 2057411187}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (83)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -29747,7 +29918,7 @@ GameObject:
   - component: {fileID: 2062582953}
   - component: {fileID: 2062582952}
   - component: {fileID: 2062582955}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CrossTrigger(Clone) (40)
   m_TagString: CrossTrigger
   m_Icon: {fileID: 0}
@@ -30200,7 +30371,7 @@ PrefabInstance:
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3803342701731252742, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
         type: 3}
@@ -30685,6 +30856,7 @@ MonoBehaviour:
   - {fileID: 1910490253}
   - {fileID: 898542253}
   - {fileID: 490959075}
+  taikiTime: 9
   jyunkaiIndex: 0
   jyunkaiTime: 15
   tuibiTime: 15
@@ -30753,11 +30925,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2430642134831650003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.63, y: 0.5, z: -8.82}
+  m_LocalPosition: {x: 3.9, y: 0.5, z: 7.42}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1217333900}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2430642134831650006
 MeshRenderer:
@@ -30816,7 +30988,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1217333900}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2817231567608235762
 MeshRenderer:
@@ -30951,6 +31123,7 @@ MonoBehaviour:
   - {fileID: 16947962}
   - {fileID: 1441604804}
   - {fileID: 1468430343}
+  taikiTime: 5
   jyunkaiIndex: 0
   jyunkaiTime: 5
   tuibiTime: 15
@@ -30963,7 +31136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345555854744839007}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.68, y: 0.5, z: 7.4}
+  m_LocalPosition: {x: 0.27, y: 0.5, z: 7.4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1217333900}
@@ -31000,6 +31173,7 @@ MonoBehaviour:
   - {fileID: 1228823972}
   - {fileID: 958430433}
   - {fileID: 1958044301}
+  taikiTime: 3
   jyunkaiIndex: 0
   jyunkaiTime: 5
   tuibiTime: 20
