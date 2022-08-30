@@ -17,9 +17,11 @@ public class PlayerController : MonoBehaviour
     public Text mutekiText;
     public Text coinText;
     int coinCount;
+    Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
+        startPosition = transform.position;
         state = STATE.ALIVE;
         life = 3;
     }
@@ -77,7 +79,9 @@ public class PlayerController : MonoBehaviour
 
     public void Restart()
     {
-        transform.position = new Vector3(0, 0, 0);
+        transform.position = startPosition;
+        float z= startPosition.z + 1.0f;
+        transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));
         state = STATE.ALIVE;
     }
 }
