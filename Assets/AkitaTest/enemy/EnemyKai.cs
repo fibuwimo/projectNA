@@ -14,6 +14,7 @@ public class EnemyKai : MonoBehaviour
         DEAD,
         FREEZ,
     }
+    public int stageCount=1;
     public float[] startSpeeds;
     public float[] maxSpeeds;
     public float speedStep;
@@ -106,7 +107,7 @@ public class EnemyKai : MonoBehaviour
         }
         if (state == STATE.DEAD)
         {
-            agent.speed = maxSpeeds[0] * 1.5f;
+            agent.speed = maxSpeeds[stageCount-1] * 1.5f;
             if (agent.desiredVelocity.magnitude == 0f)
             {
                 agent.destination = startPosition;
@@ -200,7 +201,7 @@ public class EnemyKai : MonoBehaviour
     protected void SetDead()
     {
         Debug.Log("敵デッド");
-        agent.speed = maxSpeeds[0]*1.2f;
+        agent.speed = maxSpeeds[stageCount-1]*1.2f;
         state = STATE.DEAD;
     }
     protected void SetFreez()
@@ -219,7 +220,7 @@ public class EnemyKai : MonoBehaviour
     public void Restart()
     {
         agent.speed = 0;
-        tempSpeed = startSpeeds[0];
+        tempSpeed = startSpeeds[stageCount-1];
         agent.Warp(startPosition);
         SetFreez();
 
@@ -230,9 +231,9 @@ public class EnemyKai : MonoBehaviour
         {
             yield return new WaitForSeconds(speedStepTime);
             tempSpeed += speedStep;
-            if (tempSpeed >= maxSpeeds[0])
+            if (tempSpeed >= maxSpeeds[stageCount-1])
             {
-                tempSpeed = maxSpeeds[0];
+                tempSpeed = maxSpeeds[stageCount-1];
             }
         }
     }

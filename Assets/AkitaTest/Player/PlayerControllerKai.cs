@@ -17,7 +17,7 @@ public class PlayerControllerKai : MonoBehaviour
     public Text lifeText;
     public Text mutekiText;
     public Text coinText;
-    int coinCount;
+    public int coinCount;
     int mutekiTime = 10;
     float mutekiCount = 0;
     Vector3 startPosition;
@@ -104,6 +104,7 @@ public class PlayerControllerKai : MonoBehaviour
 
     public void Restart()
     {
+        coinText.text = "コイン:" + coinCount;
         transform.position = startPosition;
         float z = startPosition.z + 1.0f;
         transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));

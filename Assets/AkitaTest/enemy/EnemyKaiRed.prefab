@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5128031216333130211}
   - component: {fileID: 114711054170358258}
   m_Layer: 2
-  m_Name: EnemyKai
+  m_Name: EnemyKaiRed
   m_TagString: agentRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,10 +128,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1520f7a532dc8e440b6aae89c328caf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stageCount: 1
   startSpeeds:
   - 2
+  - 2.5
+  - 3
+  - 3.5
+  - 4
   maxSpeeds:
   - 5
+  - 5.5
+  - 6
+  - 6.5
+  - 7
   speedStep: 0.2
   speedStepTime: 5
   state: 5

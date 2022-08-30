@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/AkitaEnemyTest.unity
+    guid: d1f3eb5ca96f04d4fb54dfbb20df1d33
+  - enabled: 1
+    path: Assets/Scenes/GameOverTest.unity
+    guid: 9a26413d614ea6a45a6cbcb6e1f0f394
+  - enabled: 1
+    path: Assets/Scenes/ClearTest.unity
+    guid: 829687587cd2f6b4491c801044a7ede5
   m_configObjects: {}
