@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5128031216333130213}
   - component: {fileID: 5128031216333130210}
   - component: {fileID: 5128031216333130211}
-  - component: {fileID: 114512973311575688}
+  - component: {fileID: 114711054170358258}
   m_Layer: 2
-  m_Name: EnemyOrange
+  m_Name: EnemyKai
   m_TagString: agentRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6600ce83946e0a54d90378f047054bba, type: 2}
+  - {fileID: 2100000, guid: 5a499c3a059059a409750435edd78c95, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,7 +116,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 7
   m_ObstacleAvoidanceType: 0
---- !u!114 &114512973311575688
+--- !u!114 &114711054170358258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,30 +125,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 5128031216333130208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7291159803384db22db18c7b37e38, type: 3}
+  m_Script: {fileID: 11500000, guid: 1520f7a532dc8e440b6aae89c328caf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeeds:
   - 2
-  - 2.2
-  - 2.4
-  - 2.6
-  - 2.8
   maxSpeeds:
-  - 4
-  - 4.2
-  - 4.4
-  - 4.6
-  - 4.8
+  - 5
   speedStep: 0.5
-  state: 0
+  state: 3
   jyunkaiTarget:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  taikiTime: 0
   jyunkaiIndex: 0
-  jyunkaiTime: 10
-  tuibiTime: 30
-  targetAgent: {fileID: 0}
+  taikiTime: 5
+  jyunkaiTime: 15
+  tuibiTime: 15
