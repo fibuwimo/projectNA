@@ -1,49 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class EnemyKai : MonoBehaviour
+public class EnemyKaiBlue : EnemyKai
 {
-    public enum STATE
-    {
-        JYUNKAI,
-        TUIBI,
-        RUN,
-        TAIKI,
-        DEAD,
-        FREEZ,
-    }
-    public float[] startSpeeds;
-    public float[] maxSpeeds;
-    public float speedStep;
-    public float speedStepTime;
-    public STATE state = STATE.FREEZ;
-    protected GameObject pl;
-    protected NavMeshAgent agent;
-    public GameObject[] jyunkaiTarget;
-    public int jyunkaiIndex = 0;
-    public int taikiTime;
-    protected float taikiCount;
-    public int jyunkaiTime;
-    protected float jyunkaiCount;
-    public int tuibiTime;
-    protected float tuibiCount;
-    protected int runTime = 10;
-    protected float runCount;
-    protected float tempSpeed;
-    protected Vector3 startPosition;
     // Start is called before the first frame update
-    void Start()
-    {
-        startPosition = transform.position;
-        pl = GameObject.FindWithTag("Player");
-        agent = gameObject.GetComponent<NavMeshAgent>();
-        agent.destination = pl.transform.position;
-        agent.speed = 0;
-        tempSpeed = startSpeeds[0];
-        StartCoroutine(changeSpeed());
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -152,7 +114,14 @@ public class EnemyKai : MonoBehaviour
             }
             else if (state == STATE.TUIBI)
             {
-                agent.destination = pl.transform.position;
+                if (Vector3.Distance(pl.transform.position, transform.position) <= 1f)
+                {
+                    agent.destination = pl.transform.position;
+                }
+                else
+                {
+                    agent.destination = pl.transform.position + pl.transform.forward * 8f;
+                }
             }
             else if (state == STATE.JYUNKAI)
             {
@@ -161,74 +130,6 @@ public class EnemyKai : MonoBehaviour
             else if (state == STATE.DEAD)
             {
                 agent.destination = startPosition;
-            }
-        }
-    }
-
-    protected void SetJyunkai()
-    {
-        Debug.Log("敵巡回");
-        agent.speed = tempSpeed;
-        jyunkaiCount = 0;
-        state = STATE.JYUNKAI;
-    }
-    protected void SetTuibi()
-    {
-        Debug.Log("敵追尾");
-        agent.speed = tempSpeed;
-        tuibiCount = 0;
-        state = STATE.TUIBI;
-    }
-    protected void SetRun()
-    {
-        Debug.Log("敵逃走");
-        agent.speed = tempSpeed/2;
-        runCount = 0;
-        state = STATE.RUN;
-    }
-    protected void SetTaiki()
-    {
-        Debug.Log("敵待機");
-        taikiCount = 0;
-        agent.speed = 0;
-        state = STATE.TAIKI;
-    }
-    protected void SetDead()
-    {
-        Debug.Log("敵デッド");
-        agent.speed = maxSpeeds[0]*1.2f;
-        state = STATE.DEAD;
-    }
-    protected void SetFreez()
-    {
-        Debug.Log("敵フリーズ");
-        state = STATE.FREEZ;
-    }
-
-    public void runAwake()
-    {
-        if (state != STATE.RUN)
-        {
-            SetRun();
-        }
-    }
-    public void Restart()
-    {
-        agent.speed = 0;
-        tempSpeed = startSpeeds[0];
-        agent.Warp(startPosition);
-        state = STATE.FREEZ;
-
-    }
-    IEnumerator changeSpeed()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(speedStepTime);
-            tempSpeed += speedStep;
-            if (tempSpeed >= maxSpeeds[0])
-            {
-                tempSpeed = maxSpeeds[0];
             }
         }
     }

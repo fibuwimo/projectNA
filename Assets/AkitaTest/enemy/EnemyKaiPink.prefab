@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5128031216333130211}
   - component: {fileID: 114711054170358258}
   m_Layer: 2
-  m_Name: EnemyKai
+  m_Name: EnemyKaiPink
   m_TagString: agentRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a499c3a059059a409750435edd78c95, type: 2}
+  - {fileID: 2100000, guid: 4666ac647c0ce3344b8444d308890afd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,7 +114,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 7
+  m_WalkableMask: 15
   m_ObstacleAvoidanceType: 0
 --- !u!114 &114711054170358258
 MonoBehaviour:
@@ -132,8 +132,9 @@ MonoBehaviour:
   - 2
   maxSpeeds:
   - 5
-  speedStep: 0.5
-  state: 3
+  speedStep: 0.2
+  speedStepTime: 5
+  state: 5
   jyunkaiTarget:
   - {fileID: 0}
   - {fileID: 0}
