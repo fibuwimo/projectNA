@@ -48,6 +48,9 @@ public class EnemyKai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(agent.isOnOffMeshLink){
+            Debug.Log("ぴんくとぶ");
+        }
         if (state == STATE.JYUNKAI)
         {
             agent.speed = tempSpeed;
