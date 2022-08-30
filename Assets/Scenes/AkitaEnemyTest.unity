@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8148,6 +8148,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501901513}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &511851022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5934162727220876237, guid: aaa0f33256537984c9c27020fb360c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 1495046899}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &512690994
 GameObject:
   m_ObjectHideFlags: 0
@@ -13732,6 +13738,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915218920}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &921499284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5934162727220876237, guid: aaa0f33256537984c9c27020fb360c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 185733546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &927553234
 GameObject:
   m_ObjectHideFlags: 0
@@ -16392,6 +16404,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa0f33256537984c9c27020fb360c45, type: 3}
+--- !u!1 &1119256344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5934162727220876237, guid: aaa0f33256537984c9c27020fb360c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 1109632059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121186410
 GameObject:
   m_ObjectHideFlags: 0
@@ -18006,6 +18024,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3803342701731252742, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
     type: 3}
   m_PrefabInstance: {fileID: 732081334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1239837177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5934162727220876237, guid: aaa0f33256537984c9c27020fb360c45,
+    type: 3}
+  m_PrefabInstance: {fileID: 568570339}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1240349229
 GameObject:
@@ -30546,7 +30570,11 @@ MonoBehaviour:
   speedStep: 0.2
   speedStepTime: 5
   state: 5
-  jyunkaiTarget: []
+  jyunkaiTarget:
+  - {fileID: 1239837177}
+  - {fileID: 511851022}
+  - {fileID: 1119256344}
+  - {fileID: 921499284}
   jyunkaiIndex: 0
   taikiTime: 6
   jyunkaiTime: 5

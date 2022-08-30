@@ -221,7 +221,7 @@ public class EnemyKai : MonoBehaviour
         agent.speed = 0;
         tempSpeed = startSpeeds[0];
         agent.Warp(startPosition);
-        state = STATE.FREEZ;
+        SetFreez();
 
     }
     IEnumerator changeSpeed()

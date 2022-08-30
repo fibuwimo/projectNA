@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerControllerKai : MonoBehaviour
+public class PlayerControllerKai2 : MonoBehaviour
 {
     public enum STATE
     {
@@ -18,8 +18,6 @@ public class PlayerControllerKai : MonoBehaviour
     public Text mutekiText;
     public Text coinText;
     int coinCount;
-    int mutekiTime = 10;
-    float mutekiCount = 0;
     Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
@@ -32,81 +30,66 @@ public class PlayerControllerKai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (state == STATE.ALIVE)
-        {
-
-        }
-        if (state == STATE.MUTEKI)
-        {
-            mutekiCount += Time.deltaTime;
-            if (mutekiCount >= mutekiTime)
-            {
-                mutekiText.text = "無敵じゃないよ";
-                SetAlive();
-            }
-
-        }
-        if (state == STATE.DEAD)
-        {
-
-        }
-
+        
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Contains("Coin"))
         {
             coinCount++;
-            coinText.text = "コイン:" + coinCount;
+            coinText.text = "コイン:" +coinCount;
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag.Contains("agent"))
         {
             EnemyKai eneScr = other.gameObject.GetComponent<EnemyKai>();
-            if (eneScr.state != EnemyKai.STATE.DEAD && eneScr.state != EnemyKai.STATE.RUN)
+            if (eneScr.state!=EnemyKai.STATE.DEAD && eneScr.state != EnemyKai.STATE.RUN)
             {
-                SetDead();
+                Dead();
             }
         }
-        if (other.gameObject.tag == ("mutekiItem"))
+        if (other.gameObject.tag==("mutekiItem"))
         {
             if (state == STATE.ALIVE)
             {
-                SetMuteki();
-
-                for (int i = 0; i < agents.Length; i++)
-                {
-                    agents[i].GetComponent<EnemyKai>().runAwake();
-                }
-                Destroy(other.gameObject);
+                StartCoroutine("Muteki");
+                
+                    for (int i = 0; i < agents.Length; i++)
+                    {
+                        agents[i].GetComponent<EnemyKai>().runAwake();
+                    }
+                
             }
+            Destroy(other.gameObject);
         }
 
     }
-    void SetAlive()
-    {
-        state = STATE.ALIVE;
-    }
-    void SetMuteki()
-    {
-        mutekiText.text = "無敵だよ";
-        mutekiCount = 0;
-        state = STATE.MUTEKI;
-    }
-    void SetDead()
+    private void Dead()
     {
         mutekiText.text = "無敵じゃないよ";
         Debug.Log("プレイヤー死亡");
         life -= 1;
-        lifeText.text = "LIFE:" + life;
+        lifeText.text = "LIFE:"+life;
         state = STATE.DEAD;
     }
+    IEnumerator Muteki()
+    {
+        mutekiText.text = "無敵だよ";
+        state = STATE.MUTEKI;
+        yield return new WaitForSeconds(10);
+        if (state == STATE.MUTEKI)
+        {
+            mutekiText.text = "無敵じゃないよ";
+            state = STATE.ALIVE;
+        }
+    }
+    
 
     public void Restart()
     {
         transform.position = startPosition;
-        float z = startPosition.z + 1.0f;
+        float z= startPosition.z + 1.0f;
         transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));
-        SetAlive();
+        state = STATE.ALIVE;
     }
 }
