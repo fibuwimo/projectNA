@@ -114,13 +114,13 @@ public class EnemyKaiBlue : EnemyKai
             }
             else if (state == STATE.TUIBI)
             {
-                if (Vector3.Distance(pl.transform.position, transform.position) <= 1f)
+                if (Vector3.Distance(pl.transform.position, transform.position) <= 3f)
                 {
                     agent.destination = pl.transform.position;
                 }
                 else
                 {
-                    agent.destination = pl.transform.position + pl.transform.forward * 8f;
+                    agent.destination = pl.transform.position + pl.transform.forward * 4.5f;
                 }
             }
             else if (state == STATE.JYUNKAI)

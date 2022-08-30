@@ -51,13 +51,13 @@ public class EnemyBlue: Enemy
             }
             if (state == STATE.TUIBI)
             {
-                if (Vector3.Distance(pl.transform.position, transform.position) <= 3.5f)
+                if (Vector3.Distance(pl.transform.position, transform.position) <= 1.0f)
                 {
                     agent.destination = pl.transform.position;
                 }
                 else
                 {
-                    agent.destination = pl.transform.position + pl.transform.forward * 4f;
+                    agent.destination = pl.transform.position + pl.transform.forward * 6f;
                 }
             }
             if (state == STATE.JYUNKAI)

@@ -144,6 +144,7 @@ public class EnemyKai : MonoBehaviour
 
         if (other.gameObject.tag == "CrossTrigger")
         {
+            Debug.Log("きんたま踏んだ～");
             if (state == STATE.RUN)
             {
                 Vector3 runPosition = transform.position + (transform.position - pl.transform.position).normalized * 3;
