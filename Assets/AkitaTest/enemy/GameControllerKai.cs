@@ -76,6 +76,7 @@ public class GameControllerKai : MonoBehaviour
                 }
 
                 //コイン生成。ここはステージ構成の違いにより、後で書き直しが必要。
+                /*
                 for (int z = -9; z < 10; z++)
                 {
                     for (int x = -9; x < 10; x++)
@@ -83,6 +84,8 @@ public class GameControllerKai : MonoBehaviour
                         Instantiate(coin, new Vector3(x * 1.5f, 0.2f, z * 1.5f), Quaternion.identity);
                     }
                 }
+                */
+                        Instantiate(coin, new Vector3(0,0,0), Quaternion.identity);
 
                 plCon.Restart();
                 for (int i = 0; i < agents.Length; i++)
