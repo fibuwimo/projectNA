@@ -10363,10 +10363,10 @@ MonoBehaviour:
   - {fileID: 2450878224066978967}
   - {fileID: 6290751633632997730}
   - {fileID: 452430049128161095}
-  coinMax: 50
+  coinMax: 1
   stageCount: 1
   stageText: {fileID: 2144202131}
-  coin: {fileID: 722198059}
+  coin: {fileID: 7593279109058528598, guid: 6948d910daf350b488b836b1b8ddd100, type: 3}
 --- !u!4 &392611849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6106001360627157698, guid: cd5df2fc256836944a0dd69e9b4551ad,
@@ -58834,8 +58834,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageCount: 1
   startSpeeds:
+  - 10
+  - 2
+  - 2
+  - 2
   - 2
   maxSpeeds:
+  - 5
+  - 10
+  - 5
+  - 5
   - 5
   speedStep: 0.2
   speedStepTime: 5
@@ -58870,7 +58878,15 @@ MonoBehaviour:
   stageCount: 1
   startSpeeds:
   - 2
+  - 10
+  - 2
+  - 2
+  - 2
   maxSpeeds:
+  - 5
+  - 10
+  - 5
+  - 5
   - 5
   speedStep: 0.2
   speedStepTime: 5
@@ -59089,7 +59105,15 @@ MonoBehaviour:
   stageCount: 1
   startSpeeds:
   - 2
+  - 10
+  - 2
+  - 2
+  - 2
   maxSpeeds:
+  - 5
+  - 10
+  - 5
+  - 5
   - 5
   speedStep: 0.2
   speedStepTime: 5
@@ -59582,7 +59606,15 @@ MonoBehaviour:
   stageCount: 1
   startSpeeds:
   - 2
+  - 10
+  - 2
+  - 2
+  - 2
   maxSpeeds:
+  - 5
+  - 10
+  - 5
+  - 5
   - 5
   speedStep: 0.2
   speedStepTime: 5
