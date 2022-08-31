@@ -34,6 +34,8 @@ public class EnemyKai : MonoBehaviour
     protected float runCount;
     protected float tempSpeed;
     protected Vector3 startPosition;
+    /*GameObject mago;
+    public Material magoiro;*/
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,7 @@ public class EnemyKai : MonoBehaviour
         agent.speed = 0;
         tempSpeed = startSpeeds[0];
         StartCoroutine(changeSpeed());
+        /*mago = transform.GetChild(0).transform.GetChild(1).gameObject;*/
     }
 
     // Update is called once per frame
@@ -187,6 +190,7 @@ public class EnemyKai : MonoBehaviour
     protected void SetRun()
     {
         Debug.Log("敵逃走");
+        /* mago.GetComponent<Renderer>().material = magoiro;*/
         agent.speed = tempSpeed/2;
         runCount = 0;
         state = STATE.RUN;
