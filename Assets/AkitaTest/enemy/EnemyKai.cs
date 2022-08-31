@@ -34,8 +34,11 @@ public class EnemyKai : MonoBehaviour
     protected float runCount;
     protected float tempSpeed;
     protected Vector3 startPosition;
-    /*GameObject mago;
-    public Material magoiro;*/
+    GameObject child;
+    GameObject mago;
+    public Material firstColor;
+    public Material runColor;
+    public Material deadColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +49,11 @@ public class EnemyKai : MonoBehaviour
         agent.speed = 0;
         tempSpeed = startSpeeds[0];
         StartCoroutine(changeSpeed());
-        /*mago = transform.GetChild(0).transform.GetChild(1).gameObject;*/
+        if (transform.childCount>0)
+        {
+            child = transform.GetChild(0).gameObject;
+            mago = transform.GetChild(0).transform.GetChild(1).gameObject;
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +61,10 @@ public class EnemyKai : MonoBehaviour
     {
         if(agent.isOnOffMeshLink){
             Debug.Log("ぴんくとぶ");
+            if (transform.childCount > 0)
+            {
+                child.GetComponent<Animator>().SetTrigger("JUMP");
+            }
         }
         if (state == STATE.JYUNKAI)
         {
@@ -176,6 +187,10 @@ public class EnemyKai : MonoBehaviour
     protected void SetJyunkai()
     {
         Debug.Log("敵巡回");
+        if (firstColor != null)
+        {
+            mago.GetComponent<Renderer>().material = firstColor;
+        }
         agent.speed = tempSpeed;
         jyunkaiCount = 0;
         state = STATE.JYUNKAI;
@@ -183,6 +198,10 @@ public class EnemyKai : MonoBehaviour
     protected void SetTuibi()
     {
         Debug.Log("敵追尾");
+        if (firstColor != null)
+        {
+            mago.GetComponent<Renderer>().material = firstColor;
+        }
         agent.speed = tempSpeed;
         tuibiCount = 0;
         state = STATE.TUIBI;
@@ -190,13 +209,20 @@ public class EnemyKai : MonoBehaviour
     protected void SetRun()
     {
         Debug.Log("敵逃走");
-        /* mago.GetComponent<Renderer>().material = magoiro;*/
+        if (runColor != null)
+        {
+            mago.GetComponent<Renderer>().material = runColor;
+        }
         agent.speed = tempSpeed/2;
         runCount = 0;
         state = STATE.RUN;
     }
     protected void SetTaiki()
     {
+        if (firstColor != null)
+        {
+            mago.GetComponent<Renderer>().material = firstColor;
+        }
         Debug.Log("敵待機");
         taikiCount = 0;
         agent.speed = 0;
@@ -204,12 +230,20 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetDead()
     {
+        if (deadColor != null)
+        {
+            mago.GetComponent<Renderer>().material = deadColor;
+        }
         Debug.Log("敵デッド");
         agent.speed = maxSpeeds[stageCount-1]*1.2f;
         state = STATE.DEAD;
     }
     protected void SetFreez()
     {
+        if (firstColor != null)
+        {
+            mago.GetComponent<Renderer>().material = firstColor;
+        }
         Debug.Log("敵フリーズ");
         state = STATE.FREEZ;
     }
