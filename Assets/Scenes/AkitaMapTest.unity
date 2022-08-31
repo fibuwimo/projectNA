@@ -10363,7 +10363,7 @@ MonoBehaviour:
   - {fileID: 2450878224066978967}
   - {fileID: 6290751633632997730}
   - {fileID: 452430049128161095}
-  coinMax: 1
+  coinMax: 139
   stageCount: 1
   stageText: {fileID: 2144202131}
   coin: {fileID: 7593279109058528598, guid: 6948d910daf350b488b836b1b8ddd100, type: 3}
