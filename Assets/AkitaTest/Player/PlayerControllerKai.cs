@@ -278,4 +278,11 @@ public class PlayerControllerKai : MonoBehaviour
         coinText.text = "コイン:" + coinCount;
         SetFreez();
     }
+    public void Gameover(int gTime, int sTime)
+    {
+        freezWarpTime = gTime;
+        freezTime = gTime + sTime;
+        coinText.text = "コイン:" + coinCount;
+        SetFreez();
+    }
 }

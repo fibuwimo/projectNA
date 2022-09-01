@@ -24,6 +24,7 @@ public class GameControllerKai : MonoBehaviour
     public int clearEffectTime;
     public int deadEffectTime;
     public int startEffectTime;
+    public int gameoverEffectTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,13 @@ public class GameControllerKai : MonoBehaviour
                 }
                 if (plCon.life == 0)
                 {
-                    SceneManager.LoadScene("GameOverTest");
+                    plCon.Gameover(gameoverEffectTime, startEffectTime);
+                    for (int i = 0; i < agents.Length; i++)
+                    {
+                        agents[i].GetComponent<EnemyKai>().Gameover(gameoverEffectTime, startEffectTime);
+                    }
+                    StartCoroutine(Gameover());
+                    state = STATE.GAMEOVER;
                 }
 
                 break;
@@ -101,5 +108,10 @@ public class GameControllerKai : MonoBehaviour
                 break;
         }
         
+    }
+    IEnumerator Gameover()
+    {
+        yield return new WaitForSeconds(gameoverEffectTime);
+        SceneManager.LoadScene("GameOverTest");
     }
 }

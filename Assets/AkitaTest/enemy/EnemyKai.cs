@@ -294,6 +294,15 @@ public class EnemyKai : MonoBehaviour
         SetFreez();
 
     }
+    public void Gameover(int gTime, int sTime)
+    {
+        agent.speed = 0;
+        tempSpeed = startSpeeds[stageCount - 1];
+        freezWarpTime = gTime+1;
+        freezTime = gTime+1 + sTime;
+        SetFreez();
+
+    }
     IEnumerator changeSpeed()
     {
         while (true)
