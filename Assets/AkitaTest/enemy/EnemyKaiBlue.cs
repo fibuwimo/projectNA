@@ -88,7 +88,6 @@ public class EnemyKaiBlue : EnemyKai
             {
                 agent.Warp(startPosition);
             }
-            freezCount += Time.deltaTime;
             if (freezCount >= freezTime)
             {
                 SetTaiki();

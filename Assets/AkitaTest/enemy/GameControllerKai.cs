@@ -21,6 +21,9 @@ public class GameControllerKai : MonoBehaviour
     public int stageCount = 1;
     public Text stageText;
     public GameObject coin;
+    public int clearEffectTime;
+    public int deadEffectTime;
+    public int startEffectTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,13 +54,14 @@ public class GameControllerKai : MonoBehaviour
 
                 break;
             case STATE.RESTART:
-                plCon.Restart();
+                plCon.Restart(deadEffectTime, startEffectTime);
                 for (int i = 0; i < agents.Length; i++)
                 {
-                    agents[i].GetComponent<EnemyKai>().Restart();
+                    agents[i].GetComponent<EnemyKai>().Restart(deadEffectTime, startEffectTime);
                 }
                 state = STATE.PLAY;
                 break;
+
             case STATE.CLEAR:
                 stageCount++;
                 if (stageCount > 5)
@@ -87,10 +91,10 @@ public class GameControllerKai : MonoBehaviour
                 */
                         Instantiate(coin, new Vector3(0,0,0), Quaternion.identity);
 
-                plCon.Restart();
+                plCon.Clear(clearEffectTime, startEffectTime);
                 for (int i = 0; i < agents.Length; i++)
                 {
-                    agents[i].GetComponent<EnemyKai>().Restart();
+                    agents[i].GetComponent<EnemyKai>().Clear(clearEffectTime,startEffectTime);
                 }
                 state = STATE.PLAY;
                 }

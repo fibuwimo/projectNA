@@ -30,8 +30,8 @@ public class EnemyKai : MonoBehaviour
     protected float jyunkaiCount;
     public int tuibiTime;
     protected float tuibiCount;
-    public int freezWarpTime;
-    public int freezTime;
+    protected int freezWarpTime;
+    protected int freezTime;
     protected float freezCount;
     protected int runTime = 10;
     protected float runCount;
@@ -63,7 +63,7 @@ public class EnemyKai : MonoBehaviour
     void Update()
     {
         if(agent.isOnOffMeshLink){
-            Debug.Log("ぴんくとぶ");
+            
             if (transform.childCount > 0)
             {
                 child.GetComponent<Animator>().SetTrigger("JUMP");
@@ -71,7 +71,7 @@ public class EnemyKai : MonoBehaviour
         }
         if (!agent.isOnOffMeshLink)
         {
-            Debug.Log("ぴんく着地");
+           
             if (transform.childCount > 0)
             {
                 //child.GetComponent<Animator>().SetTrigger("IDLE");
@@ -155,7 +155,6 @@ public class EnemyKai : MonoBehaviour
             {
                 agent.Warp(startPosition);
             }
-            freezCount += Time.deltaTime;
             if (freezCount >= freezTime)
             {
                 SetTaiki();
@@ -277,10 +276,21 @@ public class EnemyKai : MonoBehaviour
             SetRun();
         }
     }
-    public void Restart()
+    public void Restart(int dTime,int sTime)
     {
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount-1];
+        freezWarpTime = dTime;
+        freezTime = dTime + sTime;
+        SetFreez();
+
+    }
+    public void Clear(int cTime,int sTime)
+    {
+        agent.speed = 0;
+        tempSpeed = startSpeeds[stageCount - 1];
+        freezWarpTime = cTime;
+        freezTime = cTime + sTime;
         SetFreez();
 
     }
