@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: db43fbf3bad425b4f9b084a391de5067
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: body_geo
+    100002: body_Gp
+    100004: CH_Head
+    100006: CH_Hips
+    100008: CH_LeftArm
+    100010: CH_LeftFoot
+    100012: CH_LeftForeArm
+    100014: CH_LeftHand
+    100016: CH_LeftHandMiddle1
+    100018: CH_LeftHandMiddle2
+    100020: CH_LeftLeg
+    100022: CH_LeftShoulder
+    100024: CH_LeftSkirtAA
+    100026: CH_LeftSkirtAB
+    100028: CH_LeftSkirtAC
+    100030: CH_LeftSkirtBA
+    100032: CH_LeftSkirtBB
+    100034: CH_LeftSkirtBC
+    100036: CH_LeftSkirtCA
+    100038: CH_LeftSkirtCB
+    100040: CH_LeftSkirtCC
+    100042: CH_LeftToe
+    100044: CH_LeftUpLeg
+    100046: CH_Neck
+    100048: CH_RightArm
+    100050: CH_RightFoot
+    100052: CH_RightForeArm
+    100054: CH_RightHand
+    100056: CH_RightHandMiddle1
+    100058: CH_RightHandMiddle2
+    100060: CH_RightLeg
+    100062: CH_RightShoulder
+    100064: CH_RightSkirtAA
+    100066: CH_RightSkirtAB
+    100068: CH_RightSkirtAC
+    100070: CH_RightSkirtBA
+    100072: CH_RightSkirtBB
+    100074: CH_RightSkirtBC
+    100076: CH_RightSkirtCA
+    100078: CH_RightSkirtCB
+    100080: CH_RightSkirtCC
+    100082: CH_RightToe
+    100084: CH_RightUpLeg
+    100086: CH_Spine1
+    100088: CH_Spine2
+    100090: group3
+    100092: hear_geo
+    100094: houki_geo
+    100096: joint5
+    100098: meido
+    100100: meido_born
+    100102: //RootNode
+    100104: p
+    100106: p1
+    100108: p2
+    100110: p3
+    100112: pin
+    100114: pin 1
+    100116: pin 2
+    100118: pin1
+    100120: pin2
+    100122: pin3
+    100124: pin4
+    100126: structure
+    400000: body_geo
+    400002: body_Gp
+    400004: CH_Head
+    400006: CH_Hips
+    400008: CH_LeftArm
+    400010: CH_LeftFoot
+    400012: CH_LeftForeArm
+    400014: CH_LeftHand
+    400016: CH_LeftHandMiddle1
+    400018: CH_LeftHandMiddle2
+    400020: CH_LeftLeg
+    400022: CH_LeftShoulder
+    400024: CH_LeftSkirtAA
+    400026: CH_LeftSkirtAB
+    400028: CH_LeftSkirtAC
+    400030: CH_LeftSkirtBA
+    400032: CH_LeftSkirtBB
+    400034: CH_LeftSkirtBC
+    400036: CH_LeftSkirtCA
+    400038: CH_LeftSkirtCB
+    400040: CH_LeftSkirtCC
+    400042: CH_LeftToe
+    400044: CH_LeftUpLeg
+    400046: CH_Neck
+    400048: CH_RightArm
+    400050: CH_RightFoot
+    400052: CH_RightForeArm
+    400054: CH_RightHand
+    400056: CH_RightHandMiddle1
+    400058: CH_RightHandMiddle2
+    400060: CH_RightLeg
+    400062: CH_RightShoulder
+    400064: CH_RightSkirtAA
+    400066: CH_RightSkirtAB
+    400068: CH_RightSkirtAC
+    400070: CH_RightSkirtBA
+    400072: CH_RightSkirtBB
+    400074: CH_RightSkirtBC
+    400076: CH_RightSkirtCA
+    400078: CH_RightSkirtCB
+    400080: CH_RightSkirtCC
+    400082: CH_RightToe
+    400084: CH_RightUpLeg
+    400086: CH_Spine1
+    400088: CH_Spine2
+    400090: group3
+    400092: hear_geo
+    400094: houki_geo
+    400096: joint5
+    400098: meido
+    400100: meido_born
+    400102: //RootNode
+    400104: p
+    400106: p1
+    400108: p2
+    400110: p3
+    400112: pin
+    400114: pin 1
+    400116: pin 2
+    400118: pin1
+    400120: pin2
+    400122: pin3
+    400124: pin4
+    400126: structure
+    2100000: meido_body
+    2100002: meido_Hair1
+    2100004: glasses_blinn1
+    2100006: glasses_blinn2
+    2100008: lambert2
+    2300000: hear_geo
+    2300002: houki_geo
+    2300004: p
+    2300006: p1
+    2300008: p2
+    2300010: p3
+    2300012: pin 2
+    2300014: pin2
+    2300016: pin3
+    2300018: pin4
+    2300020: structure
+    3300000: hear_geo
+    3300002: houki_geo
+    3300004: p
+    3300006: p1
+    3300008: p2
+    3300010: p3
+    3300012: pin 2
+    3300014: pin2
+    3300016: pin3
+    3300018: pin4
+    3300020: structure
+    4300000: body_geo
+    4300002: hear_geo
+    4300004: structure
+    4300006: pin3
+    4300008: pin2
+    4300010: pin
+    4300012: pin4
+    4300014: p2
+    4300016: p1
+    4300018: p
+    4300020: p3
+    4300022: houki_geo
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body_geo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: meido_body
+    second: {fileID: 2100000, guid: bfe95a82e135a474b9d449532b28f82b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton:
+    - name: meido_normal3(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body_Gp
+      parentName: meido_normal3(Clone)
+      position: {x: 0.000002664438, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body_geo
+      parentName: body_Gp
+      position: {x: -0.000002664438, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: meido_born
+      parentName: meido_normal3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: meido
+      parentName: meido_born
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Hips
+      parentName: meido
+      position: {x: -0, y: 0.0022053882, z: 0.00014778652}
+      rotation: {x: -0.4439163, y: 0.55039835, z: -0.4439163, w: 0.55039835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: houki_geo
+      parentName: CH_Hips
+      position: {x: 0.002157232, y: -0.00023568649, z: 0.0013309475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Spine1
+      parentName: CH_Hips
+      position: {x: -0.00030067956, y: 6.938894e-20, z: 1.2325951e-34}
+      rotation: {x: 0, y: -0, z: -0.2687463, w: 0.963211}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Spine2
+      parentName: CH_Spine1
+      position: {x: -0.0005126686, y: 0, z: 1.5632655e-19}
+      rotation: {x: 0, y: 0, z: 0.12793338, w: 0.9917828}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Neck
+      parentName: CH_Spine2
+      position: {x: -0.0003069354, y: -2.428613e-19, z: 7.51478e-20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Head
+      parentName: CH_Neck
+      position: {x: -0.0002873215, y: -2.2451643e-10, z: 7.034565e-20}
+      rotation: {x: 0, y: 0, z: 0.04245083, w: 0.99909854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hear_geo
+      parentName: CH_Head
+      position: {x: -0.0013251442, y: 0.00026738286, z: 1.5407467e-18}
+      rotation: {x: 0.49732205, y: -0.5026637, z: 0.49732205, w: 0.5026637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group3
+      parentName: CH_Head
+      position: {x: 0.003923051, y: 0.00060537993, z: 2.0878774e-19}
+      rotation: {x: 0.49732205, y: -0.5026637, z: 0.49732205, w: 0.5026637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: structure
+      parentName: group3
+      position: {x: -0, y: 0.004682997, z: 0.0016859877}
+      rotation: {x: 0.019677717, y: -0, z: -0, w: 0.9998064}
+      scale: {x: 0.018162748, y: 0.018162748, z: 0.018162748}
+    - name: pin1
+      parentName: group3
+      position: {x: -8.06588e-20, y: 0.0047330656, z: 0.0004202579}
+      rotation: {x: 0.019677717, y: -0, z: -0, w: 0.9998064}
+      scale: {x: 0.018162748, y: 0.018162748, z: 0.018162748}
+    - name: pin 1
+      parentName: pin1
+      position: {x: -4.440892e-18, y: 0.00283517, z: -0.0059217396}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pin3
+      parentName: pin 1
+      position: {x: -0.06464162, y: 0.008923007, z: 0.066464916}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pin2
+      parentName: pin 1
+      position: {x: 0.01580392, y: -0.007284906, z: -0.017218163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pin 2
+      parentName: pin 1
+      position: {x: -0.06359964, y: 0.009985477, z: 0.062372636}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pin4
+      parentName: pin 1
+      position: {x: -0.06395873, y: 0.009985477, z: 0.052880257}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pin
+      parentName: group3
+      position: {x: -0, y: 0.004788752, z: 0.00031481232}
+      rotation: {x: 0.019677717, y: -0, z: -0, w: 0.9998064}
+      scale: {x: 0.018162748, y: 0.018162748, z: 0.018162748}
+    - name: p2
+      parentName: pin
+      position: {x: 0.06464162, y: 0.008923008, z: 0.066464916}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.30803707, y: 0.33500963, z: 0.30803707}
+    - name: p1
+      parentName: pin
+      position: {x: -0.01580392, y: -0.007284906, z: -0.017218163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.3506926, y: 1.3506926, z: 1.3506926}
+    - name: p
+      parentName: pin
+      position: {x: 0.06359964, y: 0.009985477, z: 0.062372636}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.109004475, y: 0.07124071, z: 0.109004475}
+    - name: p3
+      parentName: pin
+      position: {x: 0.06397372, y: 0.009985477, z: 0.05267265}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.109004475, y: 0.07124071, z: 0.109004475}
+    - name: joint5
+      parentName: CH_Head
+      position: {x: -0.0022922473, y: -5.2041703e-20, z: 5.070078e-19}
+      rotation: {x: 0.49732205, y: -0.5026637, z: 0.49732205, w: 0.5026637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftShoulder
+      parentName: CH_Spine2
+      position: {x: -0.00013337075, y: 0.00003513907, z: -0.00029236087}
+      rotation: {x: 0.683009, y: 0.025366254, z: 0.72946644, w: -0.027091637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftArm
+      parentName: CH_LeftShoulder
+      position: {x: -0.0003547592, y: -3.0008812e-19, z: 1.110223e-18}
+      rotation: {x: 0, y: -0.029115502, z: -0, w: 0.9995761}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftForeArm
+      parentName: CH_LeftArm
+      position: {x: -0.0005734602, y: -9.860761e-34, z: 2.7755575e-19}
+      rotation: {x: -0.12800151, y: -0.006769079, z: 0.0075229383, w: 0.99172235}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftHand
+      parentName: CH_LeftForeArm
+      position: {x: -0.00051223836, y: -1.3877787e-19, z: -8.3266725e-19}
+      rotation: {x: -0.0010871969, y: -0.057799574, z: -0.00089275284, w: 0.99832726}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftHandMiddle1
+      parentName: CH_LeftHand
+      position: {x: -0.00018825821, y: 0, z: 8.3266725e-19}
+      rotation: {x: -0.010502141, y: 0.0947184, z: -0.009295854, w: 0.9954053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftHandMiddle2
+      parentName: CH_LeftHandMiddle1
+      position: {x: -0.00042569905, y: 0, z: 0}
+      rotation: {x: -0.028592372, y: 0.025715407, z: -0.032231387, w: 0.9987404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightShoulder
+      parentName: CH_Spine2
+      position: {x: -0.00013337373, y: 0.000035138848, z: 0.000292361}
+      rotation: {x: 0.025366254, y: -0.683009, z: 0.027091637, w: 0.72946644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightArm
+      parentName: CH_RightShoulder
+      position: {x: 0.00035475846, y: 2.2860235e-19, z: 7.2188816e-10}
+      rotation: {x: -2.8143206e-17, y: -0.029115502, z: -1.5960805e-16, w: 0.9995761}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightForeArm
+      parentName: CH_RightArm
+      position: {x: 0.00057346217, y: -1.8392118e-19, z: -0.0000000052632774}
+      rotation: {x: -0.12800151, y: -0.006769079, z: 0.0075229383, w: 0.99172235}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightHand
+      parentName: CH_RightForeArm
+      position: {x: 0.00051223976, y: -0.0000000015933799, z: 0.000000008755914}
+      rotation: {x: -0.0010871969, y: -0.057799574, z: -0.00089275284, w: 0.99832726}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightHandMiddle1
+      parentName: CH_RightHand
+      position: {x: 0.00018825909, y: 0.0000000019817479, z: -0.000000007993778}
+      rotation: {x: -0.010502141, y: 0.0947184, z: -0.009295854, w: 0.9954053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightHandMiddle2
+      parentName: CH_RightHandMiddle1
+      position: {x: 0.00042569384, y: -0.0000000014631084, z: 2.4636668e-10}
+      rotation: {x: -0.028592372, y: 0.025715407, z: -0.032231387, w: 0.9987404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftUpLeg
+      parentName: CH_Hips
+      position: {x: 0.00017734244, y: 0.000112791415, z: -0.0003418755}
+      rotation: {x: -0.005013521, y: 0.0006797238, z: 0.99092144, w: 0.13434729}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftLeg
+      parentName: CH_LeftUpLeg
+      position: {x: -0.0012672066, y: 2.2551404e-19, z: -6.938894e-20}
+      rotation: {x: -0.0024913177, y: 0.017953029, z: 0.088498265, w: 0.9959114}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftFoot
+      parentName: CH_LeftLeg
+      position: {x: -0.0007408807, y: -4.8138577e-19, z: 2.7755575e-19}
+      rotation: {x: 0.016866852, y: -0.015757363, z: -0.730537, w: 0.6824829}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftToe
+      parentName: CH_LeftFoot
+      position: {x: -0.000338364, y: 7.632783e-19, z: -2.0816681e-19}
+      rotation: {x: -0.018794272, y: -0.70685697, z: -0.018794272, w: 0.70685697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtAA
+      parentName: CH_LeftUpLeg
+      position: {x: -0.00003446257, y: 0.0004591993, z: -0.00013372545}
+      rotation: {x: -0.011489903, y: -0.12360465, z: -0.10296528, w: 0.9869083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtAB
+      parentName: CH_LeftSkirtAA
+      position: {x: -0.00061808457, y: 0.000040391977, z: -2.1684043e-19}
+      rotation: {x: 0, y: 0, z: 0.05573516, w: 0.9984456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtAC
+      parentName: CH_LeftSkirtAB
+      position: {x: -0.0005380437, y: -0.00006967056, z: -1.3789697e-19}
+      rotation: {x: -0.46720624, y: -0.53077143, z: -0.46720624, w: 0.53077143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtBA
+      parentName: CH_LeftUpLeg
+      position: {x: 0.00014765524, y: 0.00017583299, z: -0.00031783147}
+      rotation: {x: -0.552132, y: -0.24866575, z: -0.1426806, w: 0.7829163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtBB
+      parentName: CH_LeftSkirtBA
+      position: {x: -0.00055897, y: 0.00005222209, z: -8.4838817e-20}
+      rotation: {x: 0, y: 0, z: 0.05573516, w: 0.9984456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtBC
+      parentName: CH_LeftSkirtBB
+      position: {x: -0.00048732394, y: 0.00002726757, z: -3.0486408e-19}
+      rotation: {x: -0.46720624, y: -0.53077143, z: -0.46720624, w: 0.53077143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtCA
+      parentName: CH_LeftUpLeg
+      position: {x: -0.00015746192, y: -0.00055816385, z: -0.00013003986}
+      rotation: {x: 0.8384592, y: 0.49141124, z: 0.23541208, w: -0.009072557}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtCB
+      parentName: CH_LeftSkirtCA
+      position: {x: -0.00037565667, y: -0.000042902808, z: -0.00000029137382}
+      rotation: {x: 0, y: 0, z: 0.05573516, w: 0.9984456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_LeftSkirtCC
+      parentName: CH_LeftSkirtCB
+      position: {x: -0.00053308613, y: -0.000108429835, z: -0.00008908863}
+      rotation: {x: -0.46720624, y: -0.53077143, z: -0.46720624, w: 0.53077143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightUpLeg
+      parentName: CH_Hips
+      position: {x: 0.00017734373, y: 0.00011279113, z: 0.00034187498}
+      rotation: {x: 0.00067972386, y: 0.0050135204, z: -0.1343473, w: 0.9909214}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightLeg
+      parentName: CH_RightUpLeg
+      position: {x: 0.0012672055, y: -4.9875e-11, z: 4.05413e-10}
+      rotation: {x: -0.0024913177, y: 0.017953029, z: 0.088498265, w: 0.9959114}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightFoot
+      parentName: CH_RightLeg
+      position: {x: 0.00074088055, y: 3.2863788e-11, z: 1.0736105e-10}
+      rotation: {x: 0.016866852, y: -0.015757363, z: -0.730537, w: 0.6824829}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightToe
+      parentName: CH_RightFoot
+      position: {x: 0.00033836387, y: 3.0293303e-11, z: -7.4593105e-18}
+      rotation: {x: -0.018794272, y: -0.70685697, z: -0.018794272, w: 0.70685697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtAA
+      parentName: CH_RightUpLeg
+      position: {x: -0.000010440421, y: -0.00037951994, z: 0.00021055737}
+      rotation: {x: -0.00079711206, y: -0.01878209, z: -0.091169745, w: 0.9956579}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtAB
+      parentName: CH_RightSkirtAA
+      position: {x: 0.0006180824, y: -0.000040392555, z: 1.846728e-10}
+      rotation: {x: 0.000000010520334, y: 5.8726535e-10, z: 0.05573516, w: 0.9984456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtAC
+      parentName: CH_RightSkirtAB
+      position: {x: 0.0005380456, y: 0.000069671194, z: -4.1534423e-10}
+      rotation: {x: -0.46720624, y: -0.53077143, z: -0.46720624, w: 0.53077143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtBA
+      parentName: CH_RightUpLeg
+      position: {x: -0.00014765434, y: -0.00017583274, z: 0.0003178322}
+      rotation: {x: -0.552132, y: -0.24866575, z: -0.1426806, w: 0.7829163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtBB
+      parentName: CH_RightSkirtBA
+      position: {x: 0.000558971, y: -0.0000522192, z: -0.0000000011904482}
+      rotation: {x: 0.000000012884724, y: 7.1925016e-10, z: 0.05573516, w: 0.9984456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtBC
+      parentName: CH_RightSkirtBB
+      position: {x: 0.00048731692, y: -0.000027274367, z: 0.000000002760035}
+      rotation: {x: -0.46720624, y: -0.53077143, z: -0.46720624, w: 0.53077143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtCA
+      parentName: CH_RightUpLeg
+      position: {x: 0.00021516958, y: 0.00053021923, z: 0.00014127945}
+      rotation: {x: 0.92481524, y: 0.29868987, z: 0.22789425, w: -0.05971075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtCB
+      parentName: CH_RightSkirtCA
+      position: {x: 0.00037565656, y: 0.000042902822, z: 0.0000002915928}
+      rotation: {x: 0.000000010520334, y: 5.8726546e-10, z: 0.05573516, w: 0.9984456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RightSkirtCC
+      parentName: CH_RightSkirtCB
+      position: {x: 0.000533086, y: 0.00010842967, z: 0.00008908783}
+      rotation: {x: -0.46720624, y: -0.53077143, z: -0.46720624, w: 0.53077143}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
