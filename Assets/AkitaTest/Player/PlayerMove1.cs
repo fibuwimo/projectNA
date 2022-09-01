@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove1 : MonoBehaviour
 {
     [SerializeField] private float _maxAngularSpeed = Mathf.Infinity;
     [SerializeField] private float _smoothTime = 0.04f;
