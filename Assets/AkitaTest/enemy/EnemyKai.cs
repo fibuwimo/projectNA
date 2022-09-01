@@ -30,6 +30,9 @@ public class EnemyKai : MonoBehaviour
     protected float jyunkaiCount;
     public int tuibiTime;
     protected float tuibiCount;
+    public int freezWarpTime;
+    public int freezTime;
+    protected float freezCount;
     protected int runTime = 10;
     protected float runCount;
     protected float tempSpeed;
@@ -64,6 +67,14 @@ public class EnemyKai : MonoBehaviour
             if (transform.childCount > 0)
             {
                 child.GetComponent<Animator>().SetTrigger("JUMP");
+            }
+        }
+        if (!agent.isOnOffMeshLink)
+        {
+            Debug.Log("ぴんく着地");
+            if (transform.childCount > 0)
+            {
+                //child.GetComponent<Animator>().SetTrigger("IDLE");
             }
         }
         if (state == STATE.JYUNKAI)
@@ -134,7 +145,18 @@ public class EnemyKai : MonoBehaviour
         }
         if (state == STATE.FREEZ)
         {
-            if (Input.anyKeyDown)
+            /*if (Input.anyKeyDown)
+            {
+                SetTaiki();
+            }
+            */
+            freezCount += Time.deltaTime;
+            if (freezCount >= freezWarpTime)
+            {
+                agent.Warp(startPosition);
+            }
+            freezCount += Time.deltaTime;
+            if (freezCount >= freezTime)
             {
                 SetTaiki();
             }
@@ -162,7 +184,6 @@ public class EnemyKai : MonoBehaviour
 
         if (other.gameObject.tag == "CrossTrigger")
         {
-            Debug.Log("きんたま踏んだ～");
             if (state == STATE.RUN)
             {
                 Vector3 runPosition = transform.position + (transform.position - pl.transform.position).normalized * 3;
@@ -245,6 +266,7 @@ public class EnemyKai : MonoBehaviour
             mago.GetComponent<Renderer>().material = firstColor;
         }
         Debug.Log("敵フリーズ");
+        freezCount = 0;
         state = STATE.FREEZ;
     }
 
@@ -259,7 +281,6 @@ public class EnemyKai : MonoBehaviour
     {
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount-1];
-        agent.Warp(startPosition);
         SetFreez();
 
     }

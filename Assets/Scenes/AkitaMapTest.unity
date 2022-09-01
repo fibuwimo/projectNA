@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -60313,6 +60313,8 @@ MonoBehaviour:
   taikiTime: 5
   jyunkaiTime: 15
   tuibiTime: 15
+  freezWarpTime: 5
+  freezTime: 10
   firstColor: {fileID: 2100000, guid: 5a499c3a059059a409750435edd78c95, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
@@ -60359,6 +60361,8 @@ MonoBehaviour:
   taikiTime: 5
   jyunkaiTime: 15
   tuibiTime: 15
+  freezWarpTime: 5
+  freezTime: 10
   firstColor: {fileID: 2100000, guid: 4666ac647c0ce3344b8444d308890afd, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
@@ -60590,6 +60594,8 @@ MonoBehaviour:
   taikiTime: 6
   jyunkaiTime: 5
   tuibiTime: 30
+  freezWarpTime: 5
+  freezTime: 10
   firstColor: {fileID: 2100000, guid: 6c500e07cec49dd44b03e1c440d8fd59, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
@@ -61096,6 +61102,8 @@ MonoBehaviour:
   taikiTime: 3
   jyunkaiTime: 15
   tuibiTime: 15
+  freezWarpTime: 5
+  freezTime: 10
   firstColor: {fileID: 2100000, guid: 8d417858d8770af4eaaac54a99256850, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}

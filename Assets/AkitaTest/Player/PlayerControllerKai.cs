@@ -10,6 +10,7 @@ public class PlayerControllerKai : MonoBehaviour
         ALIVE,
         MUTEKI,
         DEAD,
+        FREEZ,
     }
     public GameObject[] agents;
     public STATE state;
@@ -47,6 +48,10 @@ public class PlayerControllerKai : MonoBehaviour
 
         }
         if (state == STATE.DEAD)
+        {
+
+        }
+        if (state == STATE.FREEZ)
         {
 
         }
@@ -100,6 +105,10 @@ public class PlayerControllerKai : MonoBehaviour
         life -= 1;
         lifeText.text = "LIFE:" + life;
         state = STATE.DEAD;
+    }
+    void SetFreez()
+    {
+        state = STATE.FREEZ;
     }
 
     public void Restart()

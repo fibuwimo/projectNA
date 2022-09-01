@@ -79,7 +79,18 @@ public class EnemyKaiYellow : EnemyKai
         }
         if (state == STATE.FREEZ)
         {
-            if (Input.anyKeyDown)
+            /*if (Input.anyKeyDown)
+            {
+                SetTaiki();
+            }
+            */
+            freezCount += Time.deltaTime;
+            if (freezCount >= freezWarpTime)
+            {
+                agent.Warp(startPosition);
+            }
+            freezCount += Time.deltaTime;
+            if (freezCount >= freezTime)
             {
                 SetTaiki();
             }
