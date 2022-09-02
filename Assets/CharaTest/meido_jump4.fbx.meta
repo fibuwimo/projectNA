@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 863704869d48ad34385ab7aabdf13501
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: body_geo
+    100002: body_Gp
+    100004: CH_Head
+    100006: CH_Hips
+    100008: CH_LeftArm
+    100010: CH_LeftFoot
+    100012: CH_LeftForeArm
+    100014: CH_LeftHand
+    100016: CH_LeftHandMiddle1
+    100018: CH_LeftHandMiddle2
+    100020: CH_LeftLeg
+    100022: CH_LeftShoulder
+    100024: CH_LeftSkirtAA
+    100026: CH_LeftSkirtAB
+    100028: CH_LeftSkirtAC
+    100030: CH_LeftSkirtBA
+    100032: CH_LeftSkirtBB
+    100034: CH_LeftSkirtBC
+    100036: CH_LeftSkirtCA
+    100038: CH_LeftSkirtCB
+    100040: CH_LeftSkirtCC
+    100042: CH_LeftToe
+    100044: CH_LeftUpLeg
+    100046: CH_Neck
+    100048: CH_RightArm
+    100050: CH_RightFoot
+    100052: CH_RightForeArm
+    100054: CH_RightHand
+    100056: CH_RightHandMiddle1
+    100058: CH_RightHandMiddle2
+    100060: CH_RightLeg
+    100062: CH_RightShoulder
+    100064: CH_RightSkirtAA
+    100066: CH_RightSkirtAB
+    100068: CH_RightSkirtAC
+    100070: CH_RightSkirtBA
+    100072: CH_RightSkirtBB
+    100074: CH_RightSkirtBC
+    100076: CH_RightSkirtCA
+    100078: CH_RightSkirtCB
+    100080: CH_RightSkirtCC
+    100082: CH_RightToe
+    100084: CH_RightUpLeg
+    100086: CH_Spine1
+    100088: CH_Spine2
+    100090: group3
+    100092: hear_geo
+    100094: houki_geo
+    100096: joint5
+    100098: meido
+    100100: meido_born
+    100102: //RootNode
+    100104: p
+    100106: p1
+    100108: p2
+    100110: p3
+    100112: pin
+    100114: pin 1
+    100116: pin 2
+    100118: pin1
+    100120: pin2
+    100122: pin3
+    100124: pin4
+    100126: structure
+    400000: body_geo
+    400002: body_Gp
+    400004: CH_Head
+    400006: CH_Hips
+    400008: CH_LeftArm
+    400010: CH_LeftFoot
+    400012: CH_LeftForeArm
+    400014: CH_LeftHand
+    400016: CH_LeftHandMiddle1
+    400018: CH_LeftHandMiddle2
+    400020: CH_LeftLeg
+    400022: CH_LeftShoulder
+    400024: CH_LeftSkirtAA
+    400026: CH_LeftSkirtAB
+    400028: CH_LeftSkirtAC
+    400030: CH_LeftSkirtBA
+    400032: CH_LeftSkirtBB
+    400034: CH_LeftSkirtBC
+    400036: CH_LeftSkirtCA
+    400038: CH_LeftSkirtCB
+    400040: CH_LeftSkirtCC
+    400042: CH_LeftToe
+    400044: CH_LeftUpLeg
+    400046: CH_Neck
+    400048: CH_RightArm
+    400050: CH_RightFoot
+    400052: CH_RightForeArm
+    400054: CH_RightHand
+    400056: CH_RightHandMiddle1
+    400058: CH_RightHandMiddle2
+    400060: CH_RightLeg
+    400062: CH_RightShoulder
+    400064: CH_RightSkirtAA
+    400066: CH_RightSkirtAB
+    400068: CH_RightSkirtAC
+    400070: CH_RightSkirtBA
+    400072: CH_RightSkirtBB
+    400074: CH_RightSkirtBC
+    400076: CH_RightSkirtCA
+    400078: CH_RightSkirtCB
+    400080: CH_RightSkirtCC
+    400082: CH_RightToe
+    400084: CH_RightUpLeg
+    400086: CH_Spine1
+    400088: CH_Spine2
+    400090: group3
+    400092: hear_geo
+    400094: houki_geo
+    400096: joint5
+    400098: meido
+    400100: meido_born
+    400102: //RootNode
+    400104: p
+    400106: p1
+    400108: p2
+    400110: p3
+    400112: pin
+    400114: pin 1
+    400116: pin 2
+    400118: pin1
+    400120: pin2
+    400122: pin3
+    400124: pin4
+    400126: structure
+    2100000: meido_body
+    2100002: meido_Hair1
+    2100004: glasses_blinn1
+    2100006: glasses_blinn2
+    2100008: houki_lambert2
+    2300000: hear_geo
+    2300002: houki_geo
+    2300004: p
+    2300006: p1
+    2300008: p2
+    2300010: p3
+    2300012: pin 2
+    2300014: pin2
+    2300016: pin3
+    2300018: pin4
+    2300020: structure
+    3300000: hear_geo
+    3300002: houki_geo
+    3300004: p
+    3300006: p1
+    3300008: p2
+    3300010: p3
+    3300012: pin 2
+    3300014: pin2
+    3300016: pin3
+    3300018: pin4
+    3300020: structure
+    4300000: body_geo
+    4300002: hear_geo
+    4300004: structure
+    4300006: pin3
+    4300008: pin2
+    4300010: pin
+    4300012: pin4
+    4300014: p2
+    4300016: p1
+    4300018: p
+    4300020: p3
+    4300022: houki_geo
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body_geo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: meido_body
+    second: {fileID: 2100000, guid: bfe95a82e135a474b9d449532b28f82b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

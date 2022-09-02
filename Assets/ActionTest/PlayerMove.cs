@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
     Rigidbody rb;
     private bool isMoving = false;
     private bool isJumpPressed = false;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class PlayerMove : MonoBehaviour
         _transform = transform;
         prevPosition = _transform.position;
         rb = GetComponent<Rigidbody>();
+        animator=GetComponent<Animator>();
     }
 
     // Update is called once per frame
