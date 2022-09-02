@@ -24,33 +24,37 @@ public class EnemyKai : MonoBehaviour
     protected NavMeshAgent agent;
     public GameObject[] jyunkaiTarget;
     public int jyunkaiIndex = 0;
-    public int taikiTime;
+    public float taikiTime;
     protected float taikiCount;
-    public int jyunkaiTime;
+    public float jyunkaiTime;
     protected float jyunkaiCount;
-    public int tuibiTime;
+    public float tuibiTime;
     protected float tuibiCount;
-    protected int freezWarpTime;
-    protected int freezTime;
+    protected float freezWarpTime;
+    protected float freezTime;
     protected float freezCount;
-    protected int runTime = 10;
+    protected float runTime = 10;
     protected float runCount;
     protected float tempSpeed;
+    public float runSpeedBairitu;
+    public float deadSpeedBairitu;
     protected Vector3 startPosition;
     GameObject child;
     GameObject mago;
     public Material firstColor;
     public Material runColor;
     public Material deadColor;
+    PlayerControllerKai plCon;
     // Start is called before the first frame update
     void Start()
     {
         startPosition = transform.position;
         pl = GameObject.FindWithTag("Player");
+        plCon = pl.GetComponent<PlayerControllerKai>();
         agent = gameObject.GetComponent<NavMeshAgent>();
         agent.destination = pl.transform.position;
         agent.speed = 0;
-        tempSpeed = startSpeeds[0];
+        tempSpeed = startSpeeds[stageCount - 1];
         StartCoroutine(changeSpeed());
         if (transform.childCount>0)
         {
@@ -170,6 +174,7 @@ public class EnemyKai : MonoBehaviour
             if (state == STATE.RUN)
             {
                 Debug.Log("デッドするよ");
+
                 SetDead();
             }
         }
@@ -233,7 +238,7 @@ public class EnemyKai : MonoBehaviour
         {
             mago.GetComponent<Renderer>().material = runColor;
         }
-        agent.speed = tempSpeed/2;
+        agent.speed = tempSpeed*runSpeedBairitu;
         runCount = 0;
         state = STATE.RUN;
     }
@@ -250,12 +255,13 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetDead()
     {
+        plCon.scoreGain();
         if (deadColor != null)
         {
             mago.GetComponent<Renderer>().material = deadColor;
         }
         Debug.Log("敵デッド");
-        agent.speed = maxSpeeds[stageCount-1]*1.2f;
+        agent.speed = maxSpeeds[stageCount-1]*deadSpeedBairitu;
         state = STATE.DEAD;
     }
     protected void SetFreez()
@@ -269,14 +275,12 @@ public class EnemyKai : MonoBehaviour
         state = STATE.FREEZ;
     }
 
-    public void runAwake()
+    public void runAwake(float mTime)
     {
-        if (state != STATE.RUN)
-        {
-            SetRun();
-        }
+        runTime = mTime;
+        SetRun();
     }
-    public void Restart(int dTime,int sTime)
+    public void Restart(float dTime,float sTime)
     {
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount-1];
@@ -285,7 +289,7 @@ public class EnemyKai : MonoBehaviour
         SetFreez();
 
     }
-    public void Clear(int cTime,int sTime)
+    public void Clear(float cTime,float sTime)
     {
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount - 1];
@@ -294,7 +298,7 @@ public class EnemyKai : MonoBehaviour
         SetFreez();
 
     }
-    public void Gameover(int gTime, int sTime)
+    public void Gameover(float gTime, float sTime)
     {
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount - 1];

@@ -20,17 +20,45 @@ public class GameControllerKai : MonoBehaviour
     public int coinMax = 50;
     public int stageCount = 1;
     public Text stageText;
-    public GameObject coin;
-    public int clearEffectTime;
-    public int deadEffectTime;
-    public int startEffectTime;
-    public int gameoverEffectTime;
+    public GameObject coins;
+    public GameObject mutekiitems;
+    public float clearEffectTime;
+    float clearEffectCount;
+    public float deadEffectTime;
+    float deadEffectCount;
+    public float startEffectTime;
+    float startEffectCount;
+    public float gameoverEffectTime;
     // Start is called before the first frame update
     void Start()
     {
         plCon= player.GetComponent<PlayerControllerKai>();
         state = STATE.PLAY;
-        stageText.text = "STAGE1";
+        //stageText.text = "STAGE1";
+        stageText.text = "STAGE" + stageCount;
+        if (stageCount <= 30)
+        {
+            plCon.stageCount = stageCount;
+        }
+        else
+        {
+            plCon.stageCount = 30;
+        }
+        for (int i = 0; i < agents.Length; i++)
+        {
+            if (agents[i].activeSelf)
+            {
+                if (stageCount <= 30)
+                {
+                    agents[i].GetComponent<EnemyKai>().stageCount = stageCount;
+                }
+                else
+                {
+                    agents[i].GetComponent<EnemyKai>().stageCount = 30;
+                }
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -41,69 +69,42 @@ public class GameControllerKai : MonoBehaviour
             case STATE.PLAY:
                 if (plCon.state == PlayerControllerKai.STATE.DEAD)
                 {
-                    state = STATE.RESTART;
+                    //state = STATE.RESTART;
+                    setRestart();
                 }
                 if (plCon.coinCount >= coinMax)
                 {
                     plCon.coinCount = 0;
-                    state = STATE.CLEAR;
+                    //state = STATE.CLEAR;
+                    setClear();
                 }
                 if (plCon.life == 0)
                 {
                     plCon.Gameover(gameoverEffectTime, startEffectTime);
                     for (int i = 0; i < agents.Length; i++)
                     {
-                        agents[i].GetComponent<EnemyKai>().Gameover(gameoverEffectTime, startEffectTime);
+                        if (agents[i].activeSelf)
+                        {
+                            agents[i].GetComponent<EnemyKai>().Gameover(gameoverEffectTime, startEffectTime);
+                        }
                     }
-                    StartCoroutine(Gameover());
-                    state = STATE.GAMEOVER;
+                    setGameover();
                 }
 
                 break;
             case STATE.RESTART:
-                plCon.Restart(deadEffectTime, startEffectTime);
-                for (int i = 0; i < agents.Length; i++)
+                deadEffectCount += Time.deltaTime;
+                if (deadEffectCount >= deadEffectTime)
                 {
-                    agents[i].GetComponent<EnemyKai>().Restart(deadEffectTime, startEffectTime);
+                    setPlay();
                 }
-                state = STATE.PLAY;
                 break;
 
             case STATE.CLEAR:
-                stageCount++;
-                if (stageCount > 5)
+                clearEffectCount += Time.deltaTime;
+                if (clearEffectCount >= clearEffectTime)
                 {
-                    SceneManager.LoadScene("ClearTest");
-                }else {
-                for (int i = 0; i < agents.Length; i++)
-                {
-                    agents[i].GetComponent<EnemyKai>().stageCount++;
-                }
-                stageText.text = "STAGE" + stageCount;
-                GameObject[] objects = GameObject.FindGameObjectsWithTag("Coin");
-                foreach (GameObject coin in objects)
-                {
-                    Destroy(coin);
-                }
-
-                //コイン生成。ここはステージ構成の違いにより、後で書き直しが必要。
-                /*
-                for (int z = -9; z < 10; z++)
-                {
-                    for (int x = -9; x < 10; x++)
-                    {
-                        Instantiate(coin, new Vector3(x * 1.5f, 0.2f, z * 1.5f), Quaternion.identity);
-                    }
-                }
-                */
-                        Instantiate(coin, new Vector3(0,0,0), Quaternion.identity);
-
-                plCon.Clear(clearEffectTime, startEffectTime);
-                for (int i = 0; i < agents.Length; i++)
-                {
-                    agents[i].GetComponent<EnemyKai>().Clear(clearEffectTime,startEffectTime);
-                }
-                state = STATE.PLAY;
+                    setPlay();
                 }
                 break;
         }
@@ -114,4 +115,99 @@ public class GameControllerKai : MonoBehaviour
         yield return new WaitForSeconds(gameoverEffectTime);
         SceneManager.LoadScene("GameOverTest");
     }
+    IEnumerator Haiti()
+    {
+        yield return new WaitForSeconds(clearEffectTime);
+        stageText.text = "STAGE" + stageCount;
+        plCon.coinCount = 0;
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Coin");
+        foreach (GameObject coin in objects)
+        {
+            Destroy(coin);
+        }
+        GameObject[] objects2 = GameObject.FindGameObjectsWithTag("mutekiItem");
+        foreach (GameObject mutekiitem in objects2)
+        {
+            Destroy(mutekiitem);
+        }
+        Instantiate(coins, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(mutekiitems, new Vector3(0, 0, 0), Quaternion.identity);
+
+        //ここでステージごとの敵増加
+
+        if (stageCount == 2)
+        {
+            agents[4].SetActive(true);
+        }
+        if (stageCount == 3)
+        {
+            agents[5].SetActive(true);
+        }
+
+
+
+
+    }
+    void setPlay()
+    {
+        state = STATE.PLAY;
+    }
+    void setRestart()
+    {
+        plCon.Restart(deadEffectTime, startEffectTime);
+        for (int i = 0; i < agents.Length; i++)
+        {
+            if (agents[i].activeSelf)
+            {
+                agents[i].GetComponent<EnemyKai>().Restart(deadEffectTime, startEffectTime);
+            }
+        }
+        deadEffectCount = 0;
+        state = STATE.RESTART;
+    }
+    void setClear()
+    {
+        stageCount++;
+        if (stageCount <= 30)
+        {
+            plCon.stageCount = stageCount;
+        }
+        else
+        {
+            plCon.stageCount = 30;
+        }
+        for (int i = 0; i < agents.Length; i++)
+        {
+            if (agents[i].activeSelf)
+            {
+                if (stageCount <= 30)
+                {
+                    agents[i].GetComponent<EnemyKai>().stageCount = stageCount;
+                }
+                else
+                {
+                    agents[i].GetComponent<EnemyKai>().stageCount = 30;
+                }
+            }
+        }
+
+        plCon.Clear(clearEffectTime, startEffectTime);
+        for (int i = 0; i < agents.Length; i++)
+        {
+            if (agents[i].activeSelf)
+            {
+                agents[i].GetComponent<EnemyKai>().Clear(clearEffectTime, startEffectTime);
+            }
+        }
+        clearEffectCount = 0;
+        state = STATE.CLEAR;
+        StartCoroutine(Haiti());
+
+    }
+    void setGameover()
+    {
+        state = STATE.GAMEOVER;
+        StartCoroutine(Gameover());
+    }
+    
 }

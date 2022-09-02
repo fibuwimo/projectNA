@@ -33,18 +33,28 @@ public class PlayerControllerKai : MonoBehaviour
         FREEZ,
     }
     public GameObject[] agents;
+    public int stageCount = 1;
     public STATE state;
     public int life;
     public Text lifeText;
     public Text mutekiText;
     public Text coinText;
+    public Text scoreText;
+    public Text comboText;
+    int score=0;
+    int comboCount=0;
+    public float comboBairitu=1.5f;
     public int coinCount;
-    int mutekiTime = 10;
+    public float[] mutekiTimes;
     float mutekiCount = 0;
-    int freezWarpTime;
-    int freezTime;
+    float freezWarpTime;
+    float freezTime;
     protected float freezCount;
     Vector3 startPosition;
+
+    public GameObject tutiWallMihon;
+    public GameObject tutiWallMihonRed;
+    public GameObject tutiWall;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +69,67 @@ public class PlayerControllerKai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rb.velocity);
+        
         if (state == STATE.ALIVE)
         {
+            if (Input.GetKey(KeyCode.Z))
+            {
+                Vector3 tPosition = (transform.position + transform.forward * 2f);
+                float x = Mathf.Round(tPosition.x / 1.5f);
+                float z = Mathf.Round(tPosition.z / 1.5f);
+                float y = transform.position.y + 0.5f;
+                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+                 obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                {
+                    Debug.Log("レイキャスト通過");
+                    if (hit.collider.CompareTag("Wall"))
+                    {
+                        magicWallPosition.y = hit.point.y + 0.5f;
+                        Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
+                    }
+                    else
+                    {
+                        magicWallPosition.y = hit.point.y + 0.5f;
+                        Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                    }
+
+                }
+
+
+
+            }
+            if (Input.GetKeyUp(KeyCode.Z))
+            {
+                Vector3 tPosition = (transform.position + transform.forward * 2f);
+                float x = Mathf.Round(tPosition.x / 1.5f);
+                float z = Mathf.Round(tPosition.z / 1.5f);
+                float y = transform.position.y + 0.5f;
+                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                {
+                    if (hit.collider.CompareTag("Wall"))
+                    {
+
+                    }
+                    else
+                    {
+                        magicWallPosition.y = hit.point.y + 0.5f;
+                        Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
+                    }
+
+                }
+
+            }
             var position = transform.position;
             var delta = position - prevPosition;
             //isJumpPressed = Input.GetButtonDown("Jump");
@@ -110,6 +178,71 @@ public class PlayerControllerKai : MonoBehaviour
         }
         if (state == STATE.MUTEKI)
         {
+            mutekiCount += Time.deltaTime;
+
+            if (mutekiCount >= mutekiTimes[stageCount - 1])
+            {
+
+                SetAlive();
+            }
+            if (Input.GetKey(KeyCode.Z))
+            {
+                Vector3 tPosition = (transform.position + transform.forward * 2f);
+                float x = Mathf.Round(tPosition.x / 1.5f);
+                float z = Mathf.Round(tPosition.z / 1.5f);
+                float y = transform.position.y + 0.5f;
+                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+                 obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                {
+                    Debug.Log("レイキャスト通過");
+                    if (hit.collider.CompareTag("Wall"))
+                    {
+                        magicWallPosition.y = hit.point.y + 0.5f;
+                        Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
+                    }
+                    else
+                    {
+                        magicWallPosition.y = hit.point.y + 0.5f;
+                        Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                    }
+
+                }
+
+
+
+            }
+            if (Input.GetKeyUp(KeyCode.Z))
+            {
+                Vector3 tPosition = (transform.position + transform.forward * 2f);
+                float x = Mathf.Round(tPosition.x / 1.5f);
+                float z = Mathf.Round(tPosition.z / 1.5f);
+                float y = transform.position.y + 0.5f;
+                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                {
+                    if (hit.collider.CompareTag("Wall"))
+                    {
+
+                    }
+                    else
+                    {
+                        magicWallPosition.y = hit.point.y + 0.5f;
+                        Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
+                    }
+
+                }
+
+            }
             var position = transform.position;
             var delta = position - prevPosition;
             //isJumpPressed = Input.GetButtonDown("Jump");
@@ -154,31 +287,24 @@ public class PlayerControllerKai : MonoBehaviour
             // オブジェクトの回転に反映
             _transform.rotation = nextRot;
             prevPosition = position;
-            mutekiCount += Time.deltaTime;
-            if (mutekiCount >= mutekiTime)
-            {
-                mutekiText.text = "無敵じゃないよ";
-                SetAlive();
-            }
+            
 
         }
         if (state == STATE.DEAD)
         {
-
+            mutekiText.text = "無敵じゃないよ";
         }
         if (state == STATE.FREEZ)
         {
-            /*if (Input.anyKeyDown)
-            {
-                SetTaiki();
-            }
-            */
+            mutekiText.text = "無敵じゃないよ";
+            
             freezCount += Time.deltaTime;
             if (freezCount >= freezWarpTime)
             {
                 transform.position = startPosition;
                 float z = startPosition.z + 1.0f;
                 transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));
+                coinText.text = "COIN:" + coinCount;
             }
             if (freezCount >= freezTime)
             {
@@ -192,7 +318,7 @@ public class PlayerControllerKai : MonoBehaviour
         if (other.gameObject.tag.Contains("Coin"))
         {
             coinCount++;
-            coinText.text = "コイン:" + coinCount;
+            coinText.text = "COIN:" + coinCount;
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag.Contains("agent"))
@@ -202,25 +328,18 @@ public class PlayerControllerKai : MonoBehaviour
             {
                 SetDead();
             }
+
         }
         if (other.gameObject.tag == ("mutekiItem"))
         {
-            if (state == STATE.ALIVE)
-            {
-                SetMuteki();
-
-                for (int i = 0; i < agents.Length; i++)
-                {
-                    agents[i].GetComponent<EnemyKai>().runAwake();
-                }
-                Destroy(other.gameObject);
-            }
+            Destroy(other.gameObject);
+            SetMuteki();
         }
 
     }
     void FixedUpdate()
     {
-        if (state == STATE.ALIVE || state == STATE.MUTEKI) ;
+        if (state == STATE.ALIVE || state == STATE.MUTEKI)
         {
             //float jump = movingVelocity.y;
             Vector3 rayPosition = transform.position + new Vector3(0.0f, 0.5f, 0.0f);
@@ -238,51 +357,71 @@ public class PlayerControllerKai : MonoBehaviour
     void SetAlive()
     {
         rb.isKinematic = false;
+        mutekiText.text = "無敵じゃないよ";
+        comboCount = 0;
+        comboText.text = "";
         state = STATE.ALIVE;
     }
     void SetMuteki()
     {
+        Debug.Log("セット無敵呼ばれた");
+        for (int i = 0; i < agents.Length; i++)
+        {
+            if (agents[i].activeSelf)
+            {
+                agents[i].GetComponent<EnemyKai>().runAwake(mutekiTimes[stageCount - 1]);
+            }
+        }
         mutekiText.text = "無敵だよ";
         mutekiCount = 0;
         state = STATE.MUTEKI;
     }
     void SetDead()
     {
-        rb.velocity = Vector3.zero;
         mutekiText.text = "無敵じゃないよ";
         Debug.Log("プレイヤー死亡");
         life -= 1;
         lifeText.text = "LIFE:" + life;
+        comboCount = 0;
+        comboText.text = "";
         state = STATE.DEAD;
     }
     void SetFreez()
     {
-        rb.isKinematic = true;
+        rb.velocity = new Vector3(0, 0, 0);
+        rb.AddForce(0, 0, 0);
+        //rb.isKinematic = true;
         freezCount = 0;
+        comboCount = 0;
+        comboText.text ="";
         state = STATE.FREEZ;
     }
 
-    public void Restart(int dTime, int sTime)
+    public void Restart(float dTime, float sTime)
     {
        
         freezWarpTime = dTime;
         freezTime = dTime + sTime;
-        coinText.text = "コイン:" + coinCount;
         SetFreez();
     }
-    public void Clear(int cTime, int sTime)
+    public void Clear(float cTime, float sTime)
     {
        
         freezWarpTime = cTime;
         freezTime = cTime + sTime;
-        coinText.text = "コイン:" + coinCount;
         SetFreez();
     }
-    public void Gameover(int gTime, int sTime)
+    public void Gameover(float gTime, float sTime)
     {
         freezWarpTime = gTime;
         freezTime = gTime + sTime;
-        coinText.text = "コイン:" + coinCount;
         SetFreez();
+    }
+    public void scoreGain()
+    {
+        comboCount++;
+        score += (int)(500 * Mathf.Pow(2f, comboCount-1));
+        comboText.text = "COMBO:" + comboCount;
+        scoreText.text = "SCORE:" + score;
     }
 }

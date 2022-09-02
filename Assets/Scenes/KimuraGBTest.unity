@@ -10531,7 +10531,7 @@ MonoBehaviour:
   - {fileID: 452430049128161095}
   - {fileID: 968459764}
   - {fileID: 1603426169}
-  coinMax: 10
+  coinMax: 5
   stageCount: 1
   stageText: {fileID: 2144202131}
   coins: {fileID: 7593279109058528598, guid: 6948d910daf350b488b836b1b8ddd100, type: 3}
@@ -61185,8 +61185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageCount: 1
   startSpeeds:
-  - 2
   - 10
+  - 2
   - 2
   - 2
   - 2
