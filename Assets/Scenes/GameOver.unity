@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,8 +123,9 @@ GameObject:
   - component: {fileID: 298416872}
   - component: {fileID: 298416874}
   - component: {fileID: 298416873}
+  - component: {fileID: 298416875}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: GameOver_Doyon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,6 +185,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298416871}
   m_CullTransparentMesh: 0
+--- !u!95 &298416875
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298416871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec63ee40b5245844c944d30af48aaf43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &396638586
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,8 +297,9 @@ GameObject:
   - component: {fileID: 512354588}
   - component: {fileID: 512354590}
   - component: {fileID: 512354589}
+  - component: {fileID: 512354591}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: GameOver_Moji
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,6 +359,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512354587}
   m_CullTransparentMesh: 0
+--- !u!95 &512354591
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512354587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: edf0f75f33102d64e92bdf159bd8e912, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &701400816
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +525,7 @@ GameObject:
   - component: {fileID: 1519712433}
   - component: {fileID: 1519712432}
   m_Layer: 5
-  m_Name: Image
+  m_Name: GameOver_bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,7 +699,7 @@ GameObject:
   - component: {fileID: 2126193872}
   - component: {fileID: 2126193871}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: GameOver_maido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
