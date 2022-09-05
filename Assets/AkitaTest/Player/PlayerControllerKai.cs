@@ -316,6 +316,7 @@ public class PlayerControllerKai : MonoBehaviour
         }
         if (state == STATE.DEAD)
         {
+            
             mutekiText.text = "無敵じゃないよ";
         }
         if (state == STATE.FREEZ)
@@ -329,6 +330,8 @@ public class PlayerControllerKai : MonoBehaviour
                 float z = startPosition.z + 1.0f;
                 transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));
                 coinText.text = "COIN:" + coinCount;
+                animator.SetBool("DAMAGE", false);
+                animator.SetBool("RUN", false);
             }
             if (freezCount >= freezTime)
             {
@@ -412,10 +415,12 @@ public class PlayerControllerKai : MonoBehaviour
         lifeText.text = "LIFE:" + life;
         comboCount = 0;
         comboText.text = "";
+        animator.SetBool("DAMAGE", true);
         state = STATE.DEAD;
     }
     void SetFreez()
     {
+        animator.SetBool("RUN", false);
         rb.velocity = new Vector3(0, 0, 0);
         rb.AddForce(0, 0, 0);
         //rb.isKinematic = true;

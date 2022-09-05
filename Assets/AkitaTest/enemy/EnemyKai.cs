@@ -206,8 +206,9 @@ public class EnemyKai : MonoBehaviour
 
     protected void SetJyunkai()
     {
-        
-        animator.SetBool("TUIBI", true);
+        animator.SetBool("FREEZ", false);
+        animator.SetBool("DEAD", false);
+        //animator.SetBool("TUIBI", true);
         Debug.Log("敵巡回");
         if (firstColor != null)
         {
@@ -219,8 +220,9 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetTuibi()
     {
-        
-        animator.SetBool("TUIBI", true);
+        animator.SetBool("FREEZ", false);
+        animator.SetBool("DEAD", false);
+        //animator.SetBool("TUIBI", true);
         Debug.Log("敵追尾");
         if (firstColor != null)
         {
@@ -232,8 +234,9 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetRun()
     {
-        
-        animator.SetBool("TUIBI", true);
+        animator.SetBool("FREEZ", false);
+        animator.SetBool("DEAD", false);
+        //animator.SetBool("TUIBI", true);
         Debug.Log("敵逃走");
         if (runColor != null)
         {
@@ -245,6 +248,8 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetTaiki()
     {
+        animator.SetBool("DEAD", false);
+        animator.SetBool("TUIBI", false);
         animator.SetBool("FREEZ", true);
         if (firstColor != null)
         {
@@ -258,6 +263,8 @@ public class EnemyKai : MonoBehaviour
     protected void SetDead()
     {
         animator.SetBool("DEAD", true);
+        animator.SetBool("TUIBI", false);
+        animator.SetBool("FREEZ", false);
         plCon.scoreGain();
         if (deadColor != null)
         {
@@ -269,7 +276,9 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetFreez()
     {
-        animator.SetBool("FREEZ",true);
+        animator.SetBool("DEAD", false);
+        animator.SetBool("TUIBI", false);
+        animator.SetBool("FREEZ", true);
         if (firstColor != null)
         {
             mago.GetComponent<Renderer>().material = firstColor;
@@ -366,6 +375,7 @@ public class EnemyKai : MonoBehaviour
                 //return Mathf.Abs(transform.localPosition.y-pointB.y) > 0.1f;
 
             });
+            animator.ResetTrigger("JUMP");
 
 
             // NavmeshAgentを到達した事にして、Navmeshを再開
