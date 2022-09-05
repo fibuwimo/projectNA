@@ -15,6 +15,7 @@ public class GameOverScene_Controller : MonoBehaviour
         isOperable = false;
         Moji = GameObject.Find("GameOver_Moji");
         Doyon = GameObject.Find("GameOver_Doyon");
+        Helper = GameObject.Find("GameOver_Helper");
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class GameOverScene_Controller : MonoBehaviour
         if(isOperable && (Input.anyKey && !Input.GetMouseButton(0) && !Input.GetMouseButton(1) && !Input.GetMouseButton(2))){
             Moji.GetComponent<GameOver_Moji_Controller>().EndAnimation();
             Doyon.GetComponent<GameOver_Doyon_Controller>().EndAnimation();
+            Helper.GetComponent<GameOver_Helper_Controller>().EndAnimation();
         }
     }
 
