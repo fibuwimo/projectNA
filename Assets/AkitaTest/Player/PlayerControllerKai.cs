@@ -25,6 +25,10 @@ public class PlayerControllerKai : MonoBehaviour
     Rigidbody rb;
     private bool isMoving = false;
     private bool isJumpPressed = false;
+    bool isGround;
+
+    Animator animator;
+    GameObject child;
     public enum STATE
     {
         ALIVE,
@@ -64,6 +68,8 @@ public class PlayerControllerKai : MonoBehaviour
         startPosition = transform.position;
         state = STATE.ALIVE;
         life = 3;
+        child = transform.GetChild(0).gameObject;
+        animator = child.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -139,6 +145,15 @@ public class PlayerControllerKai : MonoBehaviour
             direction.Normalize();
             movingVelocity = direction * speed;
             movingVelocity.y = position.y;
+
+            if (movingVelocity.x == 0 && movingVelocity.z == 0)
+            {
+                animator.SetBool("RUN", false);
+            }
+            else
+            {
+                if (isGround) animator.SetBool("RUN", true);
+            }
 
             if (delta == Vector3.zero) return;
             // 進行方向（移動量ベクトル）に向くようなクォータニオンを取得
@@ -253,6 +268,15 @@ public class PlayerControllerKai : MonoBehaviour
             movingVelocity = direction * speed;
             movingVelocity.y = position.y;
 
+            if (movingVelocity.x == 0 && movingVelocity.z == 0)
+            {
+                animator.SetBool("RUN", false);
+            }
+            else
+            {
+                if (isGround) animator.SetBool("RUN", true);
+            }
+
             if (delta == Vector3.zero) return;
             // 進行方向（移動量ベクトル）に向くようなクォータニオンを取得
             // 回転補正計算
@@ -344,12 +368,16 @@ public class PlayerControllerKai : MonoBehaviour
             //float jump = movingVelocity.y;
             Vector3 rayPosition = transform.position + new Vector3(0.0f, 0.5f, 0.0f);
             Ray ray = new Ray(rayPosition, Vector3.down);
-            bool isGround = Physics.Raycast(ray, distance);
+            isGround = Physics.Raycast(ray, distance);
             Debug.DrawRay(rayPosition, Vector3.down * distance, Color.red);
             Debug.Log(isGround);
             if (Input.GetButtonDown("Jump"))
             {
-                if (isGround) rb.AddForce(transform.up * jumpPower, ForceMode.Impulse);
+                if (isGround)
+                {
+                    rb.AddForce(transform.up * jumpPower, ForceMode.Impulse);
+                    animator.SetTrigger("JUMP");
+                }
             }
             rb.velocity = new Vector3(movingVelocity.x, rb.velocity.y, movingVelocity.z);
         }

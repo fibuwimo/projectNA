@@ -14,6 +14,7 @@ public class EnemyKai : MonoBehaviour
         DEAD,
         FREEZ,
     }
+    
     public int stageCount=1;
     public float[] startSpeeds;
     public float[] maxSpeeds;
@@ -22,6 +23,7 @@ public class EnemyKai : MonoBehaviour
     public STATE state = STATE.FREEZ;
     protected GameObject pl;
     protected NavMeshAgent agent;
+    protected Rigidbody agentRigidbody;
     public GameObject[] jyunkaiTarget;
     public int jyunkaiIndex = 0;
     public float taikiTime;
@@ -39,12 +41,17 @@ public class EnemyKai : MonoBehaviour
     public float runSpeedBairitu;
     public float deadSpeedBairitu;
     protected Vector3 startPosition;
-    GameObject child;
-    GameObject mago;
+    protected GameObject child;
+    protected GameObject mago;
     public Material firstColor;
     public Material runColor;
     public Material deadColor;
-    PlayerControllerKai plCon;
+    protected PlayerControllerKai plCon;
+    [SerializeField, Range(0F, 90F), Tooltip("射出する角度")]
+    private float upAngle;
+    [SerializeField, Range(0F, 90F), Tooltip("射出する角度")]
+    private float dropAngle;
+    protected Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +59,7 @@ public class EnemyKai : MonoBehaviour
         pl = GameObject.FindWithTag("Player");
         plCon = pl.GetComponent<PlayerControllerKai>();
         agent = gameObject.GetComponent<NavMeshAgent>();
+        agentRigidbody = agent.GetComponent<Rigidbody>();
         agent.destination = pl.transform.position;
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount - 1];
@@ -61,26 +69,13 @@ public class EnemyKai : MonoBehaviour
             child = transform.GetChild(0).gameObject;
             mago = transform.GetChild(0).transform.GetChild(1).gameObject;
         }
+        animator = child.GetComponent<Animator>();
+        StartCoroutine(MoveNormalSpeed(agent));
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(agent.isOnOffMeshLink){
-            
-            if (transform.childCount > 0)
-            {
-                child.GetComponent<Animator>().SetTrigger("JUMP");
-            }
-        }
-        if (!agent.isOnOffMeshLink)
-        {
-           
-            if (transform.childCount > 0)
-            {
-                //child.GetComponent<Animator>().SetTrigger("IDLE");
-            }
-        }
         if (state == STATE.JYUNKAI)
         {
             agent.speed = tempSpeed;
@@ -211,6 +206,8 @@ public class EnemyKai : MonoBehaviour
 
     protected void SetJyunkai()
     {
+        
+        animator.SetBool("TUIBI", true);
         Debug.Log("敵巡回");
         if (firstColor != null)
         {
@@ -222,6 +219,8 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetTuibi()
     {
+        
+        animator.SetBool("TUIBI", true);
         Debug.Log("敵追尾");
         if (firstColor != null)
         {
@@ -233,6 +232,8 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetRun()
     {
+        
+        animator.SetBool("TUIBI", true);
         Debug.Log("敵逃走");
         if (runColor != null)
         {
@@ -244,6 +245,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetTaiki()
     {
+        animator.SetBool("FREEZ", true);
         if (firstColor != null)
         {
             mago.GetComponent<Renderer>().material = firstColor;
@@ -255,6 +257,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetDead()
     {
+        animator.SetBool("DEAD", true);
         plCon.scoreGain();
         if (deadColor != null)
         {
@@ -266,6 +269,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetFreez()
     {
+        animator.SetBool("FREEZ",true);
         if (firstColor != null)
         {
             mago.GetComponent<Renderer>().material = firstColor;
@@ -291,6 +295,7 @@ public class EnemyKai : MonoBehaviour
     }
     public void Clear(float cTime,float sTime)
     {
+
         agent.speed = 0;
         tempSpeed = startSpeeds[stageCount - 1];
         freezWarpTime = cTime;
@@ -317,6 +322,56 @@ public class EnemyKai : MonoBehaviour
             {
                 tempSpeed = maxSpeeds[stageCount-1];
             }
+        }
+    }
+    IEnumerator MoveNormalSpeed(NavMeshAgent agent)
+    {
+        agent.autoTraverseOffMeshLink = false; // OffMeshLinkによる移動を禁止
+        var agentRigidbody = agent.GetComponent<Rigidbody>();
+
+        while (true)
+        {
+            // OffmeshLinkに乗るまで普通に移動
+            yield return new WaitWhile(() => agent.isOnOffMeshLink == false);
+            animator.SetTrigger("JUMP");
+
+            // OffMeshLinkに乗ったので、NavmeshAgentによる移動を止めて、
+            // OffMeshLinkの終わりまでNavmeshAgent.speedと同じ速度で移動
+
+            agent.Stop();
+            agentRigidbody.isKinematic = false;
+
+            float rad;
+            Vector3 pointA = transform.position;
+            Vector3 pointB = new Vector3(agent.currentOffMeshLinkData.endPos.x, agent.currentOffMeshLinkData.endPos.y + 0.5f, agent.currentOffMeshLinkData.endPos.z);
+            if (agent.currentOffMeshLinkData.linkType == UnityEngine.AI.OffMeshLinkType.LinkTypeDropDown)
+            {
+                rad = dropAngle * Mathf.PI / 180;
+            }
+            else
+            {
+                rad = upAngle * Mathf.PI / 180;
+            }
+            float x = Vector2.Distance(new Vector2(pointA.x, pointA.z), new Vector2(pointB.x, pointB.z));
+            float y = pointA.y - pointB.y;
+            float speed = Mathf.Sqrt(-Physics.gravity.y * Mathf.Pow(x, 2) / (2 * Mathf.Pow(Mathf.Cos(rad), 2) * (x * Mathf.Tan(rad) + y)));
+
+            Vector3 velocity = new Vector3(pointB.x - pointA.x, x * Mathf.Tan(rad), pointB.z - pointA.z).normalized * speed;
+
+            agentRigidbody.AddForce(velocity * agentRigidbody.mass, ForceMode.Impulse);
+
+            yield return new WaitWhile(() =>
+            {
+                return Vector3.Distance(transform.localPosition,pointB) > 0.4f;
+                //return Mathf.Abs(transform.localPosition.y-pointB.y) > 0.1f;
+
+            });
+
+
+            // NavmeshAgentを到達した事にして、Navmeshを再開
+            agent.CompleteOffMeshLink();
+            agent.Resume();
+            agentRigidbody.isKinematic = true;
         }
     }
 }

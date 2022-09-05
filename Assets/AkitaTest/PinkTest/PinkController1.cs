@@ -34,11 +34,12 @@ public class PinkController1 : MonoBehaviour
 
             // OffMeshLinkに乗ったので、NavmeshAgentによる移動を止めて、
             // OffMeshLinkの終わりまでNavmeshAgent.speedと同じ速度で移動
+            
             agent.Stop();
             agentRigidbody.isKinematic = false;
 
-            Vector3 pointA = agent.currentOffMeshLinkData.startPos;
-            Vector3 pointB = new Vector3 (agent.currentOffMeshLinkData.endPos.x, agent.currentOffMeshLinkData.endPos.y+1.0f, agent.currentOffMeshLinkData.endPos.z);
+            Vector3 pointA = transform.position;
+            Vector3 pointB = new Vector3 (agent.currentOffMeshLinkData.endPos.x, agent.currentOffMeshLinkData.endPos.y+1.5f, agent.currentOffMeshLinkData.endPos.z);
 
             float rad = angle * Mathf.PI / 180;
             float x = Vector2.Distance(new Vector2(pointA.x, pointA.z), new Vector2(pointB.x, pointB.z));
@@ -69,7 +70,7 @@ public class PinkController1 : MonoBehaviour
 
             yield return new WaitWhile(() =>
             {
-                return Vector3.Distance(transform.localPosition, pointB) > 1.0f;
+                return Vector3.Distance(transform.localPosition, pointB) > 0.3f;
             });
             
 
