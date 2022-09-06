@@ -298,6 +298,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetDead()
     {
+        StartCoroutine(TimeStop());
         animator.SetBool("DEAD", true);
         animator.SetBool("TUIBI", false);
         animator.SetBool("FREEZ", false);
@@ -421,5 +422,11 @@ public class EnemyKai : MonoBehaviour
             agent.Resume();
             agentRigidbody.isKinematic = true;
         }
+    }
+    IEnumerator TimeStop()
+    {
+        Time.timeScale = 0.1f;
+        yield return new WaitForSeconds(0.05f);
+        Time.timeScale = 1f;
     }
 }
