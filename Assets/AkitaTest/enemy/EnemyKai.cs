@@ -112,29 +112,29 @@ public class EnemyKai : MonoBehaviour
         {
             runCount += Time.deltaTime;
             tenmetuCount++;
-            if (runCount >= runTime - 3.0f)
+            if (runCount >= runTime - 1.5f)
             {
-                if (tenmetuCount % 4 == 0 && tenmetuCount % 8 !=0)
-                {
-                    agentRendere.material =tenmetuColor;
-                }
-                if (tenmetuCount % 4 == 0)
+                if (tenmetuCount % 4 == 0 && tenmetuCount % 8 != 0)
                 {
                     agentRendere.material = runColor;
                 }
-            }
-            if (runCount >= runTime - 1.5f)
-            {
-                if (tenmetuCount % 2 == 0 && tenmetuCount % 4 != 0)
+                else if (tenmetuCount % 4 == 0)
                 {
                     agentRendere.material = tenmetuColor;
                 }
-                if (tenmetuCount % 2 == 0)
+            }
+            else if (runCount >= runTime - 3.0f)
+            {
+                if (tenmetuCount % 16 == 0 && tenmetuCount % 32 !=0)
                 {
-                    agentRendere.material = runColor;
+                    agentRendere.material =runColor;
+                }
+                else if (tenmetuCount % 16 == 0)
+                {
+                    agentRendere.material = tenmetuColor;
                 }
             }
-
+            
             if (runCount >= runTime)
             {
                 SetTuibi();

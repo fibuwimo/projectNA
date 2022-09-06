@@ -43,26 +43,27 @@ public class EnemyKaiYellow : EnemyKai
         {
             runCount += Time.deltaTime;
             tenmetuCount++;
-            if (runCount >= runTime - 3.0f)
+            agentRendere.material = runColor;
+            if (runCount >= runTime - 1.5f)
             {
                 if (tenmetuCount % 4 == 0 && tenmetuCount % 8 != 0)
                 {
-                    agentRendere.material = tenmetuColor;
-                }
-                if (tenmetuCount % 4 == 0)
-                {
                     agentRendere.material = runColor;
+                }
+                else if (tenmetuCount % 4 == 0)
+                {
+                    agentRendere.material = tenmetuColor;
                 }
             }
-            if (runCount >= runTime - 1.5f)
+            else if (runCount >= runTime - 3.0f)
             {
-                if (tenmetuCount % 2 == 0 && tenmetuCount % 4 != 0)
-                {
-                    agentRendere.material = tenmetuColor;
-                }
-                if (tenmetuCount % 2 == 0)
+                if (tenmetuCount % 8 == 0 && tenmetuCount % 16 != 0)
                 {
                     agentRendere.material = runColor;
+                }
+                else if (tenmetuCount % 8 == 0)
+                {
+                    agentRendere.material = tenmetuColor;
                 }
             }
 
