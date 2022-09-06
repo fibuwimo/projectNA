@@ -26,6 +26,7 @@ public class PlayerControllerKai : MonoBehaviour
     private bool isMoving = false;
     private bool isJumpPressed = false;
     bool isGround;
+    bool jumpAble = true;
 
     Animator animator;
     GameObject child;
@@ -335,7 +336,12 @@ public class PlayerControllerKai : MonoBehaviour
         if (state == STATE.FREEZ)
         {
             mutekiText.text = "無敵じゃないよ";
-            
+
+            if (isGround)
+            {
+                rb.isKinematic = true;
+            }
+
             freezCount += Time.deltaTime;
             if (freezCount >= freezWarpTime)
             {
@@ -379,19 +385,20 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void FixedUpdate()
     {
+        Vector3 rayPosition = transform.position + new Vector3(0.0f, 0.5f, 0.0f);
+        Ray ray = new Ray(rayPosition, Vector3.down);
+        isGround = Physics.Raycast(ray, distance);
         if (state == STATE.ALIVE || state == STATE.MUTEKI)
         {
             //float jump = movingVelocity.y;
-            Vector3 rayPosition = transform.position + new Vector3(0.0f, 0.5f, 0.0f);
-            Ray ray = new Ray(rayPosition, Vector3.down);
-            isGround = Physics.Raycast(ray, distance);
             Debug.DrawRay(rayPosition, Vector3.down * distance, Color.red);
             Debug.Log(isGround);
             if (Input.GetButtonDown("Jump"))
             {
-                if (isGround)
+                if (isGround && jumpAble)
                 {
                     rb.AddForce(transform.up * jumpPower, ForceMode.Impulse);
+                    StartCoroutine(SetJumpAble());
                     animator.SetTrigger("JUMP");
                 }
             }
@@ -469,7 +476,14 @@ public class PlayerControllerKai : MonoBehaviour
     {
         comboCount++;
         score += (int)(500 * Mathf.Pow(2f, comboCount-1));
-        comboText.text = "COMBO:" + comboCount;
+        comboText.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
         scoreText.text = "SCORE:" + score;
+    }
+    IEnumerator SetJumpAble()
+    {
+        jumpAble = false;
+        yield return new WaitForSeconds(0.2f);
+        jumpAble = true;
+
     }
 }
