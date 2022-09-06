@@ -7759,6 +7759,7 @@ MonoBehaviour:
   coinText: {fileID: 722198061}
   scoreText: {fileID: 0}
   comboText: {fileID: 0}
+  tutimahouText: {fileID: 0}
   comboBairitu: 1.5
   coinCount: 0
   mutekiTimes: []
@@ -26860,7 +26861,10 @@ MonoBehaviour:
   deadSpeedBairitu: 1.5
   firstColor: {fileID: 2100000, guid: 5a499c3a059059a409750435edd78c95, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
+  tenmetuColor: {fileID: 0}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
+  upAngle: 0
+  dropAngle: 0
 --- !u!195 &968459766
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46190,7 +46194,10 @@ MonoBehaviour:
   deadSpeedBairitu: 1.5
   firstColor: {fileID: 2100000, guid: 8d417858d8770af4eaaac54a99256850, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
+  tenmetuColor: {fileID: 0}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
+  upAngle: 0
+  dropAngle: 0
 --- !u!195 &1603426171
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -50170,6 +50177,7 @@ MonoBehaviour:
   coinText: {fileID: 722198061}
   scoreText: {fileID: 1459746822}
   comboText: {fileID: 1135590723}
+  tutimahouText: {fileID: 0}
   comboBairitu: 1.5
   coinCount: 0
   mutekiTimes:
@@ -60980,7 +60988,7 @@ PrefabInstance:
     - target: {fileID: 87496784606625506, guid: cd5df2fc256836944a0dd69e9b4551ad,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3939087446302884704, guid: cd5df2fc256836944a0dd69e9b4551ad,
         type: 3}
@@ -61262,7 +61270,10 @@ MonoBehaviour:
   deadSpeedBairitu: 1.5
   firstColor: {fileID: 2100000, guid: 5a499c3a059059a409750435edd78c95, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
+  tenmetuColor: {fileID: 0}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
+  upAngle: 0
+  dropAngle: 0
 --- !u!4 &807585802995765554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3469953047620219297, guid: 0b8af5bccd436a048a961e519c18f725,
@@ -61360,7 +61371,10 @@ MonoBehaviour:
   deadSpeedBairitu: 1.5
   firstColor: {fileID: 2100000, guid: 4666ac647c0ce3344b8444d308890afd, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
+  tenmetuColor: {fileID: 0}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
+  upAngle: 0
+  dropAngle: 0
 --- !u!4 &2450878224066978960
 Transform:
   m_ObjectHideFlags: 0
@@ -61773,7 +61787,10 @@ MonoBehaviour:
   deadSpeedBairitu: 1.5
   firstColor: {fileID: 2100000, guid: 6c500e07cec49dd44b03e1c440d8fd59, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
+  tenmetuColor: {fileID: 0}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
+  upAngle: 0
+  dropAngle: 0
   targetAgent: {fileID: 6290751633632997730}
 --- !u!4 &4940373402323588327 stripped
 Transform:
@@ -64946,7 +64963,10 @@ MonoBehaviour:
   deadSpeedBairitu: 1.5
   firstColor: {fileID: 2100000, guid: 8d417858d8770af4eaaac54a99256850, type: 2}
   runColor: {fileID: 2100000, guid: 871e1c2571429d245a33eee9b081d5d4, type: 2}
+  tenmetuColor: {fileID: 0}
   deadColor: {fileID: 2100000, guid: 708cbc4a3af8aa14aa914a6038de8725, type: 2}
+  upAngle: 0
+  dropAngle: 0
 --- !u!1001 &7311253091934288845
 PrefabInstance:
   m_ObjectHideFlags: 0
