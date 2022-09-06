@@ -234,6 +234,8 @@ public class EnemyKai : MonoBehaviour
 
     protected void SetJyunkai()
     {
+        animator.SetBool("TUIBI", true);
+        animator.SetBool("RUN", false);
         animator.SetBool("FREEZ", false);
         animator.SetBool("DEAD", false);
         //animator.SetBool("TUIBI", true);
@@ -248,6 +250,8 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetTuibi()
     {
+        animator.SetBool("TUIBI", true);
+        animator.SetBool("RUN", false);
         animator.SetBool("FREEZ", false);
         animator.SetBool("DEAD", false);
         //animator.SetBool("TUIBI", true);
@@ -262,6 +266,8 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetRun()
     {
+        animator.SetBool("TUIBI",false);
+        animator.SetBool("RUN", true);
         animator.SetBool("FREEZ", false);
         animator.SetBool("DEAD", false);
         //animator.SetBool("TUIBI", true);
@@ -277,6 +283,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetTaiki()
     {
+        animator.SetBool("RUN", false);
         animator.SetBool("DEAD", false);
         animator.SetBool("TUIBI", false);
         animator.SetBool("FREEZ", true);
@@ -294,6 +301,7 @@ public class EnemyKai : MonoBehaviour
         animator.SetBool("DEAD", true);
         animator.SetBool("TUIBI", false);
         animator.SetBool("FREEZ", false);
+        animator.SetBool("RUN", false);
         plCon.scoreGain();
         if (deadColor != null)
         {
@@ -308,6 +316,7 @@ public class EnemyKai : MonoBehaviour
         animator.SetBool("DEAD", false);
         animator.SetBool("TUIBI", false);
         animator.SetBool("FREEZ", true);
+        animator.SetBool("RUN", false);
         if (firstColor != null)
         {
             mago.GetComponent<Renderer>().material = firstColor;
