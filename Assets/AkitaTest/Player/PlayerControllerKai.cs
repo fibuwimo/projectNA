@@ -45,6 +45,8 @@ public class PlayerControllerKai : MonoBehaviour
     public Text coinText;
     public Text scoreText;
     public Text comboText;
+    public Text tutimahouText;
+    int tutimahouCount = 2;
     int score=0;
     int comboCount=0;
     public float comboBairitu=1.5f;
@@ -59,6 +61,7 @@ public class PlayerControllerKai : MonoBehaviour
     public GameObject tutiWallMihon;
     public GameObject tutiWallMihonRed;
     public GameObject tutiWall;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,63 +81,68 @@ public class PlayerControllerKai : MonoBehaviour
         
         if (state == STATE.ALIVE)
         {
-            if (Input.GetKey(KeyCode.Z))
+            if (tutimahouCount > 0)
             {
-                Vector3 tPosition = (transform.position + transform.forward * 2f);
-                float x = Mathf.Round(tPosition.x / 1.5f);
-                float z = Mathf.Round(tPosition.z / 1.5f);
-                float y = transform.position.y + 0.5f;
-                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
-                /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
-                 obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
-                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
-                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-
+                if (Input.GetKey(KeyCode.Z))
                 {
-                    Debug.Log("レイキャスト通過");
-                    if (hit.collider.CompareTag("Wall"))
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+                     obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
                     {
-                        magicWallPosition.y = hit.point.y + 0.5f;
-                        Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
+                        Debug.Log("レイキャスト通過");
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+                            magicWallPosition.y = hit.point.y + 0.5f;
+                            Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
+                        }
+                        else
+                        {
+                            magicWallPosition.y = hit.point.y + 0.5f;
+                            Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                        }
+
                     }
-                    else
+
+
+
+                }
+                if (Input.GetKeyUp(KeyCode.Z))
+                {
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
                     {
-                        magicWallPosition.y = hit.point.y + 0.5f;
-                        Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+
+                        }
+                        else
+                        {
+                            magicWallPosition.y = hit.point.y + 0.5f;
+                            Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
+                            tutimahouCount--;
+                            tutimahouText.text = "土魔法:" + tutimahouCount;
+                        }
+
                     }
 
                 }
-
-
-
-            }
-            if (Input.GetKeyUp(KeyCode.Z))
-            {
-                Vector3 tPosition = (transform.position + transform.forward * 2f);
-                float x = Mathf.Round(tPosition.x / 1.5f);
-                float z = Mathf.Round(tPosition.z / 1.5f);
-                float y = transform.position.y + 0.5f;
-                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
-                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
-                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-
-                {
-                    if (hit.collider.CompareTag("Wall"))
-                    {
-
-                    }
-                    else
-                    {
-                        magicWallPosition.y = hit.point.y + 0.5f;
-                        Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
-                    }
-
-                }
-
             }
             var position = transform.position;
             var delta = position - prevPosition;
@@ -200,63 +208,68 @@ public class PlayerControllerKai : MonoBehaviour
 
                 SetAlive();
             }
-            if (Input.GetKey(KeyCode.Z))
+            if (tutimahouCount > 0)
             {
-                Vector3 tPosition = (transform.position + transform.forward * 2f);
-                float x = Mathf.Round(tPosition.x / 1.5f);
-                float z = Mathf.Round(tPosition.z / 1.5f);
-                float y = transform.position.y + 0.5f;
-                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
-                /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
-                 obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
-                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
-                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-
+                if (Input.GetKey(KeyCode.Z))
                 {
-                    Debug.Log("レイキャスト通過");
-                    if (hit.collider.CompareTag("Wall"))
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+                     obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
                     {
-                        magicWallPosition.y = hit.point.y + 0.5f;
-                        Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
+                        Debug.Log("レイキャスト通過");
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+                            magicWallPosition.y = hit.point.y + 0.5f;
+                            Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
+                        }
+                        else
+                        {
+                            magicWallPosition.y = hit.point.y + 0.5f;
+                            Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                        }
+
                     }
-                    else
+
+
+
+                }
+                if (Input.GetKeyUp(KeyCode.Z))
+                {
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
                     {
-                        magicWallPosition.y = hit.point.y + 0.5f;
-                        Instantiate(tutiWallMihon, magicWallPosition, Quaternion.Euler(transform.forward));
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+
+                        }
+                        else
+                        {
+                            magicWallPosition.y = hit.point.y + 0.5f;
+                            Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
+                            tutimahouCount--;
+                            tutimahouText.text = "土魔法:" + tutimahouCount;
+                        }
+
                     }
 
                 }
-
-
-
-            }
-            if (Input.GetKeyUp(KeyCode.Z))
-            {
-                Vector3 tPosition = (transform.position + transform.forward * 2f);
-                float x = Mathf.Round(tPosition.x / 1.5f);
-                float z = Mathf.Round(tPosition.z / 1.5f);
-                float y = transform.position.y + 0.5f;
-                Vector3 magicWallPosition = new Vector3(x * 1.5f, y, z * 1.5f);
-                Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
-                Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-
-                {
-                    if (hit.collider.CompareTag("Wall"))
-                    {
-
-                    }
-                    else
-                    {
-                        magicWallPosition.y = hit.point.y + 0.5f;
-                        Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
-                    }
-
-                }
-
             }
             var position = transform.position;
             var delta = position - prevPosition;
@@ -439,7 +452,9 @@ public class PlayerControllerKai : MonoBehaviour
     }
     public void Clear(float cTime, float sTime)
     {
-       
+        tutimahouCount++;
+        if (tutimahouCount > 2) tutimahouCount = 2;
+        tutimahouText.text = "土魔法:" + tutimahouCount;
         freezWarpTime = cTime;
         freezTime = cTime + sTime;
         SetFreez();

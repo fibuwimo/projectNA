@@ -42,6 +42,30 @@ public class EnemyKaiYellow : EnemyKai
         if (state == STATE.RUN)
         {
             runCount += Time.deltaTime;
+            tenmetuCount++;
+            if (runCount >= runTime - 3.0f)
+            {
+                if (tenmetuCount % 4 == 0 && tenmetuCount % 8 != 0)
+                {
+                    agentRendere.material = tenmetuColor;
+                }
+                if (tenmetuCount % 4 == 0)
+                {
+                    agentRendere.material = runColor;
+                }
+            }
+            if (runCount >= runTime - 1.5f)
+            {
+                if (tenmetuCount % 2 == 0 && tenmetuCount % 4 != 0)
+                {
+                    agentRendere.material = tenmetuColor;
+                }
+                if (tenmetuCount % 2 == 0)
+                {
+                    agentRendere.material = runColor;
+                }
+            }
+
             if (runCount >= runTime)
             {
                 SetTuibi();

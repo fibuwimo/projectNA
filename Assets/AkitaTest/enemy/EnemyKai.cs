@@ -35,6 +35,7 @@ public class EnemyKai : MonoBehaviour
     protected float freezWarpTime;
     protected float freezTime;
     protected float freezCount;
+    protected int tenmetuCount;
     protected float runTime = 10;
     protected float runCount;
     protected float tempSpeed;
@@ -45,6 +46,7 @@ public class EnemyKai : MonoBehaviour
     protected GameObject mago;
     public Material firstColor;
     public Material runColor;
+    public Material tenmetuColor;
     public Material deadColor;
     protected PlayerControllerKai plCon;
     [SerializeField, Range(0F, 90F), Tooltip("射出する角度")]
@@ -52,6 +54,7 @@ public class EnemyKai : MonoBehaviour
     [SerializeField, Range(0F, 90F), Tooltip("射出する角度")]
     private float dropAngle;
     protected Animator animator;
+    protected Renderer agentRendere;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +71,7 @@ public class EnemyKai : MonoBehaviour
         {
             child = transform.GetChild(0).gameObject;
             mago = transform.GetChild(0).transform.GetChild(1).gameObject;
+            agentRendere = mago.GetComponent<Renderer>();
         }
         animator = child.GetComponent<Animator>();
         StartCoroutine(MoveNormalSpeed(agent));
@@ -107,6 +111,30 @@ public class EnemyKai : MonoBehaviour
         if (state == STATE.RUN)
         {
             runCount += Time.deltaTime;
+            tenmetuCount++;
+            if (runCount >= runTime - 3.0f)
+            {
+                if (tenmetuCount % 4 == 0 && tenmetuCount % 8 !=0)
+                {
+                    agentRendere.material =tenmetuColor;
+                }
+                if (tenmetuCount % 4 == 0)
+                {
+                    agentRendere.material = runColor;
+                }
+            }
+            if (runCount >= runTime - 1.5f)
+            {
+                if (tenmetuCount % 2 == 0 && tenmetuCount % 4 != 0)
+                {
+                    agentRendere.material = tenmetuColor;
+                }
+                if (tenmetuCount % 2 == 0)
+                {
+                    agentRendere.material = runColor;
+                }
+            }
+
             if (runCount >= runTime)
             {
                 SetTuibi();
@@ -244,6 +272,7 @@ public class EnemyKai : MonoBehaviour
         }
         agent.speed = tempSpeed*runSpeedBairitu;
         runCount = 0;
+        tenmetuCount = 0;
         state = STATE.RUN;
     }
     protected void SetTaiki()
