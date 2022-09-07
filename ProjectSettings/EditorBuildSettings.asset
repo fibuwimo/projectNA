@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KimuraMapTest.unity
     guid: 47ae90eca778d4546a172fbc7385ceb9
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: e06141f9c403af243b8c4547e8d69423
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: c0ecaa50dc4babb4695b1a6c95abe30e
   m_configObjects: {}
