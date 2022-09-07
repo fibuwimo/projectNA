@@ -198,7 +198,7 @@ public class EnemyKai : MonoBehaviour
             {
                 Debug.Log("デッドするよ");
 
-                SetDead();
+                deadByMuteki();
             }
         }
         for (int i = 0; i < jyunkaiTarget.Length; i++)
@@ -303,7 +303,6 @@ public class EnemyKai : MonoBehaviour
         animator.SetBool("TUIBI", false);
         animator.SetBool("FREEZ", false);
         animator.SetBool("RUN", false);
-        plCon.scoreGain();
         if (deadColor != null)
         {
             mago.GetComponent<Renderer>().material = deadColor;
@@ -331,6 +330,15 @@ public class EnemyKai : MonoBehaviour
     {
         runTime = mTime;
         SetRun();
+    }
+    public void deadByMuteki()
+    {
+        plCon.scoreGain();
+        SetDead();
+    }
+    public void deadByRumba()
+    {
+        SetDead();
     }
     public void Restart(float dTime,float sTime)
     {

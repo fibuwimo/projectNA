@@ -128,7 +128,7 @@ public class EnemyKaiBlue : EnemyKai
             if (state == STATE.RUN)
             {
                 Debug.Log("デッドするよ");
-                SetDead();
+                deadByMuteki();
             }
         }
         for (int i = 0; i < jyunkaiTarget.Length; i++)

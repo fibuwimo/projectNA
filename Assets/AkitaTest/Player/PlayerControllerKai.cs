@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerControllerKai : MonoBehaviour
 {
+    public AudioClip soundCoin;
+    public AudioClip soundMutekiItem;
+    public AudioClip bgmMuteki;
+    public AudioClip bgmClear;
+    AudioSource audioSource;
+
     [SerializeField] private float _maxAngularSpeed = Mathf.Infinity;
     [SerializeField] private float _smoothTime = 0.04f;
     [SerializeField] private Vector3 _forward = Vector3.forward;
@@ -47,7 +53,11 @@ public class PlayerControllerKai : MonoBehaviour
     public Text scoreText;
     public Text comboText;
     public Text tutimahouText;
-    int tutimahouCount = 2;
+    public Text rumbaText;
+    public int tutimahouCountMax = 2;
+    int tutimahouCount;
+    public int rumbaCountMax=5;
+    int rumbaCount;
     int score=0;
     int comboCount=0;
     public float comboBairitu=1.5f;
@@ -63,9 +73,14 @@ public class PlayerControllerKai : MonoBehaviour
     public GameObject tutiWallMihonRed;
     public GameObject tutiWall;
 
+    public GameObject rumbaMihon;
+    public GameObject rumbaMihonRed;
+    public GameObject rumba;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         _transform = transform;
         prevPosition = _transform.position;
         rb = GetComponent<Rigidbody>();
@@ -74,6 +89,10 @@ public class PlayerControllerKai : MonoBehaviour
         life = 3;
         child = transform.GetChild(0).gameObject;
         animator = child.GetComponent<Animator>();
+        tutimahouCount = tutimahouCountMax;
+        rumbaCount = rumbaCountMax;
+        tutimahouText.text = "土魔法:" + tutimahouCount;
+        rumbaText.text = "ルンバ:" + rumbaCount;
     }
 
     // Update is called once per frame
@@ -145,6 +164,74 @@ public class PlayerControllerKai : MonoBehaviour
 
                 }
             }
+            if (rumbaCount > 0)
+            {
+                if (Input.GetKey(KeyCode.X))
+                {
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 rumbaPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    Vector3 pPosition = new Vector3((Mathf.Round(transform.position.x / 1.5f) * 1.5f), y, (Mathf.Round(transform.position.z / 1.5f)) * 1.5f);
+                    /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+                     obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                    {
+                        Debug.Log("レイキャスト通過");
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+                            rumbaPosition.y = hit.point.y + 0.2f;
+                            Instantiate(rumbaMihonRed, rumbaPosition, Quaternion.Euler(transform.forward));
+                        }
+                        else
+                        {
+                            rumbaPosition.y = hit.point.y + 0.2f;
+                            Instantiate(rumbaMihon, rumbaPosition, Quaternion.Euler(transform.forward));
+                        }
+
+                    }
+
+
+
+                }
+                if (Input.GetKeyUp(KeyCode.X))
+                {
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 rumbaPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    Vector3 pPosition = new Vector3((Mathf.Round(transform.position.x / 1.5f) * 1.5f), y, (Mathf.Round(transform.position.z / 1.5f)) * 1.5f);
+                    Vector3 rumbaDirection = (rumbaPosition - pPosition).normalized;
+                    Quaternion requiredRotation = Quaternion.FromToRotation(new Vector3(0, 0, 1.0f), rumbaDirection);
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                    {
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+
+                        }
+                        else
+                        {
+                            Debug.Log(rumbaDirection);
+                            rumbaPosition.y = hit.point.y + 0.2f;
+                            Instantiate(rumba, rumbaPosition, requiredRotation);
+                            rumbaCount--;
+                            rumbaText.text = "ルンバ:" + rumbaCount;
+                        }
+
+                    }
+
+                }
+            }
             var position = transform.position;
             var delta = position - prevPosition;
             //isJumpPressed = Input.GetButtonDown("Jump");
@@ -203,6 +290,10 @@ public class PlayerControllerKai : MonoBehaviour
         if (state == STATE.MUTEKI)
         {
             mutekiCount += Time.deltaTime;
+            if (mutekiCount >= mutekiTimes[stageCount - 1]-3)
+            {
+                audioSource.volume -= 0.01f;
+            }
 
             if (mutekiCount >= mutekiTimes[stageCount - 1])
             {
@@ -266,6 +357,74 @@ public class PlayerControllerKai : MonoBehaviour
                             Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
                             tutimahouCount--;
                             tutimahouText.text = "土魔法:" + tutimahouCount;
+                        }
+
+                    }
+
+                }
+            }
+            if (rumbaCount > 0)
+            {
+                if (Input.GetKey(KeyCode.X))
+                {
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 rumbaPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    Vector3 pPosition = new Vector3((Mathf.Round(transform.position.x / 1.5f) * 1.5f), y, (Mathf.Round(transform.position.z / 1.5f)) * 1.5f);
+                    /* GameObject obj=Instantiate(tutiWallTest, magicWallPosition, Quaternion.Euler(transform.forward));
+                     obj.GetComponent<tutiWallTest>().setObj(tutiWallMihon, tutiWall);*/
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                    {
+                        Debug.Log("レイキャスト通過");
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+                            rumbaPosition.y = hit.point.y + 0.2f;
+                            Instantiate(rumbaMihonRed, rumbaPosition, Quaternion.Euler(transform.forward));
+                        }
+                        else
+                        {
+                            rumbaPosition.y = hit.point.y + 0.2f;
+                            Instantiate(rumbaMihon, rumbaPosition, Quaternion.Euler(transform.forward));
+                        }
+
+                    }
+
+
+
+                }
+                if (Input.GetKeyUp(KeyCode.X))
+                {
+                    Vector3 tPosition = (transform.position + transform.forward * 2f);
+                    float x = Mathf.Round(tPosition.x / 1.5f);
+                    float z = Mathf.Round(tPosition.z / 1.5f);
+                    float y = transform.position.y + 0.5f;
+                    Vector3 rumbaPosition = new Vector3(x * 1.5f, y, z * 1.5f);
+                    Vector3 pPosition = new Vector3((Mathf.Round(transform.position.x / 1.5f) * 1.5f), y, (Mathf.Round(transform.position.z / 1.5f)) * 1.5f);
+                    Vector3 rumbaDirection = (rumbaPosition - pPosition).normalized;
+                    Quaternion requiredRotation = Quaternion.FromToRotation(new Vector3(0, 0, 1.0f), rumbaDirection);
+                    Vector3 dir = new Vector3(x * 1.5f, 0f, z * 1.5f) - new Vector3(x * 1.5f, 10, z * 1.5f);
+                    Ray ray = new Ray(new Vector3(x * 1.5f, 10f, z * 1.5f), dir);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+
+                    {
+                        if (hit.collider.CompareTag("Wall"))
+                        {
+
+                        }
+                        else
+                        {
+                            Debug.Log(rumbaDirection);
+                            rumbaPosition.y = hit.point.y + 0.2f;
+                            Instantiate(rumba, rumbaPosition, requiredRotation);
+                            rumbaCount--;
+                            rumbaText.text = "ルンバ:" + rumbaCount;
                         }
 
                     }
@@ -345,6 +504,7 @@ public class PlayerControllerKai : MonoBehaviour
             freezCount += Time.deltaTime;
             if (freezCount >= freezWarpTime)
             {
+                audioSource.volume -= 0.01f;
                 transform.position = startPosition;
                 float z = startPosition.z + 1.0f;
                 transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));
@@ -365,6 +525,7 @@ public class PlayerControllerKai : MonoBehaviour
         {
             coinCount++;
             coinText.text = "COIN:" + coinCount;
+            audioSource.PlayOneShot(soundCoin);
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag.Contains("agent"))
@@ -407,6 +568,8 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void SetAlive()
     {
+        audioSource.volume = 1f;
+        audioSource.Stop();
         rb.isKinematic = false;
         mutekiText.text = "無敵じゃないよ";
         comboCount = 0;
@@ -415,6 +578,7 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void SetMuteki()
     {
+        audioSource.Stop();
         Debug.Log("セット無敵呼ばれた");
         for (int i = 0; i < agents.Length; i++)
         {
@@ -425,10 +589,15 @@ public class PlayerControllerKai : MonoBehaviour
         }
         mutekiText.text = "無敵だよ";
         mutekiCount = 0;
+        audioSource.volume =1f;
+        audioSource.PlayOneShot(soundMutekiItem);
+        audioSource.PlayOneShot(bgmMuteki);
         state = STATE.MUTEKI;
     }
     void SetDead()
     {
+        audioSource.Stop();
+        audioSource.volume = 1f;
         mutekiText.text = "無敵じゃないよ";
         Debug.Log("プレイヤー死亡");
         life -= 1;
@@ -440,6 +609,7 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void SetFreez()
     {
+        
         animator.SetBool("RUN", false);
         rb.velocity = new Vector3(0, 0, 0);
         rb.AddForce(0, 0, 0);
@@ -452,7 +622,8 @@ public class PlayerControllerKai : MonoBehaviour
 
     public void Restart(float dTime, float sTime)
     {
-       
+        audioSource.Stop();
+        audioSource.volume = 1f;
         freezWarpTime = dTime;
         freezTime = dTime + sTime;
         SetFreez();
@@ -460,10 +631,15 @@ public class PlayerControllerKai : MonoBehaviour
     public void Clear(float cTime, float sTime)
     {
         tutimahouCount++;
+        rumbaCount++;
         if (tutimahouCount > 2) tutimahouCount = 2;
+        if (rumbaCount > 5) rumbaCount = 5;
         tutimahouText.text = "土魔法:" + tutimahouCount;
         freezWarpTime = cTime;
         freezTime = cTime + sTime;
+        audioSource.Stop();
+        audioSource.volume = 1f;
+        audioSource.PlayOneShot(bgmClear);
         SetFreez();
     }
     public void Gameover(float gTime, float sTime)
@@ -477,6 +653,11 @@ public class PlayerControllerKai : MonoBehaviour
         comboCount++;
         score += (int)(500 * Mathf.Pow(2f, comboCount-1));
         comboText.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
+        scoreText.text = "SCORE:" + score;
+    }
+    public void RumbaScoreGain(int s)
+    {
+        score += s;
         scoreText.text = "SCORE:" + score;
     }
     IEnumerator SetJumpAble()
