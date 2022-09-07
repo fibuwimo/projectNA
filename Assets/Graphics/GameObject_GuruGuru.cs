@@ -8,6 +8,7 @@ public class GameObject_GuruGuru : MonoBehaviour
     void Start()
     {
         this.gameObject.GetComponent<CanvasGroup>().alpha = 0;
+        //this.GuruGuru_InActive();
     }
 
     // Update is called once per frame
@@ -16,7 +17,12 @@ public class GameObject_GuruGuru : MonoBehaviour
         
     }
 
-    void Fukidashi_Active(){
+    void GuruGuru_Active(){
         this.gameObject.GetComponent<CanvasGroup>().alpha = 1;
+    }
+
+    public void GuruGuru_InActive(){
+        Destroy(gameObject);
+        //this.gameObject.GetComponent<CanvasGroup>().alpha = 0;
     }
 }

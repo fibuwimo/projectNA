@@ -8,6 +8,8 @@ public class GameOverScene_Controller : MonoBehaviour
     public GameObject Doyon;
     public GameObject Moji;
     public GameObject Helper;
+
+    public GameObject Meido;
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,7 @@ public class GameOverScene_Controller : MonoBehaviour
         Moji = GameObject.Find("GameOver_Moji");
         Doyon = GameObject.Find("GameOver_Doyon");
         Helper = GameObject.Find("GameOver_Helper");
+        Meido = GameObject.Find("GameOver_Meido");
     }
 
     // Update is called once per frame
@@ -25,10 +28,11 @@ public class GameOverScene_Controller : MonoBehaviour
             Moji.GetComponent<GameOver_Moji_Controller>().EndAnimation();
             Doyon.GetComponent<GameOver_Doyon_Controller>().EndAnimation();
             Helper.GetComponent<GameOver_Helper_Controller>().EndAnimation();
+            isOperable = false;
         }
     }
 
-    void Set_isOperable(){
+    public void Set_isOperable(){
         isOperable = true;
     }
 }

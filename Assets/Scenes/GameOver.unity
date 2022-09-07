@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -145,7 +145,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747491607}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -449,7 +449,7 @@ RectTransform:
   m_LocalScale: {x: 1.0456929, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747491607}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -689,7 +689,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747491607}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -762,6 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675567578d1ca9246a926dd6bbe9fc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Meido: {fileID: 0}
 --- !u!1 &1519712430
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,11 +927,11 @@ RectTransform:
   m_Children:
   - {fileID: 1519712431}
   - {fileID: 298416872}
-  - {fileID: 2126193870}
   - {fileID: 512354588}
   - {fileID: 2025545407}
   - {fileID: 95496052}
   - {fileID: 1510431568}
+  - {fileID: 2126193870}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -984,8 +985,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOperable: 1
   Doyon: {fileID: 298416871}
-  Moji: {fileID: 2126193869}
+  Moji: {fileID: 512354587}
   Helper: {fileID: 1510431567}
+  Meido: {fileID: 2126193869}
 --- !u!1 &2025545406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1021,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747491607}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1116,6 +1118,7 @@ GameObject:
   - component: {fileID: 2126193872}
   - component: {fileID: 2126193871}
   - component: {fileID: 2126193873}
+  - component: {fileID: 2126193874}
   m_Layer: 5
   m_Name: GameOver_meido
   m_TagString: Untagged
@@ -1135,7 +1138,7 @@ RectTransform:
   m_LocalScale: {x: 1.0257736, y: 0.9742263, z: 1}
   m_Children: []
   m_Father: {fileID: 1747491607}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1168,7 +1171,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
 --- !u!222 &2126193872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1196,3 +1199,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2126193874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126193869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e79604ca05bf743bc98ea6e32c3868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

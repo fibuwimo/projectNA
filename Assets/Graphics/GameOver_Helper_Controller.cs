@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class GameOver_Helper_Controller : MonoBehaviour
 {
+    public GameObject Meido;
     Animator anim;
     // Start is called before the first frame update
     void Start()
     {
+        Meido = GameObject.Find("GameOver_meido");
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -18,5 +20,8 @@ public class GameOver_Helper_Controller : MonoBehaviour
     }
     public void EndAnimation(){
         this.anim.SetBool("isRoopEnd",true);
+    }
+    public void Surprized_Meido(){
+        Meido.GetComponent<GameOver_Meido_Controller>().End_FirstRoop_Anim();
     }
 }
