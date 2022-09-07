@@ -154,6 +154,7 @@ public class PlayerControllerKai : MonoBehaviour
                         }
                         else
                         {
+                            Debug.Log(hit.collider.gameObject.name);
                             magicWallPosition.y = hit.point.y + 0.5f;
                             Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
                             tutimahouCount--;

@@ -6313,6 +6313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetPink
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &212537967 stripped
@@ -7325,6 +7330,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetRed (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &251779067
@@ -7594,6 +7604,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jyunkiTargetOrange (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
@@ -10620,6 +10635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetPink (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &378837997 stripped
@@ -11062,6 +11082,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jyunkiTargetPink (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
@@ -13166,6 +13191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetPink (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &485044473 stripped
@@ -13258,6 +13288,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetRed
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1001 &490959074
@@ -13331,6 +13366,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jyunkiTargetBlue (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bba5fa396070f74eb59fd50cd2b6c51, type: 3}
@@ -20659,6 +20699,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetRed (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!4 &736976915 stripped
@@ -24468,6 +24513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jyunkiTargetBlue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bba5fa396070f74eb59fd50cd2b6c51, type: 3}
@@ -38292,6 +38342,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetOrange
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &1331989012 stripped
@@ -43784,6 +43839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jyunkiTargetRed (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
@@ -53153,6 +53213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetOrange (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &1884455107 stripped
@@ -53853,6 +53918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: jyunkiTargetBlue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bba5fa396070f74eb59fd50cd2b6c51, type: 3}
@@ -57706,6 +57776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetOrange (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a9dd6069f7b9f4ca0a4fa6f5128bb9, type: 3}
 --- !u!1 &2043285086 stripped
@@ -60092,6 +60167,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jyunkiTargetBlue
       objectReference: {fileID: 0}
+    - target: {fileID: 5934162727220876237, guid: 5bba5fa396070f74eb59fd50cd2b6c51,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bba5fa396070f74eb59fd50cd2b6c51, type: 3}
 --- !u!4 &2110116362 stripped
@@ -61594,7 +61674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &452430049128161096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -61924,7 +62004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &2450878224066978968
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65434,7 +65514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!195 &5666223485034762346
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -65605,7 +65685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6290751633632997731
 MonoBehaviour:
   m_ObjectHideFlags: 0
