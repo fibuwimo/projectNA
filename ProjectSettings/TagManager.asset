@@ -12,6 +12,7 @@ TagManager:
   - agentYellow
   - mutekiItem
   - Coin
+  - Slope
   layers:
   - Default
   - TransparentFX

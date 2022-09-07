@@ -119,7 +119,7 @@ public class PlayerControllerKai : MonoBehaviour
 
                     {
                         Debug.Log("レイキャスト通過");
-                        if (hit.collider.CompareTag("Wall"))
+                        if (hit.collider.CompareTag("Wall") || hit.collider.CompareTag("Slope"))
                         {
                             magicWallPosition.y = hit.point.y + 0.5f;
                             Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
@@ -148,7 +148,7 @@ public class PlayerControllerKai : MonoBehaviour
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity))
 
                     {
-                        if (hit.collider.CompareTag("Wall"))
+                        if (hit.collider.CompareTag("Wall") || hit.collider.CompareTag("Slope"))
                         {
 
                         }
@@ -318,7 +318,7 @@ public class PlayerControllerKai : MonoBehaviour
 
                     {
                         Debug.Log("レイキャスト通過");
-                        if (hit.collider.CompareTag("Wall"))
+                        if (hit.collider.CompareTag("Wall") || hit.collider.CompareTag("Slope"))
                         {
                             magicWallPosition.y = hit.point.y + 0.5f;
                             Instantiate(tutiWallMihonRed, magicWallPosition, Quaternion.Euler(transform.forward));
@@ -347,7 +347,7 @@ public class PlayerControllerKai : MonoBehaviour
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity))
 
                     {
-                        if (hit.collider.CompareTag("Wall"))
+                        if (hit.collider.CompareTag("Wall") || hit.collider.CompareTag("Slope"))
                         {
 
                         }
