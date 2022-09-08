@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class PlayerControllerKai : MonoBehaviour
 {
     public static int resultScore;
-
-    public AudioClip soundCoin;
-    public AudioClip soundMutekiItem;
     public AudioClip bgmMuteki;
     public AudioClip bgmClear;
     public AudioClip bgmMain;
     public AudioClip bgmDead;
+    public AudioClip soundCoin;
+    public AudioClip soundMutekiItem;
+    public AudioClip soundJump;
     AudioSource audioSource;
+    AudioSource audioSourceBGM;
 
     [SerializeField] private float _maxAngularSpeed = Mathf.Infinity;
     [SerializeField] private float _smoothTime = 0.04f;
@@ -51,16 +52,21 @@ public class PlayerControllerKai : MonoBehaviour
     public int stageCount = 1;
     public STATE state;
     public int life;
+    public Text stageText;
+    public Text stageText2;
     public Text lifeText;
+    public Text lifeText2;
     public Text mutekiText;
     public Text coinText;
     public Text scoreText;
     public Text comboText;
     public Text tutimahouText;
     public Text rumbaText;
+    public Image anten;
     public int tutimahouCountMax = 2;
     int tutimahouCount;
-    public int rumbaCountMax=5;
+    public int rumbaCountMax=1;
+    public int rumbaAddStageCount=3;
     int rumbaCount;
     int score=0;
     int comboCount=0;
@@ -90,7 +96,7 @@ public class PlayerControllerKai : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         startPosition = transform.position;
         audioSource.PlayOneShot(bgmMain);
-        state = STATE.ALIVE;
+        state = STATE.FREEZ;
         life = 3;
         child = transform.GetChild(0).gameObject;
         animator = child.GetComponent<Animator>();
@@ -531,6 +537,8 @@ public class PlayerControllerKai : MonoBehaviour
         {
             coinCount++;
             coinText.text = "COIN:" + coinCount;
+            score += 30;
+            scoreText.text = "SCORE:" + score;
             audioSource.PlayOneShot(soundCoin);
             Destroy(other.gameObject);
         }
@@ -565,6 +573,7 @@ public class PlayerControllerKai : MonoBehaviour
                 if (isGround && jumpAble)
                 {
                     rb.AddForce(transform.up * jumpPower, ForceMode.Impulse);
+                    audioSource.PlayOneShot(soundJump);
                     StartCoroutine(SetJumpAble());
                     animator.SetTrigger("JUMP");
                 }
@@ -609,7 +618,12 @@ public class PlayerControllerKai : MonoBehaviour
         mutekiText.text = "無敵じゃないよ";
         Debug.Log("プレイヤー死亡");
         life -= 1;
+        rumbaCount++;
+        if (rumbaCount > rumbaCountMax) rumbaCount = 1;
+        tutimahouCount = tutimahouCountMax;
+        rumbaText.text = "ルンバ:" + rumbaCount;
         lifeText.text = "LIFE:" + life;
+        lifeText2.text = "LIFE:" + life;
         comboCount = 0;
         comboText.text = "";
         animator.SetBool("DAMAGE", true);
@@ -633,13 +647,26 @@ public class PlayerControllerKai : MonoBehaviour
         freezWarpTime = dTime;
         freezTime = dTime + sTime;
         SetFreez();
+        StartCoroutine(setAntenByDead());
+    }
+    public void Init(float dTime, float sTime)
+    {
+        freezWarpTime = dTime;
+        freezTime = dTime + sTime;
+        freezCount = 0;
+        state = STATE.FREEZ;
+        StartCoroutine(setAntenByInit());
     }
     public void Clear(float cTime, float sTime)
     {
         tutimahouCount++;
-        rumbaCount++;
-        if (tutimahouCount > 2) tutimahouCount = 2;
-        if (rumbaCount > 5) rumbaCount = 5;
+        if ((stageCount) % rumbaAddStageCount == 1)
+        {
+            rumbaCount++;
+            if (rumbaCount > rumbaCountMax) rumbaCount = 1;
+            rumbaText.text = "ルンバ:" + rumbaCount;
+        }
+        if (tutimahouCount > tutimahouCountMax) tutimahouCount = 2;
         tutimahouText.text = "土魔法:" + tutimahouCount;
         freezWarpTime = cTime;
         freezTime = cTime + sTime;
@@ -647,6 +674,7 @@ public class PlayerControllerKai : MonoBehaviour
         audioSource.volume = 1f;
         audioSource.PlayOneShot(bgmClear);
         SetFreez();
+        StartCoroutine(setAntenByClear());
     }
     public void Gameover(float gTime, float sTime)
     {
@@ -677,5 +705,71 @@ public class PlayerControllerKai : MonoBehaviour
     public static int getResultScore()
     {
         return resultScore;
+    }
+    IEnumerator setAntenByDead()
+    {
+        scoreText.gameObject.SetActive(false);
+        tutimahouText.gameObject.SetActive(false);
+        rumbaText.gameObject.SetActive(false);
+        //stageText2.gameObject.SetActive(false);
+        //lifeText2.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1.5f);
+        anten.gameObject.SetActive(true);
+        lifeText.gameObject.SetActive(true);
+        stageText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(4.0f);
+        anten.gameObject.SetActive(false);
+        lifeText.gameObject.SetActive(false);
+        stageText.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(true);
+        tutimahouText.gameObject.SetActive(true);
+        rumbaText.gameObject.SetActive(true);
+        //stageText2.gameObject.SetActive(true);
+        //lifeText2.gameObject.SetActive(true);
+
+    }
+    IEnumerator setAntenByInit()
+    {
+        scoreText.gameObject.SetActive(false);
+        tutimahouText.gameObject.SetActive(false);
+        rumbaText.gameObject.SetActive(false);
+        //stageText2.gameObject.SetActive(false);
+        //lifeText2.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0f);
+        anten.gameObject.SetActive(true);
+        lifeText.gameObject.SetActive(true);
+        stageText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3.0f);
+        anten.gameObject.SetActive(false);
+        lifeText.gameObject.SetActive(false);
+        stageText.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(true);
+        tutimahouText.gameObject.SetActive(true);
+        rumbaText.gameObject.SetActive(true);
+        //stageText2.gameObject.SetActive(true);
+        //lifeText2.gameObject.SetActive(true);
+
+    }
+    IEnumerator setAntenByClear()
+    {
+        scoreText.gameObject.SetActive(false);
+        tutimahouText.gameObject.SetActive(false);
+        rumbaText.gameObject.SetActive(false);
+        //stageText2.gameObject.SetActive(false);
+        //lifeText2.gameObject.SetActive(false);
+        yield return new WaitForSeconds(3.0f);
+        anten.gameObject.SetActive(true);
+        lifeText.gameObject.SetActive(true);
+        stageText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+        anten.gameObject.SetActive(false);
+        lifeText.gameObject.SetActive(false);
+        stageText.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(true);
+        tutimahouText.gameObject.SetActive(true);
+        rumbaText.gameObject.SetActive(true);
+        //stageText2.gameObject.SetActive(true);
+        //lifeText2.gameObject.SetActive(true);
+
     }
 }
