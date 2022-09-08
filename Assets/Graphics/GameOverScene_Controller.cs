@@ -11,6 +11,8 @@ public class GameOverScene_Controller : MonoBehaviour
     public GameObject Helper;
 
     public GameObject Meido;
+
+    public int Score;
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class GameOverScene_Controller : MonoBehaviour
         Doyon = GameObject.Find("GameOver_Doyon");
         Helper = GameObject.Find("GameOver_Helper");
         Meido = GameObject.Find("GameOver_Meido");
+        Score = PlayerControllerKai.getResultScore();
+        Debug.Log(Score);
     }
 
     // Update is called once per frame
