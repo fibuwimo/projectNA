@@ -7,6 +7,6 @@ public class Start_Button : MonoBehaviour
 {
     public void SwitchScene()
     {
-        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+        SceneManager.LoadScene("AkitaMapTest", LoadSceneMode.Single);
     }
 }
