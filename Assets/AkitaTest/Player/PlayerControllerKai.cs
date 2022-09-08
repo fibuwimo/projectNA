@@ -14,7 +14,12 @@ public class PlayerControllerKai : MonoBehaviour
     public AudioClip soundMutekiItem;
     public AudioClip soundJump;
     AudioSource audioSource;
+    public GameObject BGM;
     AudioSource audioSourceBGM;
+    public float bgmMainVol=0.5f;
+    public float bgmMutekiVol = 0.5f;
+    public float bgmClearVol = 0.5f;
+    public float bgmDeadVol = 0.5f;
 
     [SerializeField] private float _maxAngularSpeed = Mathf.Infinity;
     [SerializeField] private float _smoothTime = 0.04f;
@@ -90,12 +95,12 @@ public class PlayerControllerKai : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSourceBGM = BGM.GetComponent<AudioSource>();
         audioSource = GetComponent<AudioSource>();
         _transform = transform;
         prevPosition = _transform.position;
         rb = GetComponent<Rigidbody>();
         startPosition = transform.position;
-        audioSource.PlayOneShot(bgmMain);
         state = STATE.FREEZ;
         life = 3;
         child = transform.GetChild(0).gameObject;
@@ -304,7 +309,7 @@ public class PlayerControllerKai : MonoBehaviour
             mutekiCount += Time.deltaTime;
             if (mutekiCount >= mutekiTimes[stageCount - 1]-3)
             {
-                audioSource.volume -= 0.01f;
+                audioSourceBGM.volume -= 0.005f;
             }
 
             if (mutekiCount >= mutekiTimes[stageCount - 1])
@@ -516,7 +521,7 @@ public class PlayerControllerKai : MonoBehaviour
             freezCount += Time.deltaTime;
             if (freezCount >= freezWarpTime)
             {
-                audioSource.volume -= 0.01f;
+                audioSourceBGM.volume -= 0.01f;
                 transform.position = startPosition;
                 float z = startPosition.z + 1.0f;
                 transform.LookAt(new Vector3(startPosition.x, startPosition.y, z));
@@ -583,9 +588,9 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void SetAlive()
     {
-        audioSource.volume = 1f;
-        audioSource.Stop();
-        audioSource.PlayOneShot(bgmMain);
+        audioSourceBGM.volume = bgmMainVol;
+        audioSourceBGM.Stop();
+        audioSourceBGM.PlayOneShot(bgmMain);
         rb.isKinematic = false;
         mutekiText.text = "無敵じゃないよ";
         comboCount = 0;
@@ -594,7 +599,7 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void SetMuteki()
     {
-        audioSource.Stop();
+        audioSourceBGM.Stop();
         Debug.Log("セット無敵呼ばれた");
         for (int i = 0; i < agents.Length; i++)
         {
@@ -605,16 +610,16 @@ public class PlayerControllerKai : MonoBehaviour
         }
         mutekiText.text = "無敵だよ";
         mutekiCount = 0;
-        audioSource.volume =1f;
+        audioSourceBGM.volume=bgmMutekiVol;
         audioSource.PlayOneShot(soundMutekiItem);
-        audioSource.PlayOneShot(bgmMuteki);
+        audioSourceBGM.PlayOneShot(bgmMuteki);
         state = STATE.MUTEKI;
     }
     void SetDead()
     {
-        audioSource.Stop();
-        audioSource.volume = 2f;
-        audioSource.PlayOneShot(bgmDead);
+        audioSourceBGM.Stop();
+        audioSourceBGM.volume = bgmDeadVol;
+        audioSourceBGM.PlayOneShot(bgmDead);
         mutekiText.text = "無敵じゃないよ";
         Debug.Log("プレイヤー死亡");
         life -= 1;
@@ -670,9 +675,9 @@ public class PlayerControllerKai : MonoBehaviour
         tutimahouText.text = "土魔法:" + tutimahouCount;
         freezWarpTime = cTime;
         freezTime = cTime + sTime;
-        audioSource.Stop();
-        audioSource.volume = 1f;
-        audioSource.PlayOneShot(bgmClear);
+        audioSourceBGM.Stop();
+        audioSourceBGM.volume = bgmClearVol;
+        audioSourceBGM.PlayOneShot(bgmClear);
         SetFreez();
         StartCoroutine(setAntenByClear());
     }
