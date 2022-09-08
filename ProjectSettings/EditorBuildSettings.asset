@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AkitaEnemyTest.unity
     guid: d1f3eb5ca96f04d4fb54dfbb20df1d33
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOverTest.unity
     guid: 9a26413d614ea6a45a6cbcb6e1f0f394
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ClearTest.unity
     guid: 829687587cd2f6b4491c801044a7ede5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/KimuraMapTest.unity
     guid: 47ae90eca778d4546a172fbc7385ceb9
   - enabled: 1
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: c0ecaa50dc4babb4695b1a6c95abe30e
+  - enabled: 1
+    path: Assets/Scenes/AkitaMapTest.unity
+    guid: c4a717e8239b34148a2d63fbada03094
   m_configObjects: {}
