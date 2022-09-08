@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyKai : MonoBehaviour
 {
+    public AudioClip soundDead;
+    AudioSource audioSource;
     public enum STATE
     {
         JYUNKAI,
@@ -58,6 +60,7 @@ public class EnemyKai : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         startPosition = transform.position;
         pl = GameObject.FindWithTag("Player");
         plCon = pl.GetComponent<PlayerControllerKai>();
@@ -298,6 +301,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetDead()
     {
+        audioSource.PlayOneShot(soundDead);
         StartCoroutine(TimeStop());
         animator.SetBool("DEAD", true);
         animator.SetBool("TUIBI", false);
@@ -347,6 +351,13 @@ public class EnemyKai : MonoBehaviour
         freezWarpTime = dTime;
         freezTime = dTime + sTime;
         SetFreez();
+
+    }
+    public void Init(float dTime, float sTime)
+    {
+        freezWarpTime = dTime;
+        freezTime = dTime + sTime;
+        state = STATE.FREEZ;
 
     }
     public void Clear(float cTime,float sTime)
