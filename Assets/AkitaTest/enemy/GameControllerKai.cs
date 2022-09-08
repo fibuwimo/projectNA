@@ -113,7 +113,7 @@ public class GameControllerKai : MonoBehaviour
     IEnumerator Gameover()
     {
         yield return new WaitForSeconds(gameoverEffectTime);
-        SceneManager.LoadScene("GameOverTest");
+        SceneManager.LoadScene("GameOver");
     }
     IEnumerator Haiti()
     {

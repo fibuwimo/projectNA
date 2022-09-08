@@ -7751,6 +7751,8 @@ MonoBehaviour:
   soundMutekiItem: {fileID: 0}
   bgmMuteki: {fileID: 0}
   bgmClear: {fileID: 0}
+  bgmMain: {fileID: 0}
+  bgmDead: {fileID: 0}
   _maxAngularSpeed: Infinity
   _smoothTime: 0.04
   _forward: {x: 0, y: 0, z: 1}
@@ -10898,7 +10900,7 @@ MonoBehaviour:
   - {fileID: 452430049128161095}
   - {fileID: 310839028}
   - {fileID: 2095339552}
-  coinMax: 139
+  coinMax: 50
   stageCount: 1
   stageText: {fileID: 2144202131}
   coins: {fileID: 7593279109058528598, guid: 6948d910daf350b488b836b1b8ddd100, type: 3}
@@ -50253,10 +50255,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33661434121818459af23d62f1f37ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundCoin: {fileID: 8300000, guid: 77c02ab522bf26148ab60bd7fe1c2b70, type: 3}
+  soundCoin: {fileID: 8300000, guid: 4bfa21eaf4af54f4e9ea5bf3f1420641, type: 3}
   soundMutekiItem: {fileID: 8300000, guid: 0a73b2e8bbc1edd4cbd0dd15f8848654, type: 3}
   bgmMuteki: {fileID: 8300000, guid: 1387d207d9d72e047aef155b1ba37cd3, type: 3}
   bgmClear: {fileID: 8300000, guid: 351b6c25dd92fac43af695d18e49b2dd, type: 3}
+  bgmMain: {fileID: 8300000, guid: 8252a7b77e1a9f647979f7af84f70892, type: 3}
+  bgmDead: {fileID: 8300000, guid: 31c9c9d0e9e0d4b4cb8168b10e444e12, type: 3}
   _maxAngularSpeed: Infinity
   _smoothTime: 0.04
   _forward: {x: 0, y: 0, z: 1}
@@ -62125,6 +62129,7 @@ GameObject:
   - component: {fileID: 3743922383481033352}
   - component: {fileID: 1746095570}
   - component: {fileID: 3743922383481033350}
+  - component: {fileID: 3743922383481033351}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -62243,6 +62248,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3743922383481033351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3743922383481033348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91da5d061cf9ea46a426b8256ba4c71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kemuri: {fileID: 8102905462109967073, guid: 068c48957acd052418332c7071dac9f1, type: 3}
+  rb: {fileID: 3743922383481033355}
 --- !u!136 &3743922383481033352
 CapsuleCollider:
   m_ObjectHideFlags: 0

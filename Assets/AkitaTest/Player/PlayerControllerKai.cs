@@ -11,6 +11,8 @@ public class PlayerControllerKai : MonoBehaviour
     public AudioClip soundMutekiItem;
     public AudioClip bgmMuteki;
     public AudioClip bgmClear;
+    public AudioClip bgmMain;
+    public AudioClip bgmDead;
     AudioSource audioSource;
 
     [SerializeField] private float _maxAngularSpeed = Mathf.Infinity;
@@ -87,6 +89,7 @@ public class PlayerControllerKai : MonoBehaviour
         prevPosition = _transform.position;
         rb = GetComponent<Rigidbody>();
         startPosition = transform.position;
+        audioSource.PlayOneShot(bgmMain);
         state = STATE.ALIVE;
         life = 3;
         child = transform.GetChild(0).gameObject;
@@ -573,6 +576,7 @@ public class PlayerControllerKai : MonoBehaviour
     {
         audioSource.volume = 1f;
         audioSource.Stop();
+        audioSource.PlayOneShot(bgmMain);
         rb.isKinematic = false;
         mutekiText.text = "無敵じゃないよ";
         comboCount = 0;
@@ -600,7 +604,8 @@ public class PlayerControllerKai : MonoBehaviour
     void SetDead()
     {
         audioSource.Stop();
-        audioSource.volume = 1f;
+        audioSource.volume = 2f;
+        audioSource.PlayOneShot(bgmDead);
         mutekiText.text = "無敵じゃないよ";
         Debug.Log("プレイヤー死亡");
         life -= 1;
@@ -625,8 +630,6 @@ public class PlayerControllerKai : MonoBehaviour
 
     public void Restart(float dTime, float sTime)
     {
-        audioSource.Stop();
-        audioSource.volume = 1f;
         freezWarpTime = dTime;
         freezTime = dTime + sTime;
         SetFreez();
