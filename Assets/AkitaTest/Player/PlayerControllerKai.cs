@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerControllerKai : MonoBehaviour
 {
+    public static int resultScore;
+
     public AudioClip soundCoin;
     public AudioClip soundMutekiItem;
     public AudioClip bgmMuteki;
@@ -647,6 +649,7 @@ public class PlayerControllerKai : MonoBehaviour
     {
         freezWarpTime = gTime;
         freezTime = gTime + sTime;
+        resultScore = score;
         SetFreez();
     }
     public void scoreGain()
@@ -667,5 +670,9 @@ public class PlayerControllerKai : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         jumpAble = true;
 
+    }
+    public static int getResultScore()
+    {
+        return resultScore;
     }
 }
