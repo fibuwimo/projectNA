@@ -34,6 +34,9 @@ public class GameOver_Meido_Controller : MonoBehaviour
     public void Bandage_Start(){
         //Bandage.GetComponent<GameOver_Meido_Bandage>().Bandage_Active();
     }
+    public void Zoom_In(){
+        this.anim.SetBool("isZoomStart",true);
+    }
 
 
 }

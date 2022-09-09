@@ -29,4 +29,7 @@ public class GameOver_Helper_Controller : MonoBehaviour
     public void Push_RC(){
         RC.GetComponent<GameOver_RC>().RC_Active();
     }
+    public void Zoom_In(){
+        this.anim.SetBool("isZoomStart",true);
+    }
 }
