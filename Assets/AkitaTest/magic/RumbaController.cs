@@ -7,7 +7,9 @@ public class RumbaController : MonoBehaviour
 {
     Rigidbody rb;
     int comboCount;
-    public Text comboText2;
+    public GameObject canvas;
+    
+    public Text comboTextRumba;
     PlayerControllerKai plCon;
     public AudioClip soundRumba;
     AudioSource audioSource;
@@ -17,8 +19,9 @@ public class RumbaController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         rb.velocity = transform.forward * 10.0f;
-        plCon= GameObject.FindWithTag("Player").GetComponent<PlayerControllerKai>();
-        comboText2=GameObject.Find("ComboText2").GetComponent<Text>();
+        canvas = GameObject.FindWithTag("Canvas");
+        plCon = GameObject.FindWithTag("Player").GetComponent<PlayerControllerKai>();
+
         audioSource.PlayOneShot(soundRumba);
     }
 
@@ -27,7 +30,7 @@ public class RumbaController : MonoBehaviour
     {
         if (rb.velocity.magnitude <= 0.1f)
         {
-            comboText2.text = "";
+            
             audioSource.Stop();
             Destroy(this.gameObject);
         }
@@ -46,7 +49,10 @@ public class RumbaController : MonoBehaviour
             {
                 eneScr.deadByRumba();
                 comboCount++;
-                comboText2.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
+                //comboText2.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
+                Text comboTextR = Instantiate(comboTextRumba);
+                comboTextR.transform.SetParent(canvas.transform, false);
+                comboTextR.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
                 plCon.RumbaScoreGain((int)(500 * Mathf.Pow(2f, comboCount - 1)));
                 
             }
@@ -54,7 +60,7 @@ public class RumbaController : MonoBehaviour
         }
         if (other.gameObject.tag.Contains("Coin"))
         {
-            Debug.Log("ルンバがコインに当たった");
+            
             Destroy(other.gameObject);
             plCon.CoinScoreGain();
         }

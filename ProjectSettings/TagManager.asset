@@ -13,6 +13,7 @@ TagManager:
   - mutekiItem
   - Coin
   - Slope
+  - Canvas
   layers:
   - Default
   - TransparentFX

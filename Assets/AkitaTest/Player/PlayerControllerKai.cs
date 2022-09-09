@@ -62,6 +62,7 @@ public class PlayerControllerKai : MonoBehaviour
     public int stageCount = 1;
     public STATE state;
     public int life;
+    public GameObject canvas;
     public Text stageText;
     public Text stageText2;
     public Text lifeText;
@@ -69,9 +70,10 @@ public class PlayerControllerKai : MonoBehaviour
     public Text mutekiText;
     public Text coinText;
     public Text scoreText;
-    public Text comboText;
     public Text tutimahouText;
     public Text rumbaText;
+    public Text comboTextMuteki;
+    public Image HidariueImage;
     public Image anten;
     public int tutimahouCountMax = 2;
     int tutimahouCount;
@@ -111,8 +113,8 @@ public class PlayerControllerKai : MonoBehaviour
         animator = child.GetComponent<Animator>();
         tutimahouCount = tutimahouCountMax;
         rumbaCount = rumbaCountMax;
-        tutimahouText.text = "土魔法:" + tutimahouCount;
-        rumbaText.text = "ルンバ:" + rumbaCount;
+        tutimahouText.text = "" + tutimahouCount;
+        rumbaText.text = "" + rumbaCount;
     }
 
     // Update is called once per frame
@@ -178,7 +180,7 @@ public class PlayerControllerKai : MonoBehaviour
                             magicWallPosition.y = hit.point.y + 0.5f;
                             Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
                             tutimahouCount--;
-                            tutimahouText.text = "土魔法:" + tutimahouCount;
+                            tutimahouText.text = "" + tutimahouCount;
                         }
 
                     }
@@ -246,7 +248,7 @@ public class PlayerControllerKai : MonoBehaviour
                             rumbaPosition.y = hit.point.y + 0.2f;
                             Instantiate(rumba, rumbaPosition, requiredRotation);
                             rumbaCount--;
-                            rumbaText.text = "ルンバ:" + rumbaCount;
+                            rumbaText.text = "" + rumbaCount;
                         }
 
                     }
@@ -377,7 +379,7 @@ public class PlayerControllerKai : MonoBehaviour
                             magicWallPosition.y = hit.point.y + 0.5f;
                             Instantiate(tutiWall, magicWallPosition, Quaternion.Euler(transform.forward));
                             tutimahouCount--;
-                            tutimahouText.text = "土魔法:" + tutimahouCount;
+                            tutimahouText.text = "" + tutimahouCount;
                         }
 
                     }
@@ -445,7 +447,7 @@ public class PlayerControllerKai : MonoBehaviour
                             rumbaPosition.y = hit.point.y + 0.2f;
                             Instantiate(rumba, rumbaPosition, requiredRotation);
                             rumbaCount--;
-                            rumbaText.text = "ルンバ:" + rumbaCount;
+                            rumbaText.text = "" + rumbaCount;
                         }
 
                     }
@@ -595,7 +597,6 @@ public class PlayerControllerKai : MonoBehaviour
         rb.isKinematic = false;
         mutekiText.text = "無敵じゃないよ";
         comboCount = 0;
-        comboText.text = "";
         state = STATE.ALIVE;
     }
     void SetMuteki()
@@ -628,11 +629,10 @@ public class PlayerControllerKai : MonoBehaviour
         rumbaCount++;
         if (rumbaCount > rumbaCountMax) rumbaCount = 1;
         tutimahouCount = tutimahouCountMax;
-        rumbaText.text = "ルンバ:" + rumbaCount;
+        rumbaText.text = "" + rumbaCount;
         lifeText.text = "LIFE:" + life;
-        lifeText2.text = "LIFE:" + life;
+        lifeText2.text = "" + life;
         comboCount = 0;
-        comboText.text = "";
         animator.SetBool("DAMAGE", true);
         state = STATE.DEAD;
     }
@@ -645,7 +645,6 @@ public class PlayerControllerKai : MonoBehaviour
         //rb.isKinematic = true;
         freezCount = 0;
         comboCount = 0;
-        comboText.text ="";
         state = STATE.FREEZ;
     }
 
@@ -671,10 +670,10 @@ public class PlayerControllerKai : MonoBehaviour
         {
             rumbaCount++;
             if (rumbaCount > rumbaCountMax) rumbaCount = 1;
-            rumbaText.text = "ルンバ:" + rumbaCount;
+            rumbaText.text = "" + rumbaCount;
         }
         if (tutimahouCount > tutimahouCountMax) tutimahouCount = 2;
-        tutimahouText.text = "土魔法:" + tutimahouCount;
+        tutimahouText.text = "" + tutimahouCount;
         freezWarpTime = cTime;
         freezTime = cTime + sTime;
         audioSourceBGM.Stop();
@@ -694,13 +693,16 @@ public class PlayerControllerKai : MonoBehaviour
     {
         comboCount++;
         score += (int)(500 * Mathf.Pow(2f, comboCount-1));
-        comboText.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
-        scoreText.text = "SCORE:" + score;
+        //comboText.text = "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
+        Text comboTextM = Instantiate(comboTextMuteki);
+        comboTextM.transform.SetParent(canvas.transform, false);
+        comboTextM.text= "+" + (int)(500 * Mathf.Pow(2f, comboCount - 1));
+        scoreText.text = "" + score.ToString("0000000");
     }
     public void RumbaScoreGain(int s)
     {
         score += s;
-        scoreText.text = "SCORE:" + score;
+        scoreText.text = "" + score.ToString("0000000");
     }
     IEnumerator SetJumpAble()
     {
@@ -718,7 +720,7 @@ public class PlayerControllerKai : MonoBehaviour
         coinCount++;
         coinText.text = "COIN:" + coinCount;
         score += 30;
-        scoreText.text = "SCORE:" + score;
+        scoreText.text = "" + score.ToString("0000000");
         audioSourceCoinSe.PlayOneShot(soundCoin);
     }
     IEnumerator setAntenByDead()
@@ -726,8 +728,9 @@ public class PlayerControllerKai : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         tutimahouText.gameObject.SetActive(false);
         rumbaText.gameObject.SetActive(false);
+        HidariueImage.gameObject.SetActive(false);
         //stageText2.gameObject.SetActive(false);
-        //lifeText2.gameObject.SetActive(false);
+        lifeText2.gameObject.SetActive(false);
         yield return new WaitForSeconds(1.5f);
         anten.gameObject.SetActive(true);
         lifeText.gameObject.SetActive(true);
@@ -740,7 +743,8 @@ public class PlayerControllerKai : MonoBehaviour
         tutimahouText.gameObject.SetActive(true);
         rumbaText.gameObject.SetActive(true);
         //stageText2.gameObject.SetActive(true);
-        //lifeText2.gameObject.SetActive(true);
+        lifeText2.gameObject.SetActive(true);
+        HidariueImage.gameObject.SetActive(true);
 
     }
     IEnumerator setAntenByInit()
@@ -748,6 +752,7 @@ public class PlayerControllerKai : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         tutimahouText.gameObject.SetActive(false);
         rumbaText.gameObject.SetActive(false);
+        HidariueImage.gameObject.SetActive(false);
         //stageText2.gameObject.SetActive(false);
         //lifeText2.gameObject.SetActive(false);
         yield return new WaitForSeconds(0f);
@@ -762,7 +767,8 @@ public class PlayerControllerKai : MonoBehaviour
         tutimahouText.gameObject.SetActive(true);
         rumbaText.gameObject.SetActive(true);
         //stageText2.gameObject.SetActive(true);
-        //lifeText2.gameObject.SetActive(true);
+        lifeText2.gameObject.SetActive(true);
+        HidariueImage.gameObject.SetActive(true);
 
     }
     IEnumerator setAntenByClear()
@@ -770,8 +776,9 @@ public class PlayerControllerKai : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         tutimahouText.gameObject.SetActive(false);
         rumbaText.gameObject.SetActive(false);
+        HidariueImage.gameObject.SetActive(false);
         //stageText2.gameObject.SetActive(false);
-        //lifeText2.gameObject.SetActive(false);
+        lifeText2.gameObject.SetActive(false);
         yield return new WaitForSeconds(3.0f);
         stageText.text = "STAGE" + stageCount;
         stageText2.text = "STAGE" + stageCount;
@@ -786,7 +793,8 @@ public class PlayerControllerKai : MonoBehaviour
         tutimahouText.gameObject.SetActive(true);
         rumbaText.gameObject.SetActive(true);
         //stageText2.gameObject.SetActive(true);
-        //lifeText2.gameObject.SetActive(true);
+        lifeText2.gameObject.SetActive(true);
+        HidariueImage.gameObject.SetActive(true);
 
     }
 }

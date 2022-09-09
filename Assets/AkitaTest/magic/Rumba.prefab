@@ -200,7 +200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f72542db1975384b97ebf6a62f7419b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
   comboText2: {fileID: 0}
+  comboTextRumba: {fileID: 7949304736697315041, guid: 9dbfb9a4699518e409397c8a38f1cbac,
+    type: 3}
   soundRumba: {fileID: 8300000, guid: f1f7726e52c4cf64a8a75bf65aa7dabe, type: 3}
 --- !u!54 &593186391628700107
 Rigidbody:
