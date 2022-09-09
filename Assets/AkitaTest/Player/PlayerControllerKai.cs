@@ -313,7 +313,7 @@ public class PlayerControllerKai : MonoBehaviour
             mutekiCount += Time.deltaTime;
             if (mutekiCount >= mutekiTimes[stageCount - 1]-3)
             {
-                audioSourceBGM.volume -= 0.005f;
+                audioSourceBGM.volume -= 0.003f;
             }
 
             if (mutekiCount >= mutekiTimes[stageCount - 1])
@@ -544,12 +544,9 @@ public class PlayerControllerKai : MonoBehaviour
     {
         if (other.gameObject.tag.Contains("Coin"))
         {
-            coinCount++;
-            coinText.text = "COIN:" + coinCount;
-            score += 30;
-            scoreText.text = "SCORE:" + score;
-            audioSourceCoinSe.PlayOneShot(soundCoin);
+           
             Destroy(other.gameObject);
+            CoinScoreGain();
         }
         if (other.gameObject.tag.Contains("agent"))
         {
@@ -715,6 +712,14 @@ public class PlayerControllerKai : MonoBehaviour
     public static int getResultScore()
     {
         return resultScore;
+    }
+    public void CoinScoreGain()
+    {
+        coinCount++;
+        coinText.text = "COIN:" + coinCount;
+        score += 30;
+        scoreText.text = "SCORE:" + score;
+        audioSourceCoinSe.PlayOneShot(soundCoin);
     }
     IEnumerator setAntenByDead()
     {

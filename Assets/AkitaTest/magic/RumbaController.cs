@@ -50,6 +50,13 @@ public class RumbaController : MonoBehaviour
                 plCon.RumbaScoreGain((int)(500 * Mathf.Pow(2f, comboCount - 1)));
                 
             }
+            
+        }
+        if (other.gameObject.tag.Contains("Coin"))
+        {
+            Debug.Log("ルンバがコインに当たった");
+            Destroy(other.gameObject);
+            plCon.CoinScoreGain();
         }
     }
 }
