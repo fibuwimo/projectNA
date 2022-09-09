@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   comboText2: {fileID: 0}
-  soundRumba: {fileID: 8300000, guid: 77c02ab522bf26148ab60bd7fe1c2b70, type: 3}
+  soundRumba: {fileID: 8300000, guid: f1f7726e52c4cf64a8a75bf65aa7dabe, type: 3}
 --- !u!54 &593186391628700107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -227,7 +227,8 @@ AudioSource:
   m_GameObject: {fileID: 5531095153464164681}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243572561473757510, guid: 70d785fa2a6c3d04a941fc7eb6fc1fb0,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

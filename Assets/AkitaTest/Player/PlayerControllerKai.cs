@@ -13,9 +13,14 @@ public class PlayerControllerKai : MonoBehaviour
     public AudioClip soundCoin;
     public AudioClip soundMutekiItem;
     public AudioClip soundJump;
+    public AudioClip soundDead;
     AudioSource audioSource;
-    public GameObject BGM;
-    AudioSource audioSourceBGM;
+    
+    public AudioSource audioSourceBGM;
+    public AudioSource audioSourceJumpSe;
+    public AudioSource audioSourceCoinSe;
+    public AudioSource audioSourcePlayerDeadSe;
+
     public float bgmMainVol=0.5f;
     public float bgmMutekiVol = 0.5f;
     public float bgmClearVol = 0.5f;
@@ -95,7 +100,6 @@ public class PlayerControllerKai : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSourceBGM = BGM.GetComponent<AudioSource>();
         audioSource = GetComponent<AudioSource>();
         _transform = transform;
         prevPosition = _transform.position;
@@ -544,7 +548,7 @@ public class PlayerControllerKai : MonoBehaviour
             coinText.text = "COIN:" + coinCount;
             score += 30;
             scoreText.text = "SCORE:" + score;
-            audioSource.PlayOneShot(soundCoin);
+            audioSourceCoinSe.PlayOneShot(soundCoin);
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag.Contains("agent"))
@@ -578,7 +582,7 @@ public class PlayerControllerKai : MonoBehaviour
                 if (isGround && jumpAble)
                 {
                     rb.AddForce(transform.up * jumpPower, ForceMode.Impulse);
-                    audioSource.PlayOneShot(soundJump);
+                    audioSourceJumpSe.PlayOneShot(soundJump);
                     StartCoroutine(SetJumpAble());
                     animator.SetTrigger("JUMP");
                 }
@@ -617,6 +621,7 @@ public class PlayerControllerKai : MonoBehaviour
     }
     void SetDead()
     {
+        audioSourcePlayerDeadSe.PlayOneShot(soundDead);
         audioSourceBGM.Stop();
         audioSourceBGM.volume = bgmDeadVol;
         audioSourceBGM.PlayOneShot(bgmDead);
@@ -763,6 +768,8 @@ public class PlayerControllerKai : MonoBehaviour
         //stageText2.gameObject.SetActive(false);
         //lifeText2.gameObject.SetActive(false);
         yield return new WaitForSeconds(3.0f);
+        stageText.text = "STAGE" + stageCount;
+        stageText2.text = "STAGE" + stageCount;
         anten.gameObject.SetActive(true);
         lifeText.gameObject.SetActive(true);
         stageText.gameObject.SetActive(true);
