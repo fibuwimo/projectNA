@@ -261,7 +261,7 @@ public class PlayerControllerKai : MonoBehaviour
             moveX = Input.GetAxis("Horizontal");
             moveZ = Input.GetAxis("Vertical");
             Vector3 direction = new Vector3(moveX, 0, moveZ);
-            direction.Normalize();
+            //direction.Normalize();
             movingVelocity = direction * speed;
             movingVelocity.y = position.y;
 
@@ -460,7 +460,7 @@ public class PlayerControllerKai : MonoBehaviour
             moveX = Input.GetAxis("Horizontal");
             moveZ = Input.GetAxis("Vertical");
             Vector3 direction = new Vector3(moveX, 0, moveZ);
-            direction.Normalize();
+            //direction.Normalize();
             movingVelocity = direction * speed;
             movingVelocity.y = position.y;
 
