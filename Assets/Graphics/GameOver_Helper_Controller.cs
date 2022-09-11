@@ -6,12 +6,14 @@ public class GameOver_Helper_Controller : MonoBehaviour
 {
     public GameObject Meido;
     public GameObject RC;
+    public GameObject Hand;
     Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         Meido = GameObject.Find("GameOver_meido");
         RC = GameObject.Find("GameOver_RC");
+        Hand = GameObject.Find("GameOver_Helper_Hand");
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -31,5 +33,11 @@ public class GameOver_Helper_Controller : MonoBehaviour
     }
     public void Zoom_In(){
         this.anim.SetBool("isZoomStart",true);
+    }
+    public void Surprize_Zoom(){
+        this.anim.SetBool("isZoomSurStart",true);
+    }
+    public void Hand_Appear(){
+        Hand.GetComponent<GameOver_Helper_Hand>().Helper_Hand_Active();
     }
 }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bc9fd3bf9e8d1b8428f5747b9aaacd6e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 851CHIKARA-YOWAKU
+  fontNames:
+  - 851CHIKARA-YOWAKU
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
