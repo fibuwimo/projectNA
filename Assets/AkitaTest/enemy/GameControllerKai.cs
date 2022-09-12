@@ -156,10 +156,25 @@ public class GameControllerKai : MonoBehaviour
         if (stageCount == 3)
         {
             agents[5].SetActive(true);
+            agents[6].SetActive(true);
         }
-
-
-
+        if (stageCount == 5)
+        {
+            agents[7].SetActive(true);
+            agents[8].SetActive(true);
+        }
+        if (stageCount == 7)
+        {
+            agents[9].SetActive(true);
+        }
+        if (stageCount == 9)
+        {
+            agents[10].SetActive(true);
+        }
+        if (stageCount == 12)
+        {
+            agents[11].SetActive(true);
+        }
 
     }
     void setPlay()
