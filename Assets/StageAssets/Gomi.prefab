@@ -12789,7 +12789,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8070953453081196423}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -12798,6 +12818,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -13419,10 +13449,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -13514,10 +13554,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -13724,10 +13774,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -13744,7 +13814,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8221226591034420798}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13753,6 +13838,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -15109,12 +15199,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC4
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -15534,6 +15634,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -15799,7 +15904,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -15824,6 +15939,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9012946669193913715}
     m_Modifications:
+    - target: {fileID: 6708163228173315808, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.439
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173315810, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15908,6 +16028,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiC19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f907aab2b730a4d827c95e00fabb27, type: 3}
@@ -16299,12 +16439,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB9 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -16324,6 +16479,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7705334735312815365}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -16338,6 +16503,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -17084,10 +17259,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -17319,7 +17514,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB4
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -17724,6 +17934,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -18000,6 +18220,11 @@ PrefabInstance:
       value: GomiC2
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -18404,6 +18629,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -18734,10 +18969,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB5
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146292173349, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -18899,10 +19149,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -19299,6 +19564,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -19339,10 +19614,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7305128103589024836}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570885, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -19529,6 +19834,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 773481146415105204}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -19538,6 +19853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA15 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -20254,6 +20574,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC10
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -20274,6 +20609,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4360251683575713173}
     m_Modifications:
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -20288,6 +20633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -21204,6 +21554,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -21579,10 +21934,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -21788,6 +22158,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiB12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -22689,6 +23074,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -23024,10 +23419,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
@@ -23049,6 +23454,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5569119589428922248}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -23063,6 +23478,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -23559,6 +23989,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2324706897047636257}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -24449,6 +24884,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -24854,6 +25299,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -24889,7 +25344,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719856510704}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -24898,6 +25363,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -25694,6 +26164,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB10
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
@@ -26069,6 +26544,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB11
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
@@ -26089,6 +26579,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161720876659179}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -26894,10 +27399,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -27049,6 +27574,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC20
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349592, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f907aab2b730a4d827c95e00fabb27, type: 3}
 --- !u!4 &1242241386906220337 stripped
@@ -27149,6 +27704,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC19
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f907aab2b730a4d827c95e00fabb27, type: 3}
 --- !u!4 &1242241386892890382 stripped
@@ -27164,10 +27734,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719976435824}
     m_Modifications:
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570891, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -27669,12 +28259,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangerB_geo
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC8
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349592, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -27719,7 +28329,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161720438881761}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -27728,6 +28358,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -28604,6 +29244,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
@@ -28899,10 +29544,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -29280,6 +29940,11 @@ PrefabInstance:
       value: GomiC4
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -29709,10 +30374,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -29808,6 +30493,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiB
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -30109,15 +30809,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB13
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146292173349, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -30504,6 +31219,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349592, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -30539,7 +31269,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719467457839}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -30548,6 +31293,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -31364,12 +32124,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangerB_geo
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC8
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -31714,6 +32484,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC3
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -31734,6 +32519,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719546722078}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -31748,6 +32543,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA14 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -32419,6 +33224,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f907aab2b730a4d827c95e00fabb27, type: 3}
 --- !u!4 &1242241387139816822 stripped
@@ -32799,6 +33624,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349592, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -33134,6 +33974,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC10
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -33444,10 +34299,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -33464,10 +34334,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719571379698}
     m_Modifications:
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570885, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -33644,7 +34534,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161721049928394}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -33653,6 +34563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -34279,10 +35194,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -34959,10 +35884,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -35269,7 +36214,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB5
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -35684,6 +36649,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -36094,12 +37069,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangerB_geo
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC6
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -36443,6 +37433,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiC18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
@@ -36840,6 +37845,16 @@ PrefabInstance:
       value: GomiC16
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -37264,12 +38279,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangerB_geo
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC17
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349592, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -37314,7 +38349,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161720066594942}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -37323,6 +38378,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -37759,7 +38824,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161721021297400}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -38184,6 +39264,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161721156417928}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -38764,6 +39849,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719889451520}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -38778,6 +39878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -39654,6 +40759,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -39694,7 +40809,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161720632609372}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -39703,6 +40833,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -40319,10 +41464,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -40719,6 +41879,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -40773,6 +41948,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -41624,10 +42814,35 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.033
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -42014,6 +43229,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -42049,6 +43269,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719496272935}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -42063,6 +43288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -42794,10 +44024,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -43189,10 +44454,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -43247,7 +44532,7 @@ PrefabInstance:
     - target: {fileID: 1212259146289879241, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15100002
+      value: 0.156
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289879241, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -43394,10 +44679,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -43414,6 +44724,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161720031925783}
     m_Modifications:
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -43428,6 +44743,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA17 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -44304,6 +45624,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -44344,10 +45674,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161721179218101}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570887, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -44574,10 +45934,30 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -44759,6 +46139,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB6
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
 --- !u!4 &6699019073286974621 stripped
@@ -44774,6 +46174,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719705877632}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -44788,6 +46198,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -45509,6 +46934,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiB4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906931, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
@@ -45999,6 +47444,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161721107686085}
     m_Modifications:
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -46013,6 +47463,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -46889,6 +48349,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -46924,7 +48389,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161721174400023}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -46933,6 +48408,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -47349,6 +48834,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161720741821223}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -47357,12 +48852,22 @@ PrefabInstance:
     - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -48179,6 +49684,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -48219,6 +49729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719433886824}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -49024,6 +50539,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -49419,10 +50939,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB9 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906929, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -49654,6 +51194,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
@@ -49684,10 +51234,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493161719512399315}
     m_Modifications:
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570885, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -50254,6 +51824,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -50679,7 +52259,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC17
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -51109,6 +52704,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
 --- !u!4 &6843522547364606906 stripped
@@ -51429,12 +53029,27 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.033
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB2
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -51454,6 +53069,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7505794323778618273}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -51468,6 +53088,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -52169,10 +53804,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
@@ -52550,6 +54200,11 @@ PrefabInstance:
       value: GomiC14
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -53019,10 +54674,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6572981484362161190}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570885, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -53329,10 +55014,35 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.027
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f907aab2b730a4d827c95e00fabb27, type: 3}
@@ -53349,6 +55059,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6398804592186279646}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -53363,6 +55088,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137791, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -54304,10 +56039,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -54329,15 +56079,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2536647537965899380}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -54669,6 +56454,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7001255769161345494}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137769, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
@@ -55089,10 +56899,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.551
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -55138,6 +56958,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -55954,12 +57784,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangerB_geo
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC8
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -56074,10 +57914,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906913, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -56464,6 +58319,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -56499,15 +58364,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5387296972356236800}
     m_Modifications:
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137775, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_Name
       value: GomiA6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137777, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -56954,6 +58834,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7811934969977981150}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137763, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137765, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -56968,6 +58863,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137783, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -58014,6 +59924,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -153.442
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
@@ -58404,12 +60319,32 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC5
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349592, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -58819,12 +60754,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: hangerB_geo
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC11 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -59249,6 +61199,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -59549,10 +61504,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.002
       objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906919, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906921, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_Name
       value: GomiB17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
@@ -59560,6 +61525,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212259146289906933, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906935, guid: e0c38a1e760475c459eb9a6f83f39dbb,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -59959,6 +61929,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349598, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
@@ -60079,10 +62059,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.027
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349568, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_Name
       value: GomiC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349580, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349594, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f907aab2b730a4d827c95e00fabb27, type: 3}
@@ -60099,6 +62099,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7178123002269980267}
     m_Modifications:
+    - target: {fileID: 5376367892555137761, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5376367892555137771, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
       propertyPath: m_IsActive
@@ -60113,6 +62118,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiA15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137785, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376367892555137789, guid: bdecdb08a4c74b641970e462acbe834a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5376367892555570881, guid: bdecdb08a4c74b641970e462acbe834a,
         type: 3}
@@ -60849,7 +62864,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GomiC3
       objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349570, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6708163228173349572, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349578, guid: a4f907aab2b730a4d827c95e00fabb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708163228173349590, guid: a4f907aab2b730a4d827c95e00fabb27,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -61693,6 +63723,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GomiB8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906923, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212259146289906927, guid: e0c38a1e760475c459eb9a6f83f39dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0c38a1e760475c459eb9a6f83f39dbb, type: 3}
