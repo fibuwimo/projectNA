@@ -62423,12 +62423,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1706914540757218991, guid: 473dce51114a8e64e9a83035fcf749b0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581885544379055735, guid: 473dce51114a8e64e9a83035fcf749b0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779510090220833727, guid: 473dce51114a8e64e9a83035fcf749b0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529798690519775513, guid: 473dce51114a8e64e9a83035fcf749b0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9210140023265855986, guid: 473dce51114a8e64e9a83035fcf749b0,
         type: 3}
       propertyPath: m_Name
       value: MutekiItems
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1706914540757218988, guid: 473dce51114a8e64e9a83035fcf749b0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 473dce51114a8e64e9a83035fcf749b0, type: 3}
 --- !u!4 &452430049128161088
 Transform:
