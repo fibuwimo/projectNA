@@ -269,6 +269,7 @@ public class EnemyKai : MonoBehaviour
     }
     protected void SetRun()
     {
+        if (state == STATE.DEAD) return;
         animator.SetBool("TUIBI",false);
         animator.SetBool("RUN", true);
         animator.SetBool("FREEZ", false);
