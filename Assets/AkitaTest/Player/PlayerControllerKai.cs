@@ -39,7 +39,7 @@ public class PlayerControllerKai : MonoBehaviour
     public Vector3 movingVelocity;
 
     public float jumpPower;
-    private float distance = 0.6f;
+    private float distance = 0.8f;
 
     private Transform _transform;
     private Vector3 prevPosition;
@@ -99,6 +99,9 @@ public class PlayerControllerKai : MonoBehaviour
     public GameObject rumbaMihonRed;
     public GameObject rumba;
 
+    int lifeGainCount = 1;
+    public int extendScore=100000;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -120,6 +123,13 @@ public class PlayerControllerKai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (score >= extendScore * lifeGainCount)
+        {
+            lifeGainCount++;
+            life++;
+            lifeText.text = "LIFE:" + life;
+            lifeText2.text = "" + life;
+        }
         
         if (state == STATE.ALIVE)
         {
